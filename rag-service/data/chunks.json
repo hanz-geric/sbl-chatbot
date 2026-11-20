@@ -1,0 +1,860 @@
+[
+ {
+  "id": "K001",
+  "section": "01.1",
+  "title": "01.1 Overview: registration is more than one step",
+  "text": "Starting a business in the Philippines usually involves several separate registrations:\n\n1. **Business or entity registration** – DTI (sole proprietorship business name), SEC (corporations and partnerships), or CDA (cooperatives).\n2. **Local permits and clearances** – the Mayor's Permit / business permit from the city or municipality, plus barangay and other clearances.\n3. **BIR tax registration.**\n4. **Sector-specific permits or licenses** – for example, FDA for food manufacturers."
+ },
+ {
+  "id": "K002",
+  "section": "01.1",
+  "title": "01.1 Overview: registration is more than one step",
+  "text": "**Key rule for the chatbot:** DTI business name registration does NOT by itself authorize a business to operate. It registers only the business name. The permit to operate is the business permit (Mayor's Permit) issued by the LGU.\n\n(Status: VERIFIED, INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K003",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > What it is",
+  "text": "A sole proprietor registers a **business name** with DTI through the online **Business Name Registration System (BNRS)**: https://bnrs.dti.gov.ph/\n\n- Business name registration has been fully online since August 1, 2023. DTI regional and provincial offices and Negosyo Centers can assist with online applications, renewals, and certification requests.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K004",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Who can register",
+  "text": "Any Filipino at least 18 years old can register a business name. Foreign nationals authorized to do business in the Philippines may also register.\n\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K005",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Territorial scope and fees",
+  "text": "The fee depends on the territorial scope chosen:\n\n| Territorial scope | Registration fee | Plus documentary stamp tax |\n|---|---|---|\n| Barangay | ₱200 | ₱30 |\n| City/Municipality | ₱500 | ₱30 |\n| Regional | ₱1,000 | ₱30 |\n| National | ₱2,000 | ₱30 |\n\nAn additional 50% is charged for late filing (late renewal).\n\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K006",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > How to choose the territorial scope (office guidance)",
+  "text": "Territorial scope is based on where the business is **physically located** (its office, store, or branches), not where its customers are."
+ },
+ {
+  "id": "K007",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > How to choose the territorial scope (office guidance)",
+  "text": "- One store in one barangay → Barangay scope. Example given: a sari-sari store in Barangay Irisan.\n- Branches in more than one barangay within the same city (e.g., Irisan and Camp 8 in Baguio City) → City/Municipality scope. The fee is not multiplied per barangay.\n- Branches using the same name in different cities/provinces within the region (e.g., Baguio and La Trinidad, Mountain Province, or Abra) → Regional scope.\n- Nationwide → National scope.\n- An online business with a single office but customers elsewhere (e.g., a client in Mindanao) may still register at Barangay scope, because scope follows the office location.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K008",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Validity and renewal",
+  "text": "- A DTI business name registration is valid for **5 years**.\n- The renewal fee follows the same territorial-scope schedule; late renewal incurs a 50% surcharge.\n(Status: VERIFIED, INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K009",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Cancellation",
+  "text": "- A DTI business name is **not transferable**. It must first be cancelled by the registered owner before another person can register and use it.\n- Cancellation may be **voluntary** (for example, the business closed or failed) or due to the **death of the owner**.\n(Status: FOR VALIDATION, INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K010",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Amendments",
+  "text": "Possible amendments mentioned by the office:\n- Change (upgrade) of territorial scope\n- Change of business name\n- Change of business address\n\n(Status: FOR VALIDATION, INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K011",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Where to get help",
+  "text": "DTI provincial offices and Negosyo Centers (in municipalities) assist with business name registration. The DTI and Negosyo Center Facebook pages are also active channels.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K012",
+  "section": "01.3",
+  "title": "01.3 SEC – Corporations and Partnerships",
+  "text": "The Securities and Exchange Commission (SEC) registers corporations (including One Person Corporations) and partnerships. Applications go through **eSPARC**: https://esparc.sec.gov.ph/application ; the **OneSEC** route is at https://esparc.sec.gov.ph/application/select-one-sec\n\nUsers should identify their intended business structure first, because the correct registration route depends on it.\n\n(Status: FOR VALIDATION)\n- DTI interview note: DTI also assists entrepreneurs with referrals for SEC registration. (INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K013",
+  "section": "01.4",
+  "title": "01.4 CDA – Cooperatives",
+  "text": "The Cooperative Development Authority (CDA) registers cooperatives through its online systems (e-CoopRIS): https://cs.cda.gov.ph/\n\nOlder CDA circulars (e.g., MC 2015-01) should not be treated as the only source of current requirements.\n\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K014",
+  "section": "01.5",
+  "title": "01.5 Local Business Permits (overview only)",
+  "text": "The business permit (Mayor's Permit) is the license to operate a business within a city or municipality. It is issued by the city or municipal government through its business permits and licensing office (in Baguio City, the Permits and Licensing Division, City Mayor's Office)."
+ },
+ {
+  "id": "K015",
+  "section": "01.5",
+  "title": "01.5 Local Business Permits (overview only)",
+  "text": "What the office told us:\n- After DTI registration, the entrepreneur proceeds to the city or municipal hall to get the Mayor's Permit.\n- Typical supporting requirements include a **barangay clearance**, a **fire safety inspection certificate from the Bureau of Fire Protection (BFP)**, a **sanitary permit**, and other requirements set by the LGU.\n- Home-based and online businesses still need a business permit. A separate commercial office is not necessarily required, but there should be an identifiable place where the business is conducted. Specific requirements depend on the LGU.\n- Fees and requirements differ between LGUs because each has its own revenue code (e.g., Baguio City vs. Tuba vs. La Trinidad), even for nearby places."
+ },
+ {
+  "id": "K016",
+  "section": "01.5",
+  "title": "01.5 Local Business Permits (overview only)",
+  "text": "(Status: INTERVIEW-DERIVED)\n- **Baguio City-specific procedures, requirements, renewal schedule, and eBPLS steps: see Section 02** (draft, FOR VALIDATION; the PLD interview did not push through, so validation relies on official city sources)."
+ },
+ {
+  "id": "K017",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration",
+  "text": "Every business must register with the Bureau of Internal Revenue (BIR). Registering with DTI, SEC, CDA, or the LGU does not complete BIR registration."
+ },
+ {
+  "id": "K018",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > When to register",
+  "text": "- Business taxpayers must register **on or before the start of business** (RA 11976, Ease of Paying Taxes Act; RR 7-2024; RMC No. 91-2024). Online sellers are included, with or without a physical store.\n- Under RMC No. 91-2024, the start of business is counted from the **first sale**, or **30 calendar days after** the DTI business name certificate, SEC certificate, or Mayor's Permit is issued, **whichever comes first**. So do not wait for the Mayor's Permit before registering with BIR.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K019",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Which form",
+  "text": "- **BIR Form 1901**: sole proprietors, professionals, freelancers, online sellers, content creators, and other self-employed individuals.\n- **BIR Form 1903**: corporations, partnerships, cooperatives, and associations.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K020",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Documentary requirements: sole proprietor (BIR checklist F1101, revised July 2025)",
+  "text": "Required:\n1. BIR Form 1901, two originals (for manual applications).\n2. One photocopy of a government-issued ID showing name, address, and birthdate. If the ID has no address, add proof of residence or business address. Online applicants upload a selfie holding the ID.\n3. Invoices: either buy BIR Printed Invoices, or submit one final sample of your own invoices printed by an accredited printer.\n\nIf applicable:\n- DTI business name certificate (photocopy).\n- Special Power of Attorney and IDs if a representative files for you.\n- BMBE Certificate of Authority, if registered as a Barangay Micro Business Enterprise.\n- Work visa (foreign nationals); franchise documents (common carriers); proof of BOI/PEZA or similar registration."
+ },
+ {
+  "id": "K021",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Documentary requirements: sole proprietor (BIR checklist F1101, revised July 2025)",
+  "text": "Fees: **₱30 documentary stamp tax** on the Certificate of Registration, plus the cost of BIR Printed Invoices if you buy them. The former ₱500 annual registration fee is no longer collected (see below).\n\n- Incomplete applications are returned and not processed.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K022",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Where to register",
+  "text": "- **Online:** ORUS (Online Registration and Update System) at https://orus.bir.gov.ph/home. After paying the ₱30 DST online, you can generate an electronic Certificate of Registration (eCOR). Business registration in ORUS has been available since October 2024 (RMC 113-2024).\n- **Other channels:** NewBizReg (https://web-services.bir.gov.ph/newbizreg/), the Philippine Business Hub (https://business.gov.ph/), or the New Business Registration counter of the Revenue District Office (RDO) covering your business address.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K023",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > After registration",
+  "text": "- **Display the Certificate of Registration** at the place of business. Businesses that sell through a website, social media, or another online platform must also display an electronic copy of their COR there. (RR 7-2024, as summarized by Grant Thornton) Status: FOR VALIDATION.\n- **Books of accounts:** new businesses using manual books must register them before the deadline of the first quarterly or annual income tax return, whichever is earlier. (RMC 91-2024) Status: VERIFIED.\n- **Invoices:** issue BIR-registered invoices for sales."
+ },
+ {
+  "id": "K024",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Income tax options for sole proprietors",
+  "text": "- If gross sales and other non-operating income do **not exceed ₱3,000,000** a year and you are not VAT-registered, you may choose either:\n  - **8% income tax** on gross sales/receipts **in excess of ₱250,000**. This replaces both the graduated income tax and the 3% percentage tax. No expense deductions. (The ₱250,000 reduction applies only to those earning purely from business, not mixed-income earners.)\n  - **Graduated income tax rates** on net taxable income, **plus 3% percentage tax** on gross sales.\n- The 8% option is chosen when registering (on Form 1901) or in the first quarterly return; otherwise the graduated rates apply automatically.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K025",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Taxpayer size classification (EOPT Act)",
+  "text": "- BIR classifies business taxpayers by gross sales: **micro** (below ₱3 million), **small** (₱3 million to below ₱20 million), **medium** (₱20 million to below ₱1 billion), **large** (₱1 billion and above). Micro and small taxpayers have lower penalties for some violations. (RR 8-2024; RR 6-2024, as summarized by KPMG and SunStar)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K026",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > The ₱500 Annual Registration Fee no longer applies",
+  "text": "Effective **January 22, 2024**, BIR stopped collecting the ₱500 Annual Registration Fee (ARF) under RA 11976. Business taxpayers no longer file BIR Form 0605 for the ARF, for new businesses or annual renewal.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K027",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Closing a business with BIR",
+  "text": "- File BIR Form 1905 to close the business registration. Requirements include the form (two originals), a list of ending inventory, an inventory of unused invoices, and the original Certificate of Registration and other BIR permits. A ₱30 DST is affixed to the tax clearance issued for closure. (BIR checklist F1105C, July 2025)\n- RMC No. 47-2026 streamlines closure procedures. A business that stops operating without closing its BIR registration stays liable for filing returns and paying taxes and penalties until closure is completed. (PwC Tax Alert No. 28, 2026)\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K028",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits (initial notes)",
+  "text": "- **Food manufacturers** need FDA registration and a License to Operate (LTO). Products should be properly labeled and packed. The office raised this mainly for trade fair participation, but it reflects the general FDA requirement.\n(Status: FOR VALIDATION, INTERVIEW-DERIVED)\n- Other sector permits: PENDING research."
+ },
+ {
+  "id": "K029",
+  "section": "01.8",
+  "title": "01.8 General Registration Orientation (not a universal checklist)",
+  "text": "1. Identify your business structure (sole proprietorship, partnership, corporation, cooperative).\n2. Register with the correct agency (DTI, SEC, or CDA).\n3. Ask your city or municipality about business permit requirements (barangay clearance, fire safety, sanitary, and others).\n4. Register with the BIR.\n5. Get any additional licenses your business activity requires (e.g., FDA for food).\n6. Keep your certificates, permits, receipts, and renewal dates on record."
+ },
+ {
+  "id": "K030",
+  "section": "01.8",
+  "title": "01.8 General Registration Orientation (not a universal checklist)",
+  "text": "**Office advice before registering:** Know your product AND your market. Identify your target customers and what makes your business different (unique selling point) before starting. (INTERVIEW-DERIVED)\n\nThis is an orientation only. Requirements and order may differ by LGU and business type."
+ },
+ {
+  "id": "K031",
+  "section": "01.9",
+  "title": "01.9 Common Questions – Business Registration",
+  "text": "**Is DTI registration enough to start operating?**\nNo. DTI registration covers only your business name. You still need a business permit (Mayor's Permit) from your city or municipality, and BIR registration. *(VERIFIED / INTERVIEW-DERIVED)*"
+ },
+ {
+  "id": "K032",
+  "section": "01.9",
+  "title": "01.9 Common Questions – Business Registration",
+  "text": "**Should I register with DTI, SEC, or CDA?**\nSole proprietorship → DTI. Corporation or partnership → SEC. Cooperative → CDA. *(VERIFIED)*"
+ },
+ {
+  "id": "K033",
+  "section": "01.9",
+  "title": "01.9 Common Questions – Business Registration",
+  "text": "**Does DTI registration cover business taxes?**\nNo. Tax registration is done separately with the BIR. *(VERIFIED)*"
+ },
+ {
+  "id": "K034",
+  "section": "01.9",
+  "title": "01.9 Common Questions – Business Registration",
+  "text": "**Do I still pay the ₱500 annual BIR registration fee?**\nNo. BIR stopped collecting it effective January 22, 2024 (RMC No. 14-2024). *(VERIFIED)*"
+ },
+ {
+  "id": "K035",
+  "section": "01.9",
+  "title": "01.9 Common Questions – Business Registration",
+  "text": "**How much does DTI registration cost?**\n₱200 (barangay), ₱500 (city/municipality), ₱1,000 (regional), or ₱2,000 (national), plus ₱30 documentary stamp tax. Check the BNRS for current rates. *(VERIFIED as of Nov 16, 2026)*"
+ },
+ {
+  "id": "K036",
+  "section": "01.9",
+  "title": "01.9 Common Questions – Business Registration",
+  "text": "**I sell online and have customers all over the country. Do I need national scope?**\nNot necessarily. According to DTI Baguio–Benguet, scope follows where your office or branches are located, not where your customers are. One office in one barangay can use barangay scope. *(INTERVIEW-DERIVED)*\n\n**How long is DTI registration valid?**\n5 years. Late renewal has a 50% surcharge. *(VERIFIED)*"
+ },
+ {
+  "id": "K037",
+  "section": "01.9",
+  "title": "01.9 Common Questions – Business Registration",
+  "text": "**Can I transfer my business name to someone else?**\nNo. The name must be cancelled first before someone else can register it. *(INTERVIEW-DERIVED)*\n\n**Where do I register a corporation?** SEC, through eSPARC. *(FOR VALIDATION)*\n\n**Where do I register a cooperative?** CDA. *(FOR VALIDATION)*"
+ },
+ {
+  "id": "K038",
+  "section": "02.1",
+  "title": "02.1 What the business permit is",
+  "text": "- The business permit (Mayor's Permit) is the license to operate a business in Baguio City. DTI business name registration alone does not allow a business to operate. (See 01.1.)\n- Baguio's PLD has stated that a business without a permit should not operate, based on the city tax ordinance. In 2023 the city issued 2,575 closure orders for non-compliance, and from January 1 to May 15, 2024 it shut down 544 businesses operating without permits. (Manila Bulletin, May 2024)\n- **Online and home-based sellers also need a permit.** In 2020 the PLD head said all online businesses must secure a business permit, whether or not the owner is a student. (Baguio City Guide, May 28, 2020)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K039",
+  "section": "02.1A",
+  "title": "02.1A Official eBPLS portal (checked November 17, 2026) [VERIFIED]",
+  "text": "Source: City Government of Baguio, eBPLS Online Portal, https://ebpls.baguio.gov.ph (viewed in a browser on Nov 17, 2026)."
+ },
+ {
+  "id": "K040",
+  "section": "02.1A",
+  "title": "02.1A Official eBPLS portal (checked November 17, 2026) [VERIFIED]",
+  "text": "- **What you can do online:** apply for a new business permit (upload requirements, no first trip to the counter), download the renewal assessment, pay business tax, pay real property tax, pay other city fees, and check application status.\n- **No account or password:** you verify an email address with a one-time 6-digit code. Never share the code with anyone, including city staff.\n- **Uploads:** each requirement as a PDF of up to 5 MB (scans or clear phone photos saved as PDF are fine).\n- **Payment:** through LandBank Link.BizPortal (business tax, real property tax, other fees); GCash Bills Pay for other city fees only. Settlement can take up to 24 hours; a confirmation is emailed. Do not pay twice while waiting."
+ },
+ {
+  "id": "K041",
+  "section": "02.1A",
+  "title": "02.1A Official eBPLS portal (checked November 17, 2026) [VERIFIED]",
+  "text": "- **Help:** bizpass@baguio.gov.ph; City Hall, Baguio City."
+ },
+ {
+  "id": "K042",
+  "section": "02.1A",
+  "title": "02.1A Official eBPLS portal (checked November 17, 2026) [VERIFIED]",
+  "text": "**Documentary requirements for a new permit (as listed on the portal):**\n1. Proof of ownership of the business location: any one of title, tax declaration, waiver of rights, deed of sale, notice of award, or a notarized authorization or consent to use the property.\n2. Building permit or occupancy permit.\n3. Parking: a simple sketch plan with dimensions, or a notarized affidavit of undertaking if the premises has no adequate parking.\n4. Floor plan or simple sketch plan with dimensions.\n5. Sketch of location.\n6. If leasing: a notarized contract of lease, the lessor's business permit, and a notarized authorization to process."
+ },
+ {
+  "id": "K043",
+  "section": "02.1A",
+  "title": "02.1A Official eBPLS portal (checked November 17, 2026) [VERIFIED]",
+  "text": "**For renewal:** your current business permit number, which downloads the year's renewal assessment.\n\n**Deadlines shown on the portal (statutory dates under the Local Government Code, RA 7160):**\n\n| What | When |\n|---|---|\n| Business permit renewal | January 1–20 each year |\n| Business tax (annual or quarterly) | January 20, April 20, July 20, October 20 |\n| Real property tax (annual or quarterly) | March 31, June 30, September 30, December 31 |"
+ },
+ {
+  "id": "K044",
+  "section": "02.1A",
+  "title": "02.1A Official eBPLS portal (checked November 17, 2026) [VERIFIED]",
+  "text": "- **Late payment:** the portal states late business tax payments incur a surcharge of up to 25% plus 2% interest per month.\n- The portal notes that extensions or discounts announced by the city apply. For example, in 2026 the City Treasurer staggered renewals by surname from January to March (see 02.5). **The chatbot should give January 1–20 as the standard period and tell users to check the current year's city advisory for any extension.**\n- The portal's checklist covers the property and building documents uploaded online. The other clearances in 02.3 (barangay, fire, health, zoning, and others) are still part of the process; confirm with the PLD how they are handled for online applications."
+ },
+ {
+  "id": "K045",
+  "section": "02.2",
+  "title": "02.2 Where to apply",
+  "text": "- **Online:** the city's Electronic Business Permits and Licensing System (eBPLS) at https://ebpls.baguio.gov.ph. Baguio began accepting new applications online on July 18, 2022. Applicants register with an active email address, then log in to fill out the form and upload documents. After payment is verified, the permit is sent by email for printing. (Northern Philippine Times / PNA, August 2022)\n- **In person:** Permits and Licensing Division, 1st Floor, Left Wing, Baguio City Hall. Satellite Business One-Stop Shops (BOSS) have operated in major malls (for example Baguio Centermall) for renewals.\n- **Assessment app:** \"Baguio in My Pocket\" (BIMP) has been used for online tax assessments.\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K046",
+  "section": "02.3",
+  "title": "02.3 Documentary requirements for a new business permit",
+  "text": "Requirements reported for Baguio City (combined from the 2020 PLD list and a 2024 PLD dialogue with the business sector):"
+ },
+ {
+  "id": "K047",
+  "section": "02.3",
+  "title": "02.3 Documentary requirements for a new business permit",
+  "text": "| # | Requirement | Issuing office |\n|---|---|---|\n| 1 | Accomplished business permit application form | PLD / eBPLS |\n| 2 | Business registration: DTI (sole proprietorship), SEC (corporation/partnership), or CDA (cooperative) | DTI / SEC / CDA |\n| 3 | Barangay business clearance (original) | Barangay where the business is located |\n| 4 | Lease contract or proof of ownership of the business location (or mall certification) | Lessor / owner |\n| 5 | Locational / zoning clearance | City Planning, Development and Sustainability Office (CPDSO); the Market Office for businesses in the market area |\n| 6 | Health / sanitary clearance | City Health Services Office (CHSO) |\n| 7 | Building clearance | City Buildings and Architecture Office (CBAO) |"
+ },
+ {
+  "id": "K048",
+  "section": "02.3",
+  "title": "02.3 Documentary requirements for a new business permit",
+  "text": "| # | Requirement | Issuing office |\n|---|---|---|\n| 8 | Sewerage and parks clearance | City Environment and Parks Management Office (CEPMO) |\n| 9 | Fire safety clearance | Bureau of Fire Protection, Baguio City Fire Station |\n| 10 | Authorization letter, if someone else processes the application | Applicant |\n| 11 | DOLE registration, where applicable | DOLE |"
+ },
+ {
+  "id": "K049",
+  "section": "02.3",
+  "title": "02.3 Documentary requirements for a new business permit",
+  "text": "- **New requirement (2026):** the CHSO announced that businesses must have pest control measures in place to obtain or renew a permit. This means a vermin abatement program and a contract with a pest control operator licensed by the Fertilizer and Pesticide Authority; do-it-yourself pest control does not count. (Manila Bulletin, May 27, 2026). Effective date not stated; confirm with CHSO."
+ },
+ {
+  "id": "K050",
+  "section": "02.3",
+  "title": "02.3 Documentary requirements for a new business permit",
+  "text": "- **Small businesses with building or zoning problems:** under a 2009 administrative order, the city may still issue a permit in special cases, including sari-sari stores or small-scale businesses, or where the applicant has proof of right of possession. Since 2021, new businesses with deficiencies can get permits if they fix them within one year. A business permit is not a substitute for a building permit. (PNA)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K051",
+  "section": "02.4",
+  "title": "02.4 Process for a new permit (\"3Ps\": Present, Pay, Print)",
+  "text": "1. **Present:** submit the complete documents to the PLD (or upload them on eBPLS). Presenting documents takes about 10 minutes when complete.\n2. **Pay:** pay the assessed fees and taxes at the City Treasurer's Office (or online through eBPLS).\n3. **Print:** return to the PLD to print the permit (online applicants receive it by email).\n\n- The PLD has said processing takes about 20 minutes for new applications and 10 minutes for renewals when requirements are complete. (Manila Bulletin, May 2024)\n- Under RA 11032 (Ease of Doing Business Act), LGUs must act on business permit applications within the prescribed processing times. (See feasibility context 1.3.)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K052",
+  "section": "02.5",
+  "title": "02.5 Renewal",
+  "text": "- A business permit is valid for one year and must be renewed every year. (RA 11032; Local Government Code)\n- **Baguio 2026 renewal schedule (by the owner's family or corporate name):** January 2–31 for A to H; February 1–28 for I to P; March 1–20 for Q to Z and names starting with numbers or special characters. Renewals outside the assigned month were not accepted. (City Treasurer's advisory, reported December 2025)\n- **From January 2, 2026, renewal assessments are available only online through eBPLS.** City Hall no longer issues printed assessments. If eBPLS shows \"No Record Found,\" bring a screenshot and supporting documents (income tax returns, financial statements, proof of gross receipts) to the Treasury Office."
+ },
+ {
+  "id": "K053",
+  "section": "02.5",
+  "title": "02.5 Renewal",
+  "text": "- **Payment options (2026):** online through eBPLS; bank deposit or transfer to the City Government of Baguio's Land Bank account, with proof emailed to the Treasury Office; or a manager's/cashier's check payable to the City Treasurer. Receipts or permits from bank payments can be claimed after at least five working days.\n- **Late renewal:** penalties apply when renewal is not done within the assigned period. The official eBPLS portal states that late business tax payments incur a surcharge of up to 25% plus 2% interest per month (see 02.1A).\n- **The schedule changes every year.** The chatbot must not present the 2026 schedule as permanent; it should tell users to check the current year's City Treasurer advisory.\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K054",
+  "section": "02.6",
+  "title": "02.6 Other permit transactions",
+  "text": "- Changes of location, management, or trade name, adding a line of business, partial retirement, and business retirement (closure) are handled at City Hall. (Baguio Midland Courier, 2024)\n- Closing a business also requires closing the BIR registration; see 01.6.\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K055",
+  "section": "02.7",
+  "title": "02.7 Other Benguet LGUs",
+  "text": "- Each municipality (for example La Trinidad, Itogon, Tuba) has its own revenue code, fees, and procedures. (DTI interview)\n- Example: Itogon's revenue code sets the renewal deadline without penalty at January 20; for 2026 the LGU extended it to January 30. (LGU Itogon, January 22, 2026)\n- The chatbot should direct users outside Baguio City to their municipal BPLO or Negosyo Center.\n(Status: VERIFIED, PENDING)"
+ },
+ {
+  "id": "K056",
+  "section": "02.8",
+  "title": "02.8 Common questions – business permits",
+  "text": "**I only sell online from home. Do I still need a business permit in Baguio?**\nYes. Baguio's PLD has stated that online businesses must secure a business permit, including student sellers. (FOR VALIDATION)"
+ },
+ {
+  "id": "K057",
+  "section": "02.8",
+  "title": "02.8 Common questions – business permits",
+  "text": "**Is my DTI certificate enough?**\nNo. DTI registers your business name. You still need a business permit from the city and BIR registration. (VERIFIED)"
+ },
+ {
+  "id": "K058",
+  "section": "02.8",
+  "title": "02.8 Common questions – business permits",
+  "text": "**Can I apply online?**\nYes, through eBPLS (ebpls.baguio.gov.ph). (FOR VALIDATION: current features)"
+ },
+ {
+  "id": "K059",
+  "section": "02.8",
+  "title": "02.8 Common questions – business permits",
+  "text": "**When do I renew?**\nEvery year. The standard renewal period is January 1–20 (official eBPLS portal). The city sometimes extends or staggers it; in 2026 renewals were scheduled by surname from January to March. Check the current year's advisory. (VERIFIED for the standard period)"
+ },
+ {
+  "id": "K060",
+  "section": "02.8",
+  "title": "02.8 Common questions – business permits",
+  "text": "**What happens if I operate without a permit?**\nThe city can issue a closure order. (FOR VALIDATION)"
+ },
+ {
+  "id": "K061",
+  "section": "02.8",
+  "title": "02.8 Common questions – business permits",
+  "text": "**How do I pay my Baguio business tax online?**\nThrough the eBPLS portal (https://ebpls.baguio.gov.ph): get your assessment there, then pay through LandBank Link.BizPortal. GCash Bills Pay is for other city fees only, not business tax. Settlement can take up to 24 hours and a confirmation is emailed; do not pay twice while waiting. (VERIFIED, official eBPLS portal, Nov 17, 2026)"
+ },
+ {
+  "id": "K062",
+  "section": "03.1",
+  "title": "03.1 DTI's three main functions",
+  "text": "According to the office, DTI's work is grouped into:\n- **Trabaho** – helping businesses improve operations so they can provide jobs and livelihood in communities.\n- **Negosyo** – business registration, training, market access, financing referrals, investments, and business counseling.\n- **Konsyumer** – consumer protection (see Section 09 for complaints and referrals).\n\nThe office also has an **Industry** division that supports priority industries.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K063",
+  "section": "03.2",
+  "title": "03.2 DTI business services (Negosyo)",
+  "text": "| Service | What it covers (as described by the office) |\n|---|---|\n| Business registration | DTI business name registration; help with understanding Mayor's Permit requirements; referrals for SEC, CDA, and association registration. |\n| Business information and advocacy / training | Trainings and seminars for entrepreneurs. All DTI trainings are free. |\n| Access to market | Joining trade fairs (in Baguio, Manila) and export assistance. |\n| Access to finance | Referrals to financing partners; help with loan or livelihood funding applications. (See Section 04.) |\n| Investments | Investment assistance. |\n| Business counseling | Advice for business problems, available at DTI offices and any Negosyo Center. |"
+ },
+ {
+  "id": "K064",
+  "section": "03.2",
+  "title": "03.2 DTI business services (Negosyo)",
+  "text": "| Service | What it covers (as described by the office) |\n|---|---|\n| Product development support | Help with halal certification, shelf life, nutrition facts, and trademark. |\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K065",
+  "section": "03.3",
+  "title": "03.3 Negosyo Centers",
+  "text": "Negosyo Centers are DTI's satellite offices located in municipalities. They provide registration help, counseling, and access to DTI programs.\n\n- DTI's target is to have a Negosyo Center in every municipality by 2028. In Baguio and Benguet, the remaining municipalities without one were Bakun and Bokod (as of Nov 2026).\n- DTI Baguio–Benguet was developing a Negosyo Center Baguio–Benguet website.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K066",
+  "section": "03.4",
+  "title": "03.4 Priority industries in the Cordillera (CAR)",
+  "text": "The office listed these priority industries:\n- Coffee\n- Cacao\n- Wearables and homestyle\n- Creatives\n- Processed fruits and nuts\n\nThe office said there are six priority industries but named five. Confirm the full list with DTI.\n\nBusinesses, government partners, and private partners working in these industries get priority support. **DTI still helps businesses outside these industries.** For example, processed food businesses commonly get help with halal certification, shelf life, nutrition facts, and trademarks.\n\n(Status: FOR VALIDATION, INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K067",
+  "section": "03.5",
+  "title": "03.5 DTI programs: overview",
+  "text": "| Program | Description | Who can join | How to join |\n|---|---|---|---|\n| Negosyo Center Program | Business service centers in municipalities and cities (see 03.3, 03.5.1) | All MSMEs | Walk in at the nearest Negosyo Center |\n| Kapatid Mentor ME (KMME) | Free 10-module mentoring by business owners and practitioners (03.5.2) | Micro and small enterprises, usually operating at least 1 year | Calls for mentees from DTI provincial offices |\n| OTOP Next Gen | Product development, packaging, branding, market access (03.5.3) | MSMEs with a \"minimum viable product\" | DTI provincial office screening |"
+ },
+ {
+  "id": "K068",
+  "section": "03.5",
+  "title": "03.5 DTI programs: overview",
+  "text": "| Program | Description | Who can join | How to join |\n|---|---|---|---|\n| Shared Service Facility (SSF) | Shared machines and equipment run by a cooperator (03.5.4) | Groups and organizations as cooperators; MSMEs as users | Proposal to the DTI regional or provincial office |\n| Youth Entrepreneurship Program (YEP) | Entrepreneurship training and support for youth (03.5.5) | Filipinos aged 18–30 | DTI office or Negosyo Center |\n| Pangkabuhayan sa Pagbangon at Ginhawa (PPG) | In-kind help after fire or disaster (see 04.3) | Affected microenterprises | Through DTI after a calamity |\n| Industry Cluster Enhancement (ICE) | Support for priority industries (see 03.4) | Industry participants | DTI provincial office |"
+ },
+ {
+  "id": "K069",
+  "section": "03.5",
+  "title": "03.5 DTI programs: overview",
+  "text": "| Program | Description | Who can join | How to join |\n|---|---|---|---|\n| Consumer advocacy | Consumer education and protection (see 09.3) | Public | DTI office |\n\n- DTI said all its programs are free; only registration fees are paid. (INTERVIEW-DERIVED)\n- Go Lokal! and SME Roving Academy were not discussed in the DTI interview and are not yet researched."
+ },
+ {
+  "id": "K070",
+  "section": "03.5.1",
+  "title": "03.5 DTI programs: overview > 03.5.1 Negosyo Centers (RA 10644, Go Negosyo Act)",
+  "text": "Negosyo Centers provide four groups of services:\n- **Business registration help:** processing new and renewal registrations, including Barangay Micro Business Enterprise (BMBE) registration, and coordinating with LGUs and agencies.\n- **Business advisory:** help meeting regulatory requirements, market links, access to grants and shared equipment, and mentoring programs.\n- **Information and advocacy:** information on training, financing, and marketing; support for youth and women entrepreneurs.\n- **Monitoring and evaluation:** feedback channels and process improvements for MSMEs.\n\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K071",
+  "section": "03.5.2",
+  "title": "03.5 DTI programs: overview > 03.5.2 Kapatid Mentor ME (KMME)",
+  "text": "- A joint program of DTI and the Philippine Center for Entrepreneurship (Go Negosyo), running since 2016.\n- A **10-module mentorship program** with weekly sessions where business owners and practitioners mentor micro and small entrepreneurs on areas such as marketing, finance, operations, and business planning. Some regions run it online (KMME–Money Market Encounter).\n- Goals: help micro and small entrepreneurs scale up, create jobs, and prepare OTOP entrepreneurs for expansion.\n- Who can join: regional calls typically require the business to have been **operating for at least one year** with complete business registration. It is **free**.\n- How to join: watch for calls for mentees from the DTI provincial office or Negosyo Center.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K072",
+  "section": "03.5.2",
+  "title": "03.5 DTI programs: overview > 03.5.2 Kapatid Mentor ME (KMME)",
+  "text": "- Note: in the DTI interview, a \"10-module\" program was mentioned next to the Youth Entrepreneurship Program. Official sources describe KMME as the 10-module program; YEP's standard workshop has 4 modules (see 03.5.5)."
+ },
+ {
+  "id": "K073",
+  "section": "03.5.3",
+  "title": "03.5 DTI programs: overview > 03.5.3 OTOP Next Gen (One Town, One Product Next Generation)",
+  "text": "- OTOP has two parts: **OTOP Next Gen** (supply side) gives MSMEs a package of help to improve their products, and **OTOP Philippines Hub / OTOP.PH** (demand side) gives physical and online stores to sell them.\n- OTOP Next Gen covers product development, design, packaging and labeling, branding, training, and market matching, to improve design, quality, and volume.\n- It is for MSMEs that already have a **minimum viable product** and are ready to level up; businesses just starting out are helped through other DTI programs.\n- Selection usually starts with an assessment and screening session (sometimes called an ACT session: Assessment, Consultation and Triage)."
+ },
+ {
+  "id": "K074",
+  "section": "03.5.3",
+  "title": "03.5 DTI programs: overview > 03.5.3 OTOP Next Gen (One Town, One Product Next Generation)",
+  "text": "- The Cordillera received about ₱6.26 million for OTOP Next Gen in one year's budget (PNA).\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K075",
+  "section": "03.5.4",
+  "title": "03.5 DTI programs: overview > 03.5.4 Shared Service Facilities (SSF)",
+  "text": "- DTI provides machines, equipment, and tools that MSMEs share, to raise productivity.\n- **Cooperators** run the facility. They can be government (LGUs, agencies, state universities, technical schools) or private (NGOs, people's organizations, cooperatives, industry associations).\n- Cooperator requirements: willing to open the facility to MSMEs; provide a building, staff, and working capital; private groups must be registered with SEC, CDA, or similar and have at least **two years** of track record.\n- **Individuals cannot apply** to receive an SSF and cannot take machines home. Individual MSMEs use the facility by schedule and **pay a usage fee** set by the cooperator."
+ },
+ {
+  "id": "K076",
+  "section": "03.5.4",
+  "title": "03.5 DTI programs: overview > 03.5.4 Shared Service Facilities (SSF)",
+  "text": "- DTI keeps ownership and grants the cooperator the right to use the equipment for two years (usufruct). Ownership may be donated to the cooperator if the project succeeds.\n- How to apply: send a proposal to the nearest DTI regional or provincial office. Projects up to ₱5 million are approved regionally.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K077",
+  "section": "03.5.5",
+  "title": "03.5 DTI programs: overview > 03.5.5 Youth Entrepreneurship Program (YEP)",
+  "text": "- Legal basis: **RA 10679, Youth Entrepreneurship Act**.\n- For aspiring and existing Filipino entrepreneurs aged **18 to 30**.\n- Three parts: **Youth Start** (mindset, business registration help, seminars, skills training), **Youth Net** (mentoring, networks, youth business groups), **Youth Match** (access to markets, funding, equipment).\n- The standard workshop, **\"YEP! You Can Be Your Own Boss\" (YEP-BYOB)**, covers 4 modules (My Business, Business Operations, My Resources and Finances, My Business Pitch) with 19 topics, often ending with a pitch competition.\n- How to join: ask the DTI provincial office or a Negosyo Center; DTI's Bureau of SME Development can be reached at BSMED@dti.gov.ph."
+ },
+ {
+  "id": "K078",
+  "section": "03.5.5",
+  "title": "03.5 DTI programs: overview > 03.5.5 Youth Entrepreneurship Program (YEP)",
+  "text": "- In the Cordillera, DTI and CHED ran a YEP-based project (\"Project MARITES\") for young entrepreneurs (PIA CAR, 2024).\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K079",
+  "section": "03.6",
+  "title": "03.6 Joining a trade fair",
+  "text": "- **Food products:** Manufacturers need FDA registration and a License to Operate (LTO), valid permits, and properly labeled and packed products.\n- **Non-food products:** Requirements depend on the product.\n- **Costs:** Participants pay the trade fair participation fee. Travel, accommodation (e.g., for Manila fairs), and meals are shouldered by the participant and are not covered by DTI.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K080",
+  "section": "03.7",
+  "title": "03.7 Office advice to new entrepreneurs",
+  "text": "- Know both your product and your market before starting. A good product without a target market will not grow.\n- Find your unique selling point. Example given: many sari-sari stores sell the same items, so think about what would make yours different, such as wifi, air conditioning, or a place for customers to hang out.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K081",
+  "section": "04.1",
+  "title": "04.1 DTI does not give capital",
+  "text": "DTI does not give cash or start-up capital to businesses. It helps entrepreneurs start or improve their businesses through training, referrals, and assistance.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K082",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > How DTI helps with loans",
+  "text": "- If an MSME wants a loan, it can approach DTI or a Negosyo Center. DTI refers it to a financing partner that fits the business's needs. (INTERVIEW-DERIVED)\n- **SB Corporation (Small Business Corporation, SB Corp)** is DTI's financing arm and main partner for MSME loans. (INTERVIEW-DERIVED; consistent with news sources)\n- Partner banks mentioned by DTI Baguio–Benguet include BDO and one other bank (name unclear in the recording; possibly Landbank). (INTERVIEW-DERIVED, FOR VALIDATION)"
+ },
+ {
+  "id": "K083",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > SB Corp RISE UP loans [VERIFIED, official SB Corp pages, checked November 17, 2026]",
+  "text": "RISE UP is SB Corp's multi-purpose loan for MSMEs in any sector, with soft terms. Apply online at **https://app.sbcorp.ph** (the SBCorp Money app). Inquiries: communicationsteam@sbcorp.gov.ph. Negosyo Centers can help applicants.\n\n**RISE UP Multi-Purpose Loan** (https://sbcorp.gov.ph/riseupmultipurpose/)"
+ },
+ {
+  "id": "K084",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > SB Corp RISE UP loans [VERIFIED, official SB Corp pages, checked November 17, 2026]",
+  "text": "| Product | Who | Maximum loan | Term | Interest | Track record | Processing fee |\n|---|---|---|---|---|---|---|\n| Micro Multi-Purpose Loan | Microenterprises, any sector | ₱300,000 | Monthly, up to 3 years | 12% a year, diminishing balance (DST not included) | At least 1 year | 3% |\n| SME Multi-Purpose Loan, First-Timers | SMEs, any sector | ₱20 million (no collateral up to ₱3 million) | Monthly, up to 5 years | 12% a year, diminishing balance | At least 2 years | 3% |\n| MSME Multi-Purpose Suki Loan | Existing SB Corp borrowers in good standing (at least 6 months of repayments) | ₱20 million (no collateral up to ₱5 million) | Monthly, up to 5 years | 8% to 12% a year | Automatically qualified | 3% |"
+ },
+ {
+  "id": "K085",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > SB Corp RISE UP loans [VERIFIED, official SB Corp pages, checked November 17, 2026]",
+  "text": "Requirements:\n- **Micro loan:** government-issued ID; for loans up to ₱100,000, a barangay permit or barangay certification that the business has operated at least 1 year, or a BMBE Certificate of Authority, or a Mayor's Permit; for loans above ₱100,000, a BMBE Certificate or Mayor's Permit; photos of business operations and assets; bank account details; corporate documents if applicable.\n- **SME first-timers:** ID; valid BMBE Certificate or Mayor's Permit; photos; bank details; corporate documents if applicable; plus BIR-filed financial statements for the 2 prior years showing positive net income."
+ },
+ {
+  "id": "K086",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > SB Corp RISE UP loans [VERIFIED, official SB Corp pages, checked November 17, 2026]",
+  "text": "- **Suki loan:** proof of sales (including bank statements); proof of asset value for asset purchases; financial statements (BIR-filed is required above ₱3 million); collateral (real estate mortgage) for loans above ₱5 million."
+ },
+ {
+  "id": "K087",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > SB Corp RISE UP loans [VERIFIED, official SB Corp pages, checked November 17, 2026]",
+  "text": "**RISE UP Tindahan** (https://sbcorp.gov.ph/rise-up-tindahan/): for sari-sari stores, retail stores, dealers, and distributors in the network of an SB Corp-accredited consumer-goods (FMCG) company.\n- Eligibility: Filipino-owned (100% for sole proprietorships and partnerships, at least 60% for corporations); assets of ₱100 million or less (excluding land); at least 1 year in the supply chain of an accredited FMCG company (3 years for SME loans above ₱1 million); no past-due SB Corp accounts."
+ },
+ {
+  "id": "K088",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > SB Corp RISE UP loans [VERIFIED, official SB Corp pages, checked November 17, 2026]",
+  "text": "- **Micro Tindahan:** up to ₱300,000 (based on 40% of annual sales with the FMCG company); monthly over up to 3 years; 10% a year. Requirements include ID, barangay business permit (up to ₱100,000) or BMBE/Mayor's Permit (above ₱100,000), photos and video of the business, and the FMCG reference number.\n- **SME Tindahan:** up to ₱5 million; up to 3 years; 8% a year.\n\n- Note: these replace the May 2024 news figures used earlier. Terms can change; the chatbot should cite the SB Corp page and its check date."
+ },
+ {
+  "id": "K089",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > Pondo sa Pagbabago at Pag-asenso (P3)",
+  "text": "- P3 is a government microfinancing program run through SB Corp, meant to give microenterprises an alternative to informal \"5-6\" lending. (DTI)\n- Under P3, a microenterprise could borrow **₱5,000 to ₱200,000** without collateral, with interest and fees not exceeding **2.5% per month** all in. Funds are delivered through accredited partners such as microfinance institutions and cooperatives. (DTI news releases, 2018–2019)\n- Bills to make P3 a permanent program were filed in Congress in 2025. (House and Senate bills)\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K090",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > Barangay Micro Business Enterprise (BMBE)",
+  "text": "- Small businesses can register as a BMBE at their city or municipal hall. Certified BMBEs are exempt from income tax on their business income and get priority access to credit. (First Circle guide; RA 9178)\n- Under RA 10644, Negosyo Centers handle BMBE registration. (See 03.)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K091",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > Loans versus grants",
+  "text": "- SB Corp RISE UP and P3 are **loans** that must be repaid.\n- DTI does **not** give grants or cash capital. Disaster assistance through PPG is given **in kind** (equipment or stocks), not cash. (See 04.1 and 04.3.)"
+ },
+ {
+  "id": "K092",
+  "section": "04.3",
+  "title": "04.3 Pangkabuhayan sa Pagbangon at Ginhawa (PPG)",
+  "text": "**What it is (official description):** A DTI livelihood seeding and entrepreneurship development program for micro-enterprises affected by fire incidents and other calamities. PPG provides information materials, business counseling and mentoring, enterprise development training, and livelihood kits.\n\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K093",
+  "section": "04.3",
+  "title": "04.3 Pangkabuhayan sa Pagbangon at Ginhawa (PPG)",
+  "text": "**How it works locally (office guidance):**\n- It is a special program that depends on available budget.\n- Assistance is **in kind, not cash**: equipment or stocks needed to restart the business.\n- In the current Baguio–Benguet round (Nov 2026), DTI was assessing affected MSMEs, with an allocation of **₱15,000 per MSME**. Beneficiaries choose whether they need stocks or equipment.\n- DTI livelihood assistance cannot be given as cash.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K094",
+  "section": "04.4",
+  "title": "04.4 Help with other agencies' livelihood programs",
+  "text": "DTI can help entrepreneurs prepare applications or proposals for other government livelihood programs, such as the **DOLE Integrated Livelihood Program (DILP)**.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K095",
+  "section": "05.1",
+  "title": "05.1 Livelihood assistance versus business loans",
+  "text": "- Livelihood programs from DSWD and DOLE are **grants** (mostly in kind or as seed capital) for poor, vulnerable, or low-income people. They are not loans.\n- They are different from DTI's business services (Section 03) and from SB Corp loans (Section 04). The chatbot should first find out whether the user is looking for a loan, a grant, or training."
+ },
+ {
+  "id": "K096",
+  "section": "05.2",
+  "title": "05.2 DSWD Sustainable Livelihood Program (SLP)",
+  "text": "- **What it is:** a capability-building program of DSWD for poor, vulnerable, and marginalized households. It has two tracks:\n  - **Microenterprise Development (MD) track:** helps start or grow a microenterprise through seed capital, skills training, and building livelihood assets.\n  - **Employment Facilitation (EF) track:** helps participants who are ready for jobs find employment.\n- **Seed Capital Fund (SCF):** start-up capital for small tools, raw materials, and shared equipment needed to start or expand a microenterprise. It has been reported at up to **₱15,000 per family** (DSWD presentation; Philstar 2020)."
+ },
+ {
+  "id": "K097",
+  "section": "05.2",
+  "title": "05.2 DSWD Sustainable Livelihood Program (SLP)",
+  "text": "- **Who can join:** members of poor, marginalized, vulnerable, or disadvantaged households identified by DSWD (for example through its household targeting system or as 4Ps families). Individual referrals and walk-in clients are handled under special guidelines (DSWD MC 14, s. 2018).\n- **How to apply:** through the city or municipal social welfare office or the DSWD field office. Under the MD track, participants submit a proposal that is assessed before funds are released.\n- Since 2011, SLP has assisted over 3.3 million beneficiaries (PNA, February 2024).\n- **In Baguio:** start with the City Social Welfare and Development Office (CSWDO). Contact details: PENDING.\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K098",
+  "section": "05.3",
+  "title": "05.3 DOLE Integrated Livelihood Program (DILP / Kabuhayan Program)",
+  "text": "- **What it is:** a DOLE program that gives grant assistance for livelihood and entrepreneurship to vulnerable and marginalized workers, for individuals or groups. It is part of DOLE's Integrated Livelihood and Emergency Employment Program (DILEEP), together with TUPAD (emergency employment).\n- **Components:**\n  - **Kabuhayan Formation:** start a new individual or group livelihood.\n  - **Kabuhayan Enhancement:** grow an existing livelihood into a sustainable business.\n  - **Kabuhayan Restoration:** rebuild livelihoods damaged by calamities."
+ },
+ {
+  "id": "K099",
+  "section": "05.3",
+  "title": "05.3 DOLE Integrated Livelihood Program (DILP / Kabuhayan Program)",
+  "text": "- **Who can join (examples):** self-employed workers with insufficient income; unpaid family workers; low-wage, seasonal, or displaced workers; marginalized farmers and fisherfolk; women, youth, persons with disabilities, senior citizens, and Indigenous Peoples; parents of child laborers; rebel returnees. DO 239-B (2026) added more groups, including TESDA graduates and micro-entrepreneurs who completed DOLE technical advisory visits.\n- **Not eligible:** 4Ps beneficiaries and government employees (per DOLE regional guidance).\n- **Assistance (DOLE regional guidance):**"
+ },
+ {
+  "id": "K100",
+  "section": "05.3",
+  "title": "05.3 DOLE Integrated Livelihood Program (DILP / Kabuhayan Program)",
+  "text": "| Type | Maximum assistance |\n|---|---|\n| Individual (starter or livelihood kit, e.g., Negosyo sa Kariton) | up to ₱30,000 |\n| Group, micro (15–25 members) | up to ₱250,000 |\n| Group, small (26–50 members) | up to ₱500,000 |\n| Group, medium (more than 50 members) | up to ₱1,000,000 |"
+ },
+ {
+  "id": "K101",
+  "section": "05.3",
+  "title": "05.3 DOLE Integrated Livelihood Program (DILP / Kabuhayan Program)",
+  "text": "- Assistance is given as working capital in the form of raw materials, tools, and equipment, plus basic training (business planning, bookkeeping), one year of group accident insurance, protective equipment, and advisory services. Group projects need a management team and a profit-sharing scheme in the business plan.\n- **How to apply:** through DOLE-accredited co-partners (ACPs), such as LGUs (often through the PESO), cooperatives, or organizations, which submit the proposal or business plan to DOLE. DTI can help prepare the proposal (INTERVIEW-DERIVED, see 04.4)."
+ },
+ {
+  "id": "K102",
+  "section": "05.3",
+  "title": "05.3 DOLE Integrated Livelihood Program (DILP / Kabuhayan Program)",
+  "text": "- **In Baguio–Benguet:** DOLE has a Baguio–Benguet field office under DOLE-CAR. Reported examples: 19 individual beneficiaries received ₱18,000–₱20,000 each for food vending, baking, sari-sari stores, and similar projects (PNA); a Labor Day payout included livelihood projects for 27 beneficiaries in Benguet. Contact details: PENDING.\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K103",
+  "section": "05.4",
+  "title": "05.4 Other livelihood sources (to research)",
+  "text": "- City Social Welfare and Development Office (CSWDO), Baguio: local livelihood assistance.\n- City Agriculture Office: agricultural livelihood assistance.\n- PESO Baguio: employment and referrals.\n- DTI PPG (disaster-affected microenterprises): see 04.3."
+ },
+ {
+  "id": "K104",
+  "section": "06.1",
+  "title": "06.1 Free DTI trainings",
+  "text": "- DTI and Negosyo Centers run free trainings and seminars for entrepreneurs, including digitalization trainings with DICT. (INTERVIEW-DERIVED)\n- DTI offices also run short workshops such as costing and pricing. (DTI regional releases)\n- KMME mentoring and YEP workshops: see 03.5.2 and 03.5.5."
+ },
+ {
+  "id": "K105",
+  "section": "06.2",
+  "title": "06.2 TESDA scholarships",
+  "text": "TESDA (Technical Education and Skills Development Authority) offers free technical-vocational training through scholarships. The main ones:"
+ },
+ {
+  "id": "K106",
+  "section": "06.2",
+  "title": "06.2 TESDA scholarships",
+  "text": "| Scholarship | Purpose | Typical benefits |\n|---|---|---|\n| **Training for Work Scholarship Program (TWSP)** | Skills for jobs in priority industries | Free training and free competency assessment; some offerings add allowances |\n| **Special Training for Employment Program (STEP)** | Short community-based training for employment **and self-employment** | Free training and assessment, training allowance, **starter toolkits**, and entrepreneurship training |\n| **Private Education Student Financial Assistance (PESFA)** | Assistance for training in private institutions | Free training and assessment, allowance |"
+ },
+ {
+  "id": "K107",
+  "section": "06.2",
+  "title": "06.2 TESDA scholarships",
+  "text": "- **STEP is the most relevant for people who want to start a livelihood**, because it includes starter toolkits and basic business training.\n- Baguio offerings (as reported locally) have included free tuition, assessment fees, training allowance, accident insurance, and PPE or internet allowances. Applicants generally must be at least 18 years old and not currently under another scholarship. (Baguio City Guide reports on TESDA RTC Baguio)\n- Allowance amounts and income limits differ by year and program; the chatbot should not quote fixed amounts.\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K108",
+  "section": "06.3",
+  "title": "06.3 Where to train in Baguio and Benguet",
+  "text": "- **TESDA Cordillera State Institute of Technical Education (CSITE), main campus** (formerly the Regional Training Center Baguio): Loakan Road, Baguio City. Phone (074) 424-8723. Email rtcbaguio@tesda.gov.ph. CSITE combines the Baguio City School of Arts and Trades, the Regional Training Center, and the provincial training centers under RA 11192.\n- **Provincial Training Center – Benguet:** Kapangan, Benguet. Offerings have included Carpentry NC II, Masonry, Bread and Pastry Production NC II, and Organic Agriculture Production NC II.\n- **TESDA Baguio–Benguet Provincial Office:** Wangal, La Trinidad, Benguet. Email car.benguet@tesda.gov.ph. Contact for course offerings and scholarship slots."
+ },
+ {
+  "id": "K109",
+  "section": "06.3",
+  "title": "06.3 Where to train in Baguio and Benguet",
+  "text": "- Many private schools in Baguio and Benguet also offer TESDA-registered programs; TESDA-CAR keeps a list.\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K110",
+  "section": "06.4",
+  "title": "06.4 Competency assessment and certification",
+  "text": "- After training, learners take a **competency assessment** at a TESDA-accredited assessment center to get a **National Certificate (NC)** for a full qualification, or a **Certificate of Competency (COC)** for some units.\n- How to apply: go to an accredited assessment center or TESDA provincial office, submit the application form and requirements (such as ID and photos), pay the fee, and take the assessment. Passers claim their certificate afterward.\n- Assessment fees depend on the qualification (set by TESDA circulars); scholarship programs usually cover them. A National Certificate is generally valid for 5 years.\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K111",
+  "section": "07",
+  "title": "07. Marketing and Business Management",
+  "text": "Note for the chatbot: this section is general advice. When answering from it, say it is general guidance and suggest a Negosyo Center for business counseling."
+ },
+ {
+  "id": "K112",
+  "section": "07.1",
+  "title": "07.1 Before starting: know your product and your market",
+  "text": "- Know both your product and your market. Identify your target customers and what makes your business different (unique selling point). A good product without a target market will not grow. (DTI Baguio–Benguet interview)\n- Example from DTI: many sari-sari stores sell the same goods, so think about what would make yours stand out."
+ },
+ {
+  "id": "K113",
+  "section": "07.2",
+  "title": "07.2 The business plan",
+  "text": "- DTI's guide for new entrepreneurs (developed with the UP Institute for Small-Scale Industries and the BSP) organizes a business plan into four parts: **marketing plan** (customers, competitors, pricing, promotion), **technical plan** (production, suppliers, equipment, location), **organizational plan** (people, roles, registration), and **financial plan** (start-up costs, projected income, cash flow).\n- DTI's online MSME Resources section has guides on writing a business plan, registration requirements, food hygiene and packaging, bookkeeping, and financing. Business counselors at Negosyo Centers can help.\n(Status: VERIFIED, GENERAL GUIDANCE)"
+ },
+ {
+  "id": "K114",
+  "section": "07.3",
+  "title": "07.3 Pricing, records, and money",
+  "text": "- Learn basic **costing and pricing** so prices cover costs and leave a profit; DTI offices hold free costing and pricing workshops.\n- Keep **records** of sales and expenses. Registered businesses must keep BIR-registered books of accounts (see 01.6) and issue invoices.\n- Keep business money separate from household money.\n(Status: GENERAL GUIDANCE)"
+ },
+ {
+  "id": "K115",
+  "section": "07.4",
+  "title": "07.4 Rules for selling: prices and labels",
+  "text": "- Follow consumer rules enforced by DTI, such as the Price Tag Act, proper product labeling, and the ban on giving candy instead of coins as change. Sales promotions need a DTI permit. (DTI interview; see 09.3)\n- Packaged food must meet FDA requirements; see 01.7."
+ },
+ {
+  "id": "K116",
+  "section": "07.5",
+  "title": "07.5 Selling online: the Internet Transactions Act (RA 11967)",
+  "text": "- RA 11967, the **Internet Transactions Act of 2023**, protects online consumers and merchants. DTI regulates e-commerce through its new **E-Commerce Bureau**.\n- The law took full effect on **June 20, 2025**, when its 18-month transition period ended. DTI can now issue compliance orders, take down websites, and blacklist or fine non-compliant online sellers.\n- Online merchants are primarily liable to consumers for complaints about their online sales; the platform is liable only in a secondary way.\n- The E-Commerce Bureau keeps an **Online Business Database** of online merchants and platforms.\n- Online sellers in Baguio also need a city business permit (02.1) and BIR registration, and must display their BIR certificate online (01.6)."
+ },
+ {
+  "id": "K117",
+  "section": "07.5",
+  "title": "07.5 Selling online: the Internet Transactions Act (RA 11967)",
+  "text": "- Consumer-to-consumer selling is outside the law's stated coverage.\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K118",
+  "section": "07.6",
+  "title": "07.6 Growing the business",
+  "text": "- Join trade fairs (03.6), apply for OTOP Next Gen product development (03.5.3), join KMME mentoring (03.5.2), and consider SB Corp financing when ready (04.2).\n- Use digital channels; DTI and DICT offer digitalization trainings."
+ },
+ {
+  "id": "K119",
+  "section": "08.1",
+  "title": "08.1 Most frequently asked questions at DTI (reported by DTI Baguio–Benguet, Nov 12, 2026)",
+  "text": "1. How do I register my business? → See 01.2, 01.6, 01.8, and 02.\n2. Does DTI give capital? → No. See 04.1.\n3. Does DTI offer trainings, and are they free? → Yes, DTI trainings are free. See 03.2 and 06.1.\n4. How do I join a trade fair? → See 03.6.\n5. How do I apply for an SB Corp loan? → Online at app.sbcorp.ph (SBCorp Money app), or with help from a Negosyo Center. See 04.2.\n6. How do I apply for a trademark? → PENDING (trademarks are registered with the Intellectual Property Office of the Philippines, IPOPHL; sources not yet collected). DTI can assist."
+ },
+ {
+  "id": "K120",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**I want to start a small business in Baguio. What are the steps?**\nIn general: (1) choose your business structure; (2) register the name with DTI (sole proprietor) or register with SEC or CDA; (3) get your barangay clearance and other clearances, then apply for the Mayor's Permit at the Baguio PLD or online through eBPLS; (4) register with BIR on or before you start selling; (5) get any special licenses, such as FDA for food. See 01.8, 02, and 01.6. Ask a Negosyo Center for help with your specific case."
+ },
+ {
+  "id": "K121",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**Do I register with BIR before or after getting my Mayor's Permit?**\nDon't wait for the Mayor's Permit. BIR registration is due on or before the start of business, counted from your first sale or 30 days after your DTI, SEC, or Mayor's Permit document is issued, whichever comes first. See 01.6."
+ },
+ {
+  "id": "K122",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**I only sell online. What do I need?**\nA DTI business name (if you use a business name), a Baguio business permit (online sellers are covered), and BIR registration, with your BIR certificate displayed on your online page. The Internet Transactions Act also covers online merchants. See 01.2, 02.1, 01.6, and 07.5."
+ },
+ {
+  "id": "K123",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**Should I choose the 8% income tax?**\nIf your yearly gross sales are ₱3 million or less and you are not VAT-registered, you can choose 8% on sales above ₱250,000 (for purely self-employed individuals) or graduated rates plus 3% percentage tax. Which is better depends on your expenses. See 01.6 and ask the BIR or an accountant."
+ },
+ {
+  "id": "K124",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**Can I get a government loan for my business?**\nSB Corp (DTI's financing arm) offers loans for MSMEs, applied for online; P3 has offered small collateral-free microloans. Terms change, so check SB Corp or a Negosyo Center. See 04.2."
+ },
+ {
+  "id": "K125",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**I am poor and want to start a small livelihood. Is there free assistance?**\nDSWD's Sustainable Livelihood Program and DOLE's Kabuhayan (DILP) give livelihood grants, often as starter kits or seed capital, to qualified low-income or vulnerable people. Ask the City Social Welfare and Development Office or DOLE. See 05."
+ },
+ {
+  "id": "K126",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**My store burned down. Can DTI help?**\nDTI's PPG program can give in-kind help (stocks or equipment) to microenterprises hit by fire or disasters, depending on budget. See 04.3."
+ },
+ {
+  "id": "K127",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**Where can I learn a skill for free?**\nTESDA scholarships (TWSP, STEP) offer free training and assessment; STEP includes starter toolkits. In Baguio, contact TESDA CSITE (Loakan Road) or the TESDA Baguio–Benguet office. See 06."
+ },
+ {
+  "id": "K128",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**Can my group get equipment from DTI?**\nThrough DTI's Shared Service Facilities, a registered organization (such as a cooperative or association with at least 2 years of track record) can run DTI-provided equipment for MSMEs to use. Individuals can only use an SSF, not receive one. See 03.5.4."
+ },
+ {
+  "id": "K129",
+  "section": "08.2",
+  "title": "08.2 Common questions across topics",
+  "text": "**How do I report a store that overcharges or sells defective goods?**\nReport to DTI. You may report anonymously if your claim is factual and has evidence. See 09.3."
+ },
+ {
+  "id": "K130",
+  "section": "08.3",
+  "title": "08.3 Topics not covered: refer to the office",
+  "text": "This knowledge base does **not** contain the items below. For each one, the chatbot should say it does not have the information, give **no amount or rate**, and refer the user to the listed office. Numbers found elsewhere in this knowledge base belong to other agencies or programs and must not be reused here."
+ },
+ {
+  "id": "K131",
+  "section": "08.3",
+  "title": "08.3 Topics not covered: refer to the office",
+  "text": "**SEC registration fees (corporations, partnerships, One Person Corporations)**\nNot covered. DTI business name fees (01.2) apply only to sole proprietorships and are not SEC fees. Ask the SEC or check the fee computed in eSPARC: https://esparc.sec.gov.ph/application. (See 01.3.)"
+ },
+ {
+  "id": "K132",
+  "section": "08.3",
+  "title": "08.3 Topics not covered: refer to the office",
+  "text": "**How much business tax or permit fee a business will pay in Baguio City**\nNot covered. The amount is assessed by the City Treasurer's Office under the Baguio revenue code, based on the line of business and gross sales. Get the assessment through eBPLS (https://ebpls.baguio.gov.ph) or ask the City Treasurer's Office. BIR income tax (8% or graduated rates, see 01.6) is a different, national tax."
+ },
+ {
+  "id": "K133",
+  "section": "08.3",
+  "title": "08.3 Topics not covered: refer to the office",
+  "text": "**Business permit requirements and fees in La Trinidad, Itogon, Tuba, and other Benguet towns**\nNot covered in detail. Each municipality has its own revenue code, requirements, fees, and deadlines, so Baguio City rules do not automatically apply. Ask the municipal Business Permits and Licensing Office (BPLO) or the nearest Negosyo Center. (See 02.7.)"
+ },
+ {
+  "id": "K134",
+  "section": "08.3",
+  "title": "08.3 Topics not covered: refer to the office",
+  "text": "**Trademark registration steps and fees**\nNot covered. Trademarks are registered with the Intellectual Property Office of the Philippines (IPOPHL); DTI can assist. (See 09.2.)"
+ },
+ {
+  "id": "K135",
+  "section": "08.3",
+  "title": "08.3 Topics not covered: refer to the office",
+  "text": "**FDA fees and processing times**\nNot covered. The FDA requirements in 01.7 are general notes only. Ask the Food and Drug Administration."
+ },
+ {
+  "id": "K136",
+  "section": "08.3",
+  "title": "08.3 Topics not covered: refer to the office",
+  "text": "**Whether a loan or grant will be approved**\nThe chatbot cannot promise approval of any loan or grant. Approval is decided by the agency (for example SB Corp, DSWD, DOLE) after evaluating the application.\n\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K137",
+  "section": "09.1",
+  "title": "09.1 Where to go for help",
+  "text": "| Office | What for | Contact (status) |\n|---|---|---|\n| DTI Baguio–Benguet Provincial Office | Business name registration, MSME programs, consumer complaints | 1st & 2nd Floors, Jesnor Building, 4 Cariño Street, Baguio City (from the group's request letter, Nov 2026) |\n| Negosyo Centers (municipalities) | Registration help, counseling, program access | Visit in person (INTERVIEW-DERIVED); directory PENDING |\n| Baguio City Permits and Licensing Division (PLD), City Mayor's Office | Business permits | 1st Floor, Left Wing, Baguio City Hall; (074) 637-4322; pldcmobaguioCity@gmail.com; Mon–Fri 8:00 AM–5:00 PM (from PLD correspondence with the group) |"
+ },
+ {
+  "id": "K138",
+  "section": "09.1",
+  "title": "09.1 Where to go for help",
+  "text": "| Office | What for | Contact (status) |\n|---|---|---|\n| Baguio eBPLS help desk | Online permits and payments | bizpass@baguio.gov.ph; https://ebpls.baguio.gov.ph (official portal, checked Nov 17, 2026) |\n| Baguio City Treasurer's Office | Business tax assessment and payment | Treasury Office, City Hall, Baguio City 2600; cto.baguio@gmail.com (2026 advisory) |\n| TESDA CSITE (Regional Training Center) | Skills training, assessment | Loakan Road, Baguio City; (074) 424-8723; rtcbaguio@tesda.gov.ph (TESDA-CAR site) |\n| TESDA Baguio–Benguet Provincial Office | Course offerings, scholarship slots | Wangal, La Trinidad, Benguet; car.benguet@tesda.gov.ph (TESDA-CAR site) |"
+ },
+ {
+  "id": "K139",
+  "section": "09.1",
+  "title": "09.1 Where to go for help",
+  "text": "| Office | What for | Contact (status) |\n|---|---|---|\n| DTI Bureau of SME Development | YEP and other MSME programs | BSMED@dti.gov.ph; (+632) 7791-3310 (DTI YEP page) |\n| SB Corporation | MSME loans | Apply at https://app.sbcorp.ph; communicationsteam@sbcorp.gov.ph (official site, checked Nov 17, 2026) |\n| BIR Revenue District Office covering Baguio | Tax registration | PENDING |\n| DOLE Baguio–Benguet Field Office | Kabuhayan (DILP) | PENDING |\n| City Social Welfare and Development Office, Baguio | DSWD SLP and local livelihood assistance | PENDING |\n| BFP Baguio City Fire Station; City Health Services Office; CPDSO | Clearances for the business permit | PENDING |"
+ },
+ {
+  "id": "K140",
+  "section": "09.1",
+  "title": "09.1 Where to go for help",
+  "text": "- Online: DTI website https://www.dti.gov.ph/, BNRS https://bnrs.dti.gov.ph/, Baguio eBPLS https://ebpls.baguio.gov.ph, BIR ORUS https://orus.bir.gov.ph/home."
+ },
+ {
+  "id": "K141",
+  "section": "09.2",
+  "title": "09.2 Agency responsibilities (initial)",
+  "text": "| Concern | Agency |\n|---|---|\n| Business name (sole proprietorship) | DTI (BNRS) |\n| Corporations, partnerships | SEC |\n| Cooperatives | CDA |\n| Business permit / Mayor's Permit | City or municipal government (Baguio City: Permits and Licensing Division, City Mayor's Office) |\n| Barangay clearance | Barangay hall |\n| Fire safety inspection certificate | Bureau of Fire Protection (BFP) |\n| Tax registration | BIR |\n| Food manufacturing license (LTO) and product registration | FDA |\n| MSME loans | SB Corporation (through DTI referral), partner banks |\n| Livelihood programs | DOLE (DILP), DSWD (SLP), CSWDO |\n| Skills training | TESDA |\n| Online selling rules (Internet Transactions Act) | DTI E-Commerce Bureau |"
+ },
+ {
+  "id": "K142",
+  "section": "09.2",
+  "title": "09.2 Agency responsibilities (initial)",
+  "text": "| Concern | Agency |\n|---|---|\n| Trademarks | Intellectual Property Office of the Philippines (IPOPHL) |\n| BMBE registration | Negosyo Center / city or municipal hall |"
+ },
+ {
+  "id": "K143",
+  "section": "09.3",
+  "title": "09.3 Consumer complaints (referral)",
+  "text": "- DTI handles consumer concerns such as violations of the Price Tag Act, giving candy as change, improper labeling, unauthorized sales promos (these need a DTI permit), and defective products, including online purchases. Disputes may be resolved through DTI mediation.\n- Consumers may file reports anonymously or through dummy accounts, as long as the claim is factual and backed by evidence. DTI does not disclose the identity of the complainant. DTI verifies, monitors, and inspects before taking enforcement action.\n\n(Status: INTERVIEW-DERIVED)"
+ }
+]
