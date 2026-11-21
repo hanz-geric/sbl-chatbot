@@ -23,7 +23,9 @@ def clean_context(text):
     text = re.sub(r"\n?\(Status:[^)]*\)", "", text)
     text = re.sub(r"\*?\((?:VERIFIED|FOR VALIDATION|INTERVIEW-DERIVED|UNVERIFIED|PENDING|GENERAL GUIDANCE)[^)]*\)\*?", "", text)
     text = re.sub(r"\(\s*see [^)]*\)", "", text, flags=re.I)
+    text = re.sub(r"\s*see \d\d(?:\.\d+[A-Z]?)*(?:(?:,\s*|,?\s*and\s+)\d\d(?:\.\d+[A-Z]?)*)*\.?", "", text, flags=re.I)
     text = re.sub(r"\(\s*\d\d\.\d[^)]*\)", "", text)
+    # A cross-reference was the whole answer; drop the line rather than leave "question →"
     text = re.sub(r"^.*?(?:->|\u2192)[ \t]*$\n?", "", text, flags=re.M)
     text = re.sub(r"[ \t]{2,}", " ", text)
     text = re.sub(r"[ \t]+([;,.])", r"\1", text)
