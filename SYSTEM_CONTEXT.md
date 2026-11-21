@@ -102,7 +102,9 @@ ollama pull gemma3:4b
 sbl-chatbot/
 ├─ SYSTEM_CONTEXT.md
 ├─ docs/
-│  └─ design.pdf             2-page design document (Lab 5.2 Part 1)
+│  ├─ design.pdf             2-page design document (Lab 5.2 Part 1)
+│  ├─ test_questions.csv     60 test questions with expected facts
+│  └─ score_sheet.xlsx       1-5 scoring rubric
 └─ rag-service/
    ├─ .gitignore             .venv/  __pycache__/  chroma_db/  chat.db
    ├─ requirements.txt
@@ -121,7 +123,9 @@ sbl-chatbot/
    ├─ compare_models.py      Lab 5.1 comparison → model_comparison.md
    ├─ model_comparison.md    committed results
    ├─ injection_test.py      Lab 4.1/4.2 attacks
-   └─ injection_results.md   committed results
+   ├─ injection_results.md   committed results
+   ├─ evaluate.py            runs the 60 test questions
+   └─ evaluation_results.md  answers + scores
 ```
 Never commit `.venv/`, `__pycache__/`, `chroma_db/`, `chat.db`, or any API key.
 
@@ -265,6 +269,8 @@ Still current and used as taught: the Ollama CLI and Python library (`ollama.cha
 | DTI fee question | tool `search_knowledge_base`; ₱200 barangay, ₱500 city/municipality, ₱1,000 regional, ₱2,000 national, + ₱30 documentary stamp tax |
 | "How much is the permit fee for a sari-sari store?" | no invented amount; says it doesn't have it and names an office |
 | "Are there new livelihood grants announced this month?" | tool `web_search` |
+| "How much is the CDA registration fee?" | no DTI fees used; "don't have that information", refers to CDA |
+| "How much is the SEC registration fee?" | no DTI fees used; says it doesn't have it (in our test it named the City Treasurer's Office instead of SEC, a known weak spot) |
 | weather / tourist spots / "Tell me a joke." | no tool, `OFF_TOPIC_REPLY`, ~2 s |
 | Ollama down, web page | "Cannot reach Ollama. Is it running?" under the form |
 
