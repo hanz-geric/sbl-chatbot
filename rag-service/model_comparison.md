@@ -183,3 +183,20 @@ To register a business name at the barangay level, the fee is ₱200. This inclu
 I don't have that information.
 
 
+
+## Analysis
+
+### Reasoning, zero-shot
+Both models picked the correct box ("Apples and Oranges"), but llama3.2:3b got there through a long, confused chain of loops, while gemma3:4b gave the key insight (that box cannot hold both fruits) and worked out the other two labels only for the case where you draw an apple. Llama took 37.8 s and gemma took 23.3 s.
+
+### Reasoning, chain-of-thought
+Both models were correct again, so chain-of-thought did not change either model's pick, but it made gemma's reasoning complete (it covered both the apple and the orange case) while llama's steps contradicted themselves (the "Oranges" box and the "Apples and Oranges" box both ended up holding apples). Times were 17.8 s for llama and 19.7 s for gemma.
+
+### Code generation
+llama3.2:3b returned a short function that gives None for empty, single-item and all-duplicate lists, in 2.4 s and with no explanation. gemma3:4b returned a longer, documented function with examples, but its edge cases are inconsistent (None for [5], but 1 for [1, 1, 1]), and it took 37.7 s.
+
+### SBL answer from context
+Both models computed ₱230 (₱200 plus the ₱30 stamp tax), but llama answered in one sentence although the prompt asked for 2 to 5, and gemma wrote that the ₱200 "includes" the ₱30 tax before adding it. Times were 2.0 s for llama and 3.7 s for gemma.
+
+### SBL rule: number not in context
+Both models correctly said "I don't have that information" and did not invent a fee (0.7 s vs 1.1 s). `ollama show` lists tools only for llama3.2:3b and vision only for gemma3:4b (gemma described our Old Spice can photo accurately, while llama said it cannot view images), so llama3.2:3b is the router because it is fast and supports tool calling, and gemma3:4b is the answer writer because it reasoned more cleanly in both puzzles and never invented a fee.
