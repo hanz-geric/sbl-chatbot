@@ -182,19 +182,4 @@ To register a business name at the barangay level, the fee is ₱200. This inclu
 
 I don't have that information.
 
-## Analysis
 
-### Reasoning, zero-shot
-Both models picked the correct box ("Apples and Oranges"). gemma3:4b explained why that box must hold a single fruit and worked out the other two labels, while llama3.2:3b's reasoning was confused (it described a loop), so its correct answer looks partly lucky. Speed was about equal (24.4 s vs 23.6 s).
-
-### Reasoning, chain-of-thought
-Both models were correct again, so the prompt style did not change the final pick for either one. llama's step-by-step contained an error (it said two boxes could both hold apples), while gemma's steps were clean. Speed was again about equal (15.9 s vs 16.4 s).
-
-### Code generation
-llama3.2:3b gave a short, correct function that returns None for empty, single-item and all-duplicate lists, in 2.2 s. gemma3:4b gave a longer, documented function with examples, but its edge cases are inconsistent (None for [5], but 5 for [5, 5]), and it took 34.8 s.
-
-### SBL answer from context
-Both models computed ₱230 (₱200 plus the ₱30 stamp tax). llama answered in one sentence although the prompt asked for 2 to 5, and gemma's wording said the ₱200 "includes" the ₱30 tax before adding it. Times were 1.9 s vs 3.7 s.
-
-### SBL rule: number not in context
-Both models correctly said "I don't have that information" and did not invent a fee (0.8 s vs 1.1 s). `ollama show` lists tools for llama3.2:3b and vision for gemma3:4b, and in our image test gemma described the photo accurately (an Old Spice deodorant can) while llama said it cannot view image files. So llama3.2:3b is the router because it is fast and supports tool calling, and gemma3:4b is the answer writer because it follows rules and explains well.
