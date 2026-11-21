@@ -226,7 +226,7 @@ CREATE TABLE IF NOT EXISTS messages (
 |---|---|
 | Agent with RAG tool + web tool | Lab 5.2's proposed architecture |
 | llama3.2:3b as router | has tool calling; fast on CPU (~2 s per route); llama3:8b/gemma3:12b from the manual are too slow on our CPUs |
-| gemma3:4b writes the answers | follows the answer rules; solved the Lab 1.4 puzzle with chain-of-thought where llama3.2:3b failed; no tool calling, so it can't route |
+| gemma3:4b writes the answers | follows the answer rules; reasoned correctly and completely on the Lab 1.4 puzzle in both prompt styles, where llama3.2:3b reached the right box through self-contradictory steps; no tool calling, so it can't route |
 | Tools `return_direct=True` | the agent stops after the tool; gemma answers with our tested RULES |
 | Off-topic = "no tool called" | tested: weather, tourist spots, jokes and "ignore your rules" prompts all got no tool call |
 | all-MiniLM-L6-v2 embeddings | what Lab 2.1 teaches; English-only questions, so no multilingual model needed |

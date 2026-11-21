@@ -1,5 +1,0 @@
-# Environment files
-.env
-.env.*
-!.env.example
-__pycache__
