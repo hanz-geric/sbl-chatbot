@@ -78,8 +78,9 @@ langchain-chroma==1.1.0
 langchain-tavily==0.2.18
 ollama==0.6.3
 flask==3.1.3
+pytest==9.1.1
 ```
-`sentence-transformers` is needed by `HuggingFaceEmbeddings` but is not installed with it, so it is listed. `chromadb`, `langgraph`, `langchain-core`, `httpx` and `torch` come in as dependencies.
+`sentence-transformers` is needed by `HuggingFaceEmbeddings` but is not installed with it, so it is listed. `pytest` is listed so the unit tests can be run from a clean checkout. `chromadb`, `langgraph`, `langchain-core`, `httpx` and `torch` come in as dependencies.
 
 ### Setup (per member)
 ```
