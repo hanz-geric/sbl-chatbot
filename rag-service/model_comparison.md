@@ -199,4 +199,10 @@ llama3.2:3b returned a short function that gives None for empty, single-item and
 Both models computed ₱230 (₱200 plus the ₱30 stamp tax), but llama answered in one sentence although the prompt asked for 2 to 5, and gemma wrote that the ₱200 "includes" the ₱30 tax before adding it. Times were 2.0 s for llama and 3.7 s for gemma.
 
 ### SBL rule: number not in context
-Both models correctly said "I don't have that information" and did not invent a fee (0.7 s vs 1.1 s). `ollama show` lists tools only for llama3.2:3b and vision only for gemma3:4b (gemma described our Old Spice can photo accurately, while llama said it cannot view images), so llama3.2:3b is the router because it is fast and supports tool calling, and gemma3:4b is the answer writer because it reasoned more cleanly in both puzzles and never invented a fee.
+Both models correctly said "I don't have that information" and did not invent a fee, so neither broke the numbers rule. Times were 0.7 s for llama and 1.1 s for gemma.
+
+### Capabilities
+`ollama show` lists tools only for llama3.2:3b and vision only for gemma3:4b. We checked the vision claim with a test photo: gemma described our Old Spice can accurately, while llama said it cannot view image files.
+
+### Conclusion
+llama3.2:3b is the router because it is fast and is the only one of the two that supports tool calling. gemma3:4b writes the answers because it reasoned more cleanly in both puzzles, followed the length instruction, and never invented a fee. Neither model failed the puzzle in this run, so the choice rests on the quality of the reasoning rather than on the final answer.
