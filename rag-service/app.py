@@ -4,11 +4,12 @@ import sqlite3
 import time
 from pathlib import Path
 
-import httpx
+import groq
 import ollama
 from flask import Flask, jsonify, render_template, request, session
 
 from agent import route
+from config import LLM_PROVIDER
 from generator import NO_RESULTS_REPLY, OFF_TOPIC_REPLY, stream_answer
 
 BASE = Path(__file__).parent
@@ -93,10 +94,11 @@ def ask():
             answer = NO_RESULTS_REPLY
         else:
             answer = "".join(stream_answer(question, context)).strip()
-    except ollama.ResponseError as e:
-        return jsonify({"status": "failed", "message": f"The model returned an error: {e.error}"})
-    except (ConnectionError, httpx.ConnectError):
-        return jsonify({"status": "failed", "message": "Cannot reach Ollama. Is it running?"})
+    except (groq.GroqError, ollama.ResponseError) as e:
+        return jsonify({"status": "failed", "message": f"The model returned an error: {getattr(e, 'error', e)}"})
+    except ConnectionError:
+        message = "Cannot reach Ollama. Is it running?" if LLM_PROVIDER == "local" else "Cannot reach the Groq API. Check your internet connection."
+        return jsonify({"status": "failed", "message": message})
 
     seconds = round(time.time() - start, 2)
     save_message(session_id, "bot", answer, json.dumps(sources) if sources else None, seconds)

@@ -1,8 +1,9 @@
 import re
 
-import ollama
+from langchain_core.messages import HumanMessage, SystemMessage
 
-CHAT_MODEL = "gemma3:4b"
+from llm import chat_model
+
 OFF_TOPIC_REPLY = "I can only help with small business and livelihood questions for Baguio City and Benguet."
 NO_RESULTS_REPLY = "I could not find any information about that. Please try asking in a different way."
 RULES = """You are the Small Business and Livelihood Assistant for Baguio City and Benguet, Philippines.
@@ -35,14 +36,9 @@ def clean_context(text):
 
 
 def stream_answer(question, context):
-    stream = ollama.chat(
-        model=CHAT_MODEL,
-        messages=[
-            {"role": "system", "content": RULES + "<context>\n" + context + "\n</context>"},
-            {"role": "user", "content": "<user_data>" + question + "</user_data>\n\n(Answer in English.)"},
-        ],
-        stream=True,
-        options={"temperature": 0.1, "num_predict": 300, "num_ctx": 4096},
-    )
-    for part in stream:
-        yield part["message"]["content"]
+    messages = [
+        SystemMessage(RULES + "<context>\n" + context + "\n</context>"),
+        HumanMessage("<user_data>" + question + "</user_data>\n\n(Answer in English.)"),
+    ]
+    for chunk in chat_model.stream(messages):
+        yield chunk.content

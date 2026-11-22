@@ -60,6 +60,7 @@ Why two models: llama3.2:3b supports tool calling but ignores the answer rules (
 | OS | Windows (team laptops) |
 | Python | 3.11, venv in `rag-service/.venv` |
 | Ollama | `localhost:11434`; models `llama3.2:3b` (router, ~2 GB, has `tools`) and `gemma3:4b` (answers, ~3.4 GB) |
+| LLM provider | `LLM_PROVIDER` in the environment or repo-root `.env` (loaded by `config.py`): `groq` (default; `openai/gpt-oss-20b` routes, `openai/gpt-oss-120b` answers, needs `GROQ_API_KEY`) or `local` (Ollama; `llama3.2:3b` routes, `gemma4:12b` answers) |
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` through `HuggingFaceEmbeddings` (downloads ~90 MB on first use, runs on CPU, not in Ollama) |
 | Vector store | Chroma, folder `rag-service/chroma_db/`, collection `knowledge_base` |
 | Web search | Tavily, free API key in the `TAVILY_API_KEY` environment variable; `country="philippines"` boosts Philippine pages |
@@ -72,6 +73,7 @@ No XAMPP, PHP or MySQL.
 ```
 langchain==1.5.2
 langchain-ollama==1.1.0
+langchain-groq==1.2.1
 langchain-huggingface==1.2.3
 sentence-transformers==6.3.0
 langchain-chroma==1.1.0
@@ -79,8 +81,9 @@ langchain-tavily==0.2.18
 ollama==0.6.3
 flask==3.1.3
 pytest==9.1.1
+python-dotenv==1.2.4
 ```
-`sentence-transformers` is needed by `HuggingFaceEmbeddings` but is not installed with it, so it is listed. `pytest` is listed so the unit tests can be run from a clean checkout. `chromadb`, `langgraph`, `langchain-core`, `httpx` and `torch` come in as dependencies.
+`sentence-transformers` is needed by `HuggingFaceEmbeddings` but is not installed with it, so it is listed. `pytest` is listed so the unit tests can be run from a clean checkout. `langchain-groq` brings the `groq` client; `python-dotenv` loads `.env`. `chromadb`, `langgraph`, `langchain-core`, `httpx` and `torch` come in as dependencies.
 
 ### Setup (per member)
 ```
@@ -91,9 +94,14 @@ ollama pull gemma3:4b
 - `cd rag-service`, `python -m venv .venv`, `.venv\Scripts\activate`, `pip install -r requirements.txt`, `python build_index.py`.
 
 ### Running
-1. Ollama running.
+1. Ollama running (only needed when `LLM_PROVIDER=local`).
 2. `cd rag-service`, activate the venv, `python app.py`.
 3. Open http://127.0.0.1:5000/
+
+### Switching the LLM provider (Groq ↔ local Ollama)
+- Groq (default): leave `LLM_PROVIDER` unset or set `LLM_PROVIDER=groq`. Put `GROQ_API_KEY=...` in the repo-root `.env`; needs internet.
+- Local: put `LLM_PROVIDER=local` in the repo-root `.env` (or `set LLM_PROVIDER=local` in the shell), pull the models once (`ollama pull llama3.2:3b`, `ollama pull gemma4:12b`), and keep Ollama running.
+- Optional `ROUTER_MODEL` / `CHAT_MODEL` replace the defaults for the chosen provider. `llm.py` builds both models; restart `app.py` after changing the value.
 
 ---
 
@@ -109,6 +117,8 @@ sbl-chatbot/
 └─ rag-service/
    ├─ .gitignore             .venv/  __pycache__/  chroma_db/  chat.db
    ├─ requirements.txt
+   ├─ config.py              LLM_PROVIDER switch + model names (loads .env)
+   ├─ llm.py                 build ChatGroq or ChatOllama models
    ├─ data/chunks.json       given, 143 passages
    ├─ build_index.py         chunks → Documents → MiniLM → Chroma
    ├─ retrieval.py           embeddings, vector_store, retriever
@@ -183,10 +193,12 @@ return found[-1] if found else ""
 |---|---|
 | `build_index.py` | `Document(page_content=title + "\n" + text, metadata={id, section, title, status})`; deletes `chroma_db/` with `shutil.rmtree`; `Chroma.from_documents(..., ids=chunk ids, collection_name="knowledge_base", persist_directory=...)`; prints `Done. The collection has 143 chunks.` |
 | `retrieval.py` | `embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)`; `vector_store = Chroma(...)`; `retriever = vector_store.as_retriever(search_kwargs={"k": TOP_K})`, `TOP_K = 3` (Lab 2.1) |
-| `generator.py` | `CHAT_MODEL = "gemma3:4b"`, `OFF_TOPIC_REPLY`, `NO_RESULTS_REPLY`, `RULES`, `clean_context(text)`, `stream_answer(question, context)` |
+| `config.py` | `LLM_PROVIDER` (`groq` default or `local`), `ROUTER_MODEL`, `CHAT_MODEL`; loads the repo-root `.env` |
+| `llm.py` | `build_model(model)` → `ChatGroq` (groq) or `ChatOllama` (local); exports `router_model`, `chat_model` |
+| `generator.py` | `OFF_TOPIC_REPLY`, `NO_RESULTS_REPLY`, `RULES`, `clean_context(text)`, `stream_answer(question, context)`; `chat_model` from `llm.py` |
 | `knowledge_tool.py` | `@tool(response_format="content_and_artifact", return_direct=True)` → returns `(context text, docs)` |
 | `web_tool.py` | `tavily = TavilySearch(max_results=3, country="philippines")`; same decorator → returns `(context text, results)`; Tavily's `ToolException` (no results) → `("", [])` |
-| `agent.py` | `ROUTER_MODEL = "llama3.2:3b"`, `ROUTER_PROMPT`, `router = create_agent(...)`, `route(question)` → `(tool name or None, context, sources)` |
+| `agent.py` | `ROUTER_PROMPT`, `router = create_agent(...)`, `route(question)` → `(tool name or None, context, sources)`; `router_model` from `llm.py` |
 | `app.py` | Flask routes `GET /`, `GET /messages`, `POST /ask`; SQLite `messages` table |
 
 **Source format** (stored as JSON in `messages.sources`):

@@ -1,10 +1,9 @@
 from langchain.agents import create_agent
-from langchain_ollama import ChatOllama
 
 from knowledge_tool import search_knowledge_base
+from llm import router_model
 from web_tool import web_search
 
-ROUTER_MODEL = "llama3.2:3b"
 ROUTER_PROMPT = """You are the Small Business and Livelihood Assistant for Baguio City and Benguet, Philippines.
 Tools:
 - search_knowledge_base: use it for questions about registering a business, permits, taxes, loans, grants, livelihood programs, trainings and offices.
@@ -17,7 +16,7 @@ Rules:
 5. Answer in English, in 2 to 5 sentences or a short list."""
 
 router = create_agent(
-    model=ChatOllama(model=ROUTER_MODEL, temperature=0.1, num_ctx=4096, num_predict=300),
+    model=router_model,
     tools=[search_knowledge_base, web_search],
     system_prompt=ROUTER_PROMPT,
 )
