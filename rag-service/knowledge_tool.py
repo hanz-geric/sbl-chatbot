@@ -15,5 +15,5 @@ def search_knowledge_base(query: str):
     """
     docs = retriever.invoke(query)
     context = "\n\n".join("### " + clean_context(doc.page_content) for doc in docs)
-    
+
     return context, docs
