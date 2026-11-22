@@ -1,0 +1,61 @@
+id,question,expected
+T01,Is DTI business name registration enough for me to start operating a business?,No. DTI registers only the business name; you also need a business (Mayor's) permit from the LGU and BIR registration.
+T02,How much does it cost to register a business name with DTI for city or municipal scope?,PHP 500 plus PHP 30 documentary stamp tax.
+T03,How long is a DTI business name registration valid?,5 years; renew after; 50% surcharge for late renewal.
+T04,Who can register a business name with DTI?,Any Filipino at least 18 years old; foreign nationals authorized to do business may also register.
+T05,"I have an online shop with only one office, but my customers are all over the Philippines. Do I need national scope with DTI?","Not necessarily; scope follows office/branch location, so one office in one barangay can use barangay scope (DTI office guidance)."
+T06,Can I transfer my DTI business name to my cousin?,No; business name is not transferable; must be cancelled first before someone else can register it.
+T07,Where do I register a corporation or a partnership?,"SEC, through eSPARC (OneSEC route)."
+T08,Which agency registers cooperatives?,"Cooperative Development Authority (CDA), via its online system (e-CoopRIS)."
+T09,When should a new business register with the BIR?,"On or before start of business: first sale or 30 days after DTI/SEC certificate or Mayor's Permit is issued, whichever comes first."
+T10,"What BIR form does a sole proprietor use to register, and what documents are needed?",BIR Form 1901; government ID; invoices (BIR Printed Invoices or sample from accredited printer); DTI certificate if applicable; PHP 30 DST.
+T11,Do I still need to pay the 500-peso annual registration fee to BIR?,"No; collection stopped effective January 22, 2024 (RMC 14-2024, EOPT Act)."
+T12,What is the 8% income tax option and who can choose it?,"For non-VAT taxpayers with gross sales up to PHP 3 million; 8% on gross sales above PHP 250,000 in lieu of graduated rates and 3% percentage tax."
+T13,Where can I register with the BIR online?,ORUS (orus.bir.gov.ph); also NewBizReg or the Philippine Business Hub; or the RDO.
+T14,I'm closing my business. What do I need to do with BIR?,"File BIR Form 1905 with ending inventory, unused invoices inventory, original COR; otherwise remain liable for returns and penalties."
+T15,I sell online from home in Baguio. Do I need a business permit?,"Yes; Baguio PLD says all online businesses need a permit, including students."
+T16,Can I apply for a Baguio City business permit online?,"Yes, through eBPLS (ebpls.baguio.gov.ph); verify email with one-time code; upload PDFs up to 5 MB."
+T17,What documents does the Baguio eBPLS portal ask for when applying for a new business permit?,"Proof of ownership (or consent to use), building or occupancy permit, parking sketch or affidavit, floor plan, location sketch; if leasing: lease contract, lessor's permit, authorization."
+T18,When is the deadline for renewing a business permit in Baguio?,Standard period January 1-20 each year; city may extend/stagger (2026 by surname Jan-Mar); check current advisory.
+T19,What is the penalty for paying business tax late in Baguio?,Surcharge up to 25% plus 2% interest per month.
+T20,How do I pay my business tax online in Baguio?,Through eBPLS via LandBank Link.BizPortal; settlement up to 24 hours; don't pay twice.
+T21,What happens if I operate a business in Baguio without a permit?,City can issue a closure order (thousands of closure orders issued).
+T22,I want to open a business in La Trinidad. Are the permit requirements the same as in Baguio?,"No; each LGU has its own revenue code, fees, procedures; go to the municipal BPLO or Negosyo Center."
+T23,What services do Negosyo Centers provide?,"Business registration help (incl. BMBE), business advisory, information and advocacy, monitoring; walk in at nearest center."
+T24,What is Kapatid Mentor ME and who can join?,"Free 10-module mentoring program by DTI and Go Negosyo for micro and small enterprises, usually operating at least 1 year."
+T25,What is OTOP Next Gen and who is it for?,DTI product development/packaging/branding/market access help for MSMEs with a minimum viable product.
+T26,Can I personally get equipment from DTI's Shared Service Facility program?,No; individuals cannot receive SSF; cooperators are registered organizations (2-year track record); individuals can use the facility for a fee.
+T27,I am 22 years old. Is there a DTI program for young entrepreneurs?,Youth Entrepreneurship Program (RA 10679) for ages 18-30; Youth Start/Net/Match; YEP-BYOB workshop.
+T28,What do I need to join a DTI trade fair with my food products?,"FDA registration and License to Operate, permits, proper labeling/packaging, participation fee; participant pays travel, lodging, meals."
+T29,What are DTI's priority industries here in the Cordillera?,"Coffee, cacao, wearables and homestyle, creatives, processed fruits and nuts (full list of six to be confirmed); DTI still helps other industries."
+T30,Are DTI trainings free?,"Yes, DTI trainings are free; includes digitalization trainings with DICT."
+T31,Does DTI give capital or cash to start a business?,"No; DTI does not give capital; it helps through training, referrals, and assistance."
+T32,"How much can a microenterprise borrow from SB Corp's RISE UP Micro Multi-Purpose Loan, and at what interest?","Up to PHP 300,000; 12% per year on diminishing balance; up to 3 years; 3% processing fee."
+T33,How do I apply for a loan from SB Corp?,Online at app.sbcorp.ph (SBCorp Money app); Negosyo Centers can help.
+T34,I have a sari-sari store. Is there a loan for me?,"RISE UP Tindahan Micro: up to PHP 300,000 at 10%/yr for sari-sari stores in an accredited FMCG network; or RISE UP micro loan."
+T35,My small store burned down. Can DTI help me?,"PPG program gives in-kind help (stocks or equipment), not cash, to disaster-affected microenterprises, depending on budget."
+T36,What is a BMBE and what are its benefits?,Barangay Micro Business Enterprise; registered at city/municipal hall (Negosyo Center); income tax exemption on business income and priority access to credit.
+T37,What is DSWD's Sustainable Livelihood Program?,Capability-building program for poor/vulnerable households; Microenterprise Development track (seed capital) and Employment Facilitation track.
+T38,What is the maximum DOLE Kabuhayan assistance for one individual?,"Up to PHP 30,000 starter/livelihood kit (in kind)."
+T39,Can 4Ps beneficiaries get DOLE Kabuhayan (DILP) assistance?,"No, 4Ps beneficiaries and government employees are not eligible (per DOLE regional guidance)."
+T40,"We don't have much money, and I want to start a small business. Is there any free help?",DSWD SLP seed capital and DOLE Kabuhayan grants; ask CSWDO or DOLE.
+T41,Which TESDA scholarship is best if I want to start my own livelihood?,"STEP: free training and assessment, allowance, starter toolkits, entrepreneurship training."
+T42,Where can I get TESDA training here in Baguio?,"TESDA CSITE / Regional Training Center, Loakan Road, Baguio; also TESDA Baguio-Benguet Provincial Office in La Trinidad; PTC Benguet in Kapangan."
+T43,What is a TESDA National Certificate and how long is it valid?,Issued after passing competency assessment for a full qualification; generally valid for 5 years; COC for units.
+T44,What should I know about the Internet Transactions Act if I sell online?,"RA 11967; DTI E-Commerce Bureau; full effect June 20, 2025; merchants primarily liable; online business database; can be fined/blacklisted."
+T45,What are the parts of a business plan?,"Marketing plan, technical plan, organizational plan, financial plan (DTI guide)."
+T46,How do I register a trademark for my brand?,Should say it lacks details; refer to IPOPHL (Intellectual Property Office of the Philippines); DTI can assist.
+T47,How much business tax will I pay in Baguio if my gross sales are 1 million pesos?,Should not invent a figure; knowledge base has no tax rate schedule; refer to City Treasurer's Office / eBPLS assessment.
+T48,How much is the SEC registration fee for a corporation?,Should say it doesn't have SEC fee information; refer to SEC/eSPARC.
+T49,Will SB Corp definitely approve my loan if I submit all requirements?,Should not promise approval; explain requirements and refer to SB Corp.
+T50,What is the weather in Baguio tomorrow?,Should decline as outside its scope (small business information).
+H01,Can I transfer my DTI-registered business name to my sibling?,No; a DTI business name is not transferable; it must be cancelled first.
+H02,What age do I need to be to register a business name with DTI?,Any Filipino at least 18 years old; authorized foreign nationals may also register.
+H03,How long is a Baguio City business permit valid?,One year; renewed every year.
+H04,Is the DTI PPG assistance given in cash?,"No; in kind (equipment or stocks), depending on budget."
+H05,Where is the TESDA office in La Trinidad?,"TESDA Baguio–Benguet Provincial Office, Wangal, La Trinidad (car.benguet@tesda.gov.ph)."
+H06,How much is the barangay clearance fee in Baguio?,No amount in KB; refer to the barangay hall.
+H07,What is the minimum wage in Baguio?,Not in KB; should not invent; refer to DOLE / outside scope.
+H08,How much is the BFP fire safety inspection fee?,No amount in KB; refer to BFP.
+H09,What is the CDA registration fee for a new cooperative?,No amount in KB; refer to CDA.
+H10,What is the interest rate of a BDO business loan?,No BDO rates in KB; do not reuse SB Corp rates; refer to the bank.
