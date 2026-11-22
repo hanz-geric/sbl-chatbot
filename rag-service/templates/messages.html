@@ -1,0 +1,22 @@
+{% for msg in messages %}
+    <div class="{{ msg.role }}">
+        <div class="text">{{ msg.content }}</div>
+        {% if msg.role == "bot" and msg.sources %}
+            <div class="sources">
+                Sources:
+                {% for source in msg.sources %}
+                    <br>-
+                    {% if source.url %}
+                        <a href="{{ source.url }}" target="_blank">{{ source.title }}</a>
+                    {% else %}
+                        {{ source.title }}
+                    {% endif %}
+                    {% if source.status %}[{{ source.status }}]{% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if msg.role == "bot" and msg.response_time %}
+            <div class="sources">{{ msg.response_time }} s</div>
+        {% endif %}
+    </div>
+{% endfor %}
