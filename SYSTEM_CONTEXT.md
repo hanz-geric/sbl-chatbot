@@ -36,7 +36,7 @@ Flask    app.py ── saves messages ──► SQLite chat.db (table messages)
    ▼
 Agent    agent.py: create_agent(llama3.2:3b, tools) picks ONE tool (or none = off-topic)
    ├─► knowledge_tool.py  search_knowledge_base ─► retrieval.py: Chroma + all-MiniLM-L6-v2, top 3
-   └─► web_tool.py        web_search ─► Tavily (internet), top 3
+   └─► web_tool.py        web_search ─► Tavily (internet), top 3, Philippines boost
    │  tool text = CONTEXT, tool results = sources
    ▼
 Answer   generator.py: RULES + CONTEXT ─► gemma3:4b (Ollama, localhost:11434)
@@ -62,7 +62,7 @@ Why two models: llama3.2:3b supports tool calling but ignores the answer rules (
 | Ollama | `localhost:11434`; models `llama3.2:3b` (router, ~2 GB, has `tools`) and `gemma3:4b` (answers, ~3.4 GB) |
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` through `HuggingFaceEmbeddings` (downloads ~90 MB on first use, runs on CPU, not in Ollama) |
 | Vector store | Chroma, folder `rag-service/chroma_db/`, collection `knowledge_base` |
-| Web search | Tavily, free API key in the `TAVILY_API_KEY` environment variable |
+| Web search | Tavily, free API key in the `TAVILY_API_KEY` environment variable; `country="philippines"` boosts Philippine pages |
 | Chat history | SQLite file `rag-service/chat.db` (created by `app.py`) |
 | Site URL | http://127.0.0.1:5000/ |
 
@@ -185,7 +185,7 @@ return found[-1] if found else ""
 | `retrieval.py` | `embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)`; `vector_store = Chroma(...)`; `retriever = vector_store.as_retriever(search_kwargs={"k": TOP_K})`, `TOP_K = 3` (Lab 2.1) |
 | `generator.py` | `CHAT_MODEL = "gemma3:4b"`, `OFF_TOPIC_REPLY`, `NO_RESULTS_REPLY`, `RULES`, `clean_context(text)`, `stream_answer(question, context)` |
 | `knowledge_tool.py` | `@tool(response_format="content_and_artifact", return_direct=True)` → returns `(context text, docs)` |
-| `web_tool.py` | `tavily = TavilySearch(max_results=3)`; same decorator → returns `(context text, results)`; Tavily's `ToolException` (no results) → `("", [])` |
+| `web_tool.py` | `tavily = TavilySearch(max_results=3, country="philippines")`; same decorator → returns `(context text, results)`; Tavily's `ToolException` (no results) → `("", [])` |
 | `agent.py` | `ROUTER_MODEL = "llama3.2:3b"`, `ROUTER_PROMPT`, `router = create_agent(...)`, `route(question)` → `(tool name or None, context, sources)` |
 | `app.py` | Flask routes `GET /`, `GET /messages`, `POST /ask`; SQLite `messages` table |
 
