@@ -26,7 +26,7 @@ def format_results(results: list[dict]) -> str:
     return "\n\n".join(f"### {r['title']}\n{r['content']}" for r in results)
 
 
-@tool(response_format="content_and_artifact", return_direct=True)
+@tool(response_format="content_and_artifact")
 def web_search(query: str):
     """
         Search the internet for CURRENT news and recent updates about small business and livelihood in the Philippines: 
