@@ -32,7 +32,7 @@ def test_results_become_content_and_artifact(monkeypatch):
 
     assert out.content == "### DTI news\nNew MSME program."
     assert out.artifact == results
-    assert seen["query"] == "MSME loans Philippines"
+    assert seen["query"] == "MSME loans"
 
 
 def test_empty_results_give_empty_content(monkeypatch):
