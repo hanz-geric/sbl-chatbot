@@ -36,3 +36,19 @@ Updated:
 - **DTI sales promo checklist:** PDF only.
 - **Blocked by bot checks / CAPTCHA** (need a person to pass the check in the browser pane once): SEC (sec.gov.ph), DOLE (dole.gov.ph, ble.dole.gov.ph), IPOPHL (ipophil.gov.ph), Pag-IBIG (pagibigfund.gov.ph).
 - **DOST SETUP amounts and repayment terms:** not on the DOST-CAR page.
+
+## Issue #29, Part B: hand-read pages (November 23, 2026)
+
+Read in the user's Chrome through Claude in Chrome, one page at a time (these sites block crawlers or bots):
+
+| Passages | Topic | Source |
+|---|---|---|
+| K183–K184 | SEC: eSPARC online registration; stock corporation filing fee rule | https://www.sec.gov.ph/esparc/ ; https://www.sec.gov.ph/online-services/registration-calculator/ ; https://www.sec.gov.ph/forms-and-fees/schedules-of-fees/ |
+| K185–K187 | IPOPHL: trademarks, small-entity fees, Juana Make a Mark waiver | https://www.ipophil.gov.ph/trademark/ ; https://www.ipophil.gov.ph/services/schedule-of-fees/trademark-related-fees/ ; https://www.ipophil.gov.ph/juana-make-a-mark-trademark-assistance-program/ |
+| K188–K189 | DOLE: DILP eligible projects; TUPAD | https://bwsc.dole.gov.ph/dileep/dilp/ ; https://bwsc.dole.gov.ph/dileep/tupad/ |
+| K190 | DOLE Rule 1020 establishment registration + Baguio–Benguet field office | https://ro7.dole.gov.ph/frontline-services/ ; https://car.dole.gov.ph/contact-us/ |
+| K191–K193 | DTI: other regulators by product; business name in person; Go Negosyo Act | https://www.dti.gov.ph/dti-business-center/dti-business-registration-permits ; https://www.dti.gov.ph/dti-business-center/dti-msme-resources/dti-msme-law |
+
+Updated: `K028` (points to the product-regulator list), `K102` (DOLE Baguio–Benguet contact replaces PENDING; status VERIFIED), `K131` (08.3 now only partnerships and non-stock corporations), `K134` (08.3 now only patents and copyright).
+
+Not read: **Pag-IBIG** (privacy consent box must be accepted by the user first; `K194`–`K199` reserved); DTI's BMBE handbook and sales promo checklist (PDF downloads).
