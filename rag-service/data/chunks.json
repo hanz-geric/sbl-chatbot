@@ -1113,7 +1113,7 @@
   "id": "K162",
   "section": "10.4",
   "title": "10.4 Hiring employees > PhilHealth and Pag-IBIG",
-  "text": "- Private-sector workers with an employer–employee relationship are covered under PhilHealth's formal economy program. The member submits a PhilHealth Member Registration Form.\n- Employer registration steps and premium rates for PhilHealth, and employer registration and contribution rates for Pag-IBIG, are not covered here. Ask PhilHealth or Pag-IBIG, or register through the Central Business Portal (https://business.gov.ph).\nSource: https://www.philhealth.gov.ph/members/formal/ (checked November 23, 2026)\n(Status: VERIFIED)"
+  "text": "- Private-sector workers with an employer–employee relationship are covered under PhilHealth's formal economy program. The member submits a PhilHealth Member Registration Form.\n- PhilHealth employer registration steps and premium rates are not covered here; ask PhilHealth or register through the Central Business Portal (https://business.gov.ph).\n- For Pag-IBIG employer registration and contributions, see 10.7.\nSource: https://www.philhealth.gov.ph/members/formal/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K163",
@@ -1126,6 +1126,18 @@
   "section": "10.6",
   "title": "10.6 Hiring employees > Registering the business with DOLE (Rule 1020)",
   "text": "- **Every establishment, whatever its size**, must register with DOLE under **Rule 1020 of the Occupational Safety and Health Standards**, so it is part of DOLE's list of covered establishments. This applies to private businesses operating in the Philippines.\n- The form is the Registry of Establishment. Legal basis: DOLE Department Order No. 198-18 (rules of the OSH law, RA 11058).\n- In Baguio City and Benguet, register with the **DOLE Baguio–Benguet Field Office**, DOLE-CAR New Building, Cabinet Hill, Baguio City; (074) 442-2447; car_baguiobenguet@dole.gov.ph.\nSource: https://ro7.dole.gov.ph/frontline-services/ and https://car.dole.gov.ph/contact-us/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K194",
+  "section": "10.7",
+  "title": "10.7 Hiring employees > Pag-IBIG employer registration",
+  "text": "- Pag-IBIG Fund coverage is **mandatory for employers whose employees are covered by SSS**, so a business that hires workers must also register as a Pag-IBIG employer and get a **Pag-IBIG Employer ID**.\n- Requirements: a duly accomplished **Employer's Data Form** and proof that the business exists:\n  - Sole proprietorship: certified true copy of the DTI Certificate of Registration\n  - Partnership or corporation: certified true copies of the SEC Certificate and the approved Articles and By-laws\n  - Cooperative: certified true copies of the CDA Certificate and the approved Articles of Cooperation\n- Applies to employers in Baguio City and Benguet like everywhere in the Philippines.\nSource: https://www.pagibigfund.gov.ph/employer_businessregistration.html (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K195",
+  "section": "10.7",
+  "title": "10.7 Hiring employees > Pag-IBIG monthly contributions",
+  "text": "- Since **February 2024**, the regular monthly Pag-IBIG contribution is **₱400**: **₱200 from the employee**, matched by **₱200 from the employer**.\n- It is based on 2% of the Maximum Fund Salary, now ₱10,000 (2% × ₱10,000 = ₱200). Members may save more than this.\n- Contributions go to the member's Regular Savings, which earns tax-free annual dividends (6.62% for 2025) and can be withdrawn at maturity after 20 years or at retirement.\n- Pag-IBIG contact: 8-724-4244 (8-Pag-IBIG); contactus@pagibigfund.gov.ph.\nSource: https://www.pagibigfund.gov.ph/Membership_RegularSavings.html (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K164",
