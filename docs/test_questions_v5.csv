@@ -1,0 +1,21 @@
+id,question,expected
+V01,How much is the SEC filing fee for a stock corporation?,"1/5 of 1% of authorized capital stock or subscribed capital, whichever is higher, not less than PHP 2,000; plus legal research fee of 1% of the filing fee (min PHP 10)."
+V02,Where do I register a One Person Corporation?,SEC through eSPARC (esparc.sec.gov.ph); not DTI.
+V03,How much is the SEC fee to register a partnership?,Decline: not covered; refer to SEC / eSPARC computed fee or 1-4SEC.
+V04,How much is the trademark filing fee for a small business?,"PHP 1,200 per class (small entity), IPOPHL."
+V05,Is there help to pay for trademark registration for a small business?,"IPOPHL Juana Make a Mark: waives filing, claim of color and publication fees (up to about PHP 2,400) for eligible MSMEs; apply through a DTI office."
+V06,How much does it cost to register a patent?,Decline: not covered; refer to IPOPHL.
+V07,Who can join DOLE TUPAD?,"Disadvantaged workers 18+, fit seniors, retrenched/laid-off workers, self-employed who lost livelihood to calamity/crisis; one per family; 10-90 days at minimum wage."
+V08,Do I need to register my business with DOLE?,"Yes, every establishment regardless of size registers under Rule 1020 (OSHS); in Baguio-Benguet at the DOLE Baguio-Benguet Field Office, Cabinet Hill."
+V09,How much is the DOLE Rule 1020 registration fee?,Decline: no fee stated; refer to DOLE Baguio-Benguet Field Office.
+V10,How much is the FDA License to Operate fee for a small food manufacturer?,"PHP 1,010 initial (2 years) for capital PHP 250,000 and below; PHP 2,525 renewal (5 years)."
+V11,How long is an FDA License to Operate valid?,Initial 2 years; renewal 5 years; renew within 90 days before expiry.
+V12,How much is the FDA product registration (CPR) fee?,Decline: computed by the FDA system by product type and validity; refer to FDA.
+V13,Is there financial help for returning OFWs who want to start a business?,"OWWA BPBH PHP 20,000 cash assistance and/or OWWA-Landbank EDLP loan PHP 100,000-2M at 7.5%; SB Corp franchise funding."
+V14,Can a senior citizen get both my promo discount and the 20% senior discount?,"No; the senior gets the promo discount or the 20% discount, whichever is higher."
+V15,When must employers pay their SSS contributions?,Regular employers: by the last day of the month following the applicable month; using a PRN.
+V16,What is TESDA STEP?,"Special Training for Employment Program: free community-based training and assessment, starter toolkits, training allowance; supports self-employment."
+V17,What loan does DBP offer to farmers and small agri businesses?,"DA-ACPC/DBP AgriNegosyo: up to 90% of project cost; PHP 100,000-500,000 individual farmers; PHP 500,000-5M farmer-enterprises."
+V18,Do I need DOT accreditation for a homestay in Baguio?,Answer from section 12: DOT accreditation rules for homestays and Baguio's requirement; apply via DOT accreditation portal.
+V19,What do I need to open a carinderia in Baguio?,"DTI name, barangay clearance, health certificates and sanitary permit (CHSO), Mayor's Permit, BIR; SSS etc. if hiring."
+V20,What is the interest rate of a Landbank business loan?,Decline: not covered; refer to Landbank.
