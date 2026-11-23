@@ -15,6 +15,9 @@ def web_search(query: str):
         found = tavily.invoke({"query": query})
     except ToolException:
         return "", []
+    # When nothing is found, Tavily returns a plain message string instead of a dict.
+    if not isinstance(found, dict):
+        return "", []
     results = found.get("results", [])
     context = "\n\n".join(f"### {r['title']}\n{r['content']}" for r in results)
     return context, results
