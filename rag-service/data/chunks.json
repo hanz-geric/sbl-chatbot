@@ -45,25 +45,37 @@
   "id": "K008",
   "section": "01.2",
   "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Validity and renewal",
-  "text": "- A DTI business name registration is valid for **5 years**.\n- The renewal fee follows the same territorial-scope schedule; late renewal incurs a 50% surcharge.\n(Status: VERIFIED, INTERVIEW-DERIVED)"
+  "text": "- A DTI business name registration is valid for **5 years** from the date of registration.\n- **Early renewal:** up to 180 calendar days before expiry.\n- **Regular renewal:** within 90 calendar days after expiry.\n- **Grace period:** within the next 90 calendar days after the regular period, with a 50% surcharge on the registration fee.\n- A business name not renewed within the grace period is cancelled.\n- The renewal fee follows the same territorial-scope schedule.\nSource: https://bnrs.dti.gov.ph/faq (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K009",
   "section": "01.2",
   "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Cancellation",
-  "text": "- A DTI business name is **not transferable**. It must first be cancelled by the registered owner before another person can register and use it.\n- Cancellation may be **voluntary** (for example, the business closed or failed) or due to the **death of the owner**.\n(Status: FOR VALIDATION, INTERVIEW-DERIVED)"
+  "text": "- Cancellation is done at selected DTI offices. Grounds listed by BNRS: the business stopped before expiry; the business was sold or transferred; someone else has prior rights to an identical or confusingly similar name; or the business moved outside its registered territorial scope.\n- A DTI business name is **not transferable**. The registered owner's name must be cancelled before a new owner can register it. The office also mentioned cancellation after the owner's death.\nSource: https://bnrs.dti.gov.ph/faq (checked November 23, 2026)\n(Status: VERIFIED, INTERVIEW-DERIVED)"
  },
  {
   "id": "K010",
   "section": "01.2",
   "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Amendments",
-  "text": "Possible amendments mentioned by the office:\n- Change (upgrade) of territorial scope\n- Change of business name\n- Change of business address\n\n(Status: FOR VALIDATION, INTERVIEW-DERIVED)"
+  "text": "- Changing (upgrading) the territorial scope counts as a **new application**: a new certificate and a new 5-year validity.\n- Changes of business address, owner's name, or civil status are made at a DTI office.\n- Typos can be corrected only for a new registration, by emailing bnrshelpdesk@dtiphmail.dti.gov.ph.\n- Transferring ownership is not allowed; cancel and register again under the new owner.\nSource: https://bnrs.dti.gov.ph/faq (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K011",
   "section": "01.2",
   "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Where to get help",
   "text": "DTI provincial offices and Negosyo Centers (in municipalities) assist with business name registration. The DTI and Negosyo Center Facebook pages are also active channels.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K144",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Names that are not allowed",
+  "text": "BNRS rejects names that, among other grounds: suggest unlawful or immoral activity; describe the quality of the goods or services; are already registered as a trade name, trademark, or business name; are purely generic words; are the names of other persons; or are deceptive or misleading.\n- \"Company\", \"Corporation\", or \"Incorporated\" may be used only by SEC-registered partnerships or corporations.\n- \"Cooperative\" may be used only by CDA-registered cooperatives.\nSource: https://bnrs.dti.gov.ph/faq (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K145",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > How to pay and BNRS support",
+  "text": "- Payment: GCash, Maya, credit or debit card, over the counter (7-Eleven, Bayad Center), or Landbank Link.BizPortal. No other BNRS payment is needed after the registration fee.\n- BNRS support: bnrs.support@dti.gov.ph; text or Viber 0917 595 3930.\nSource: https://bnrs.dti.gov.ph/faq (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K012",
@@ -76,6 +88,12 @@
   "section": "01.4",
   "title": "01.4 CDA – Cooperatives",
   "text": "The Cooperative Development Authority (CDA) registers cooperatives through its online systems (e-CoopRIS): https://cs.cda.gov.ph/\n\nOlder CDA circulars (e.g., MC 2015-01) should not be treated as the only source of current requirements.\n\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K146",
+  "section": "01.4",
+  "title": "01.4 CDA – Cooperatives > Name reservation and online registration",
+  "text": "- Before registering, a cooperative reserves its name with a Cooperative Name Reservation Notice: **₱100 for 30 days, ₱200 for 60 days, ₱300 for 90 days**.\n- A cooperative becomes a legal entity when the CDA issues its Certificate of Registration.\n- Register online through CDA's eCoopRIS: https://cs.cda.gov.ph/ecoopris/users/login\n- The registration fee, minimum number of members, and training requirement are not on this page; ask the CDA.\nSource: https://cda.gov.ph/services/regulatory-services/registration/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K014",
@@ -390,6 +408,12 @@
   "text": "Negosyo Centers are DTI's satellite offices located in municipalities. They provide registration help, counseling, and access to DTI programs.\n\n- DTI's target is to have a Negosyo Center in every municipality by 2028. In Baguio and Benguet, the remaining municipalities without one were Bakun and Bokod (as of Nov 2026).\n- DTI Baguio–Benguet was developing a Negosyo Center Baguio–Benguet website.\n\n(Status: INTERVIEW-DERIVED)"
  },
  {
+  "id": "K147",
+  "section": "03.3",
+  "title": "03.3 Negosyo Centers > Legal basis",
+  "text": "Negosyo Centers are set up under the Go Negosyo Act (RA 10644) to promote ease of doing business and help MSMEs access services. They are located in DTI offices, LGUs, schools, NGOs, and malls.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-negosyo-center/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K066",
   "section": "03.4",
   "title": "03.4 Priority industries in the Cordillera (CAR)",
@@ -412,6 +436,30 @@
   "section": "03.5",
   "title": "03.5 DTI programs: overview",
   "text": "| Program | Description | Who can join | How to join |\n|---|---|---|---|\n| Consumer advocacy | Consumer education and protection (see 09.3) | Public | DTI office |\n\n- DTI said all its programs are free; only registration fees are paid. (INTERVIEW-DERIVED)\n- Go Lokal! and SME Roving Academy were not discussed in the DTI interview and are not yet researched."
+ },
+ {
+  "id": "K148",
+  "section": "03.5",
+  "title": "03.5 DTI programs > Shared Service Facilities (SSF)",
+  "text": "- DTI provides machines, equipment, tools, and systems that are housed by a **cooperator** and shared with MSMEs to raise productivity and quality.\n- Cooperators can be government entities (LGUs, state universities, tech-voc schools), private entities (cooperatives, associations, NGOs, people's organizations, corporations, private schools), or One Person Corporations. Individual MSMEs use the facility; they do not own it.\n- Implemented by DTI regional and provincial offices. National contact: SSF Project Management Office, DTI-BSMED, BSMED@dti.gov.ph, (02) 7791-3310.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-shared-service-facilities/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K149",
+  "section": "03.5",
+  "title": "03.5 DTI programs > OTOP Next Gen",
+  "text": "OTOP Next Gen helps MSMEs that already have a \"minimum viable product\" improve quality, design, packaging, standards compliance, and marketability. Contact otop@dti.gov.ph or the local DTI office.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-otop-philippines (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K150",
+  "section": "03.5",
+  "title": "03.5 DTI programs > Kapatid Mentor ME: who can join",
+  "text": "- A 10-module mentoring program of DTI and the Philippine Center for Entrepreneurship, where large companies mentor micro and small entrepreneurs.\n- Applicants: at least 18; Filipino resident; owner, co-owner, or partner of a registered business operating at least 1 year; has employees or manages a team; willing to attend all sessions and sign a Contract of Commitment; three references. One mentee per enterprise and per family.\n- Online sessions need a computer or phone, stable internet, a headset, and a Facebook account.\n- Apply through the nearest Negosyo Center or DTI office.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-kapatid-mentor-me-project/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K151",
+  "section": "03.5",
+  "title": "03.5 DTI programs > Youth Entrepreneurship Program (YEP)",
+  "text": "- Based on the Youth Entrepreneurship Act (RA 10679). For aspiring and existing youth entrepreneurs aged 18–30.\n- **Youth Start:** mindset seminars, help with business registration, skills training.\n- **Youth Net:** mentoring and youth entrepreneur organizations.\n- **Youth Match:** market promotion, access to funding, machines and equipment.\n- Apply through a DTI office or Negosyo Center.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-youth-entrepreneurship-program-yep/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K070",
@@ -531,7 +579,7 @@
   "id": "K089",
   "section": "04.2",
   "title": "04.2 Loans through SB Corporation and partner institutions > Pondo sa Pagbabago at Pag-asenso (P3)",
-  "text": "- P3 is a government microfinancing program run through SB Corp, meant to give microenterprises an alternative to informal \"5-6\" lending. (DTI)\n- Under P3, a microenterprise could borrow **₱5,000 to ₱200,000** without collateral, with interest and fees not exceeding **2.5% per month** all in. Funds are delivered through accredited partners such as microfinance institutions and cooperatives. (DTI news releases, 2018–2019)\n- Bills to make P3 a permanent program were filed in Congress in 2025. (House and Senate bills)\n(Status: VERIFIED, FOR VALIDATION)"
+  "text": "- P3 is a government microfinancing program run through SB Corp, meant to give microenterprises an alternative to informal \"5-6\" lending.\n- P3 loans are given through **partner financial institutions** (such as microfinance institutions and cooperatives), not directly by SB Corp. Apply through a partner institution.\n- Loans to microenterprises, including farming activities, are **₱5,000 to ₱300,000**, with interest and fees up to **2.5% a month (30% a year)**.\nSource: https://sbcorp.gov.ph/pondo-sa-pagbabago-at-pag-asenso-p3/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K090",
@@ -544,6 +592,18 @@
   "section": "04.2",
   "title": "04.2 Loans through SB Corporation and partner institutions > Loans versus grants",
   "text": "- SB Corp RISE UP and P3 are **loans** that must be repaid.\n- DTI does **not** give grants or cash capital. Disaster assistance through PPG is given **in kind** (equipment or stocks), not cash. (See 04.1 and 04.3.)"
+ },
+ {
+  "id": "K152",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > Other SB Corp financing programs",
+  "text": "| Program | For | Amount | Interest | Term |\n|---|---|---|---|---|\n| Business Expansion Financing | Businesses operating 3 to 11 months | ₱50,000 to ₱3 million | 0% for the first 12 months, then 1% a month (diminishing) | Up to 3 years; up to 6 months grace |\n| Franchise Funding | Returning OFWs and their families; franchisees endorsed by partner associations | Up to 80% of the franchise investment, max ₱20 million | 1% a month (diminishing) | Up to 3 years; 3 months grace |\nSource: https://sbcorp.gov.ph/programs-and-services/msme-financing-programs/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K153",
+  "section": "04.2",
+  "title": "04.2 Loans through SB Corporation and partner institutions > Other SB Corp financing programs",
+  "text": "| Program | For | Amount | Interest | Term |\n|---|---|---|---|---|\n| Purchase Order Financing | Businesses operating at least 1 year with at least 3 completed purchase orders in the past 2 years | Up to 80% of the PO, max ₱20 million | 1% per 30 days | 30 to 360 days |\n| Enterprise Rehabilitation Financing | Businesses recovering from setbacks | Up to ₱300,000 | 0% in year 1, then 1% a month | Up to 3 years; up to 6 months grace |\n| Venture Capital Program | Start-ups | ₱500,000 to ₱5 million (equity) | — | 5 to 10 years |\nContact: sbcorporation@sbcorp.gov.ph; (02) 5328-1100 to 10.\nSource: https://sbcorp.gov.ph/programs-and-services/msme-financing-programs/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K092",
@@ -562,6 +622,24 @@
   "section": "04.4",
   "title": "04.4 Help with other agencies' livelihood programs",
   "text": "DTI can help entrepreneurs prepare applications or proposals for other government livelihood programs, such as the **DOLE Integrated Livelihood Program (DILP)**.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K154",
+  "section": "04.5",
+  "title": "04.5 Agricultural loans > KAYA loans for young agripreneurs",
+  "text": "- DA-ACPC's Kapital Access for Young Agripreneurs: up to **₱500,000**, **0% interest** (the lending partner may charge a service fee up to 3.5%), **no collateral**, payable up to 5 years.\n- For agri-fishery entrepreneurs aged **18 to 30** who are graduates of agriculture or fishery courses or programs (formal or non-formal).\n- Requirements: government ID, loan application form, simple business plan, proof of RSBSA or FFEDIS registration.\n- Apply at https://access.acpc.gov.ph. Applications go to a partner lender (cooperative, cooperative bank, or rural bank).\nSource: https://acpc.gov.ph/kapital-access-for-young-agripreneurs-kaya/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K155",
+  "section": "04.5",
+  "title": "04.5 Agricultural loans > SURE loans after calamities",
+  "text": "- DA-ACPC's Survival and Recovery loan: up to **₱25,000**, 0% interest (up to 3% service fee), no collateral, payable up to 3 years.\n- For small farmers and fisherfolk in areas under a **state of calamity**, enrolled in RSBSA.\n- Borrowers are identified and endorsed by the DA regional office and the Municipal Agriculture Office; there is no direct application.\nSource: https://acpc.gov.ph/survival-and-recovery-program/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K156",
+  "section": "04.5",
+  "title": "04.5 Agricultural loans > DBP AgriNegosyo loan",
+  "text": "- DA-ACPC and DBP loan for farmers, fisherfolk, and micro and small enterprises registered with SEC, DTI, or CDA.\n- Up to 90% of the project cost: ₱100,000 to ₱500,000 for individual farmers; ₱500,000 to ₱5 million for farmer-enterprises.\n- Term loan up to 10 years including up to 2 years grace. Service fee 3.5%. The interest rate is not stated on the page; ask DBP.\n- Individual farmers must be RSBSA-registered and trained for the project.\nSource: https://www.dbp.ph/developmental-banking/micro-small-and-medium-enterprises/dbp-agrinegosyo-loan-program/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K095",
@@ -642,6 +720,12 @@
   "text": "- **STEP is the most relevant for people who want to start a livelihood**, because it includes starter toolkits and basic business training.\n- Baguio offerings (as reported locally) have included free tuition, assessment fees, training allowance, accident insurance, and PPE or internet allowances. Applicants generally must be at least 18 years old and not currently under another scholarship. (Baguio City Guide reports on TESDA RTC Baguio)\n- Allowance amounts and income limits differ by year and program; the chatbot should not quote fixed amounts.\n(Status: VERIFIED, FOR VALIDATION)"
  },
  {
+  "id": "K157",
+  "section": "06.2",
+  "title": "06.2 TESDA scholarships > STEP allowance and online application",
+  "text": "- TESDA's scholarships page says STEP gives free training and assessment, starter toolkits, and a training allowance of ₱60 a day during training. The page's circulars are from 2017–2022, so confirm the current amount with TESDA.\n- Online scholarship application: https://www.tesda.gov.ph/Barangay\nSource: https://www.tesda.gov.ph/About/TESDA/1279 (checked November 23, 2026)\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
   "id": "K108",
   "section": "06.3",
   "title": "06.3 Where to train in Baguio and Benguet",
@@ -652,6 +736,12 @@
   "section": "06.3",
   "title": "06.3 Where to train in Baguio and Benguet",
   "text": "- Many private schools in Baguio and Benguet also offer TESDA-registered programs; TESDA-CAR keeps a list.\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K158",
+  "section": "06.3",
+  "title": "06.3 Where to train in Baguio and Benguet > ATI agri-entrepreneurship training",
+  "text": "The Department of Agriculture's Agricultural Training Institute (ATI) offers trainings including agri-entrepreneurship and digital tools for agriculture, in person and online (e-Learning, webinars).\nSource: https://ati2.da.gov.ph/ati-main/content/training_services (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K110",
@@ -856,5 +946,47 @@
   "section": "09.3",
   "title": "09.3 Consumer complaints (referral)",
   "text": "- DTI handles consumer concerns such as violations of the Price Tag Act, giving candy as change, improper labeling, unauthorized sales promos (these need a DTI permit), and defective products, including online purchases. Disputes may be resolved through DTI mediation.\n- Consumers may file reports anonymously or through dummy accounts, as long as the claim is factual and backed by evidence. DTI does not disclose the identity of the complainant. DTI verifies, monitors, and inspects before taking enforcement action.\n\n(Status: INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K159",
+  "section": "10.1",
+  "title": "10.1 Hiring employees > Overview",
+  "text": "- When a business hires its first employee, it must register as an employer with **SSS**, **PhilHealth**, and **Pag-IBIG**, and follow DOLE wage rules.\n- The **Central Business Portal (https://business.gov.ph)** has one employee-reporting module covering SSS, PhilHealth, and Pag-IBIG.\n- A self-employed owner who hires workers must also register as an employer and get an SSS Employer Number.\nSource: https://www.sss.gov.ph/employer-er/ and https://www.sss.gov.ph/self-employed/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K160",
+  "section": "10.2",
+  "title": "10.2 Hiring employees > SSS employer registration",
+  "text": "- SSS coverage of an employer starts on the **first day of operation**.\n- Register through the Central Business Portal (no SS Form R-1 or supporting documents needed), through My.SSS online, or at an SSS branch.\n- Report new employees to SSS **within 30 days from their hiring date**. Employees must have their own SS numbers.\n- Each month, deduct the employee share from pay and remit it with the employer share and EC contribution, using a Payment Reference Number (PRN).\n- Late contributions are charged a **2% penalty per month** until paid.\n- Contribution rates are in the SSS contribution table (effective January 1, 2025): https://www.sss.gov.ph/sss-contribution-table/\nSource: https://www.sss.gov.ph/employer-er/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K161",
+  "section": "10.3",
+  "title": "10.3 Hiring employees > SSS for self-employed owners",
+  "text": "- A self-employed SSS member is someone who has no employer other than themself.\n- Contributions are paid monthly or quarterly using a PRN from My.SSS. The deadline is the **last day of the month after** the month being paid for.\n- Amounts follow the latest SSS schedule of contributions.\nSource: https://www.sss.gov.ph/self-employed/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K162",
+  "section": "10.4",
+  "title": "10.4 Hiring employees > PhilHealth and Pag-IBIG",
+  "text": "- Private-sector workers with an employer–employee relationship are covered under PhilHealth's formal economy program. The member submits a PhilHealth Member Registration Form.\n- Employer registration steps and premium rates for PhilHealth, and employer registration and contribution rates for Pag-IBIG, are not covered here. Ask PhilHealth or Pag-IBIG, or register through the Central Business Portal (https://business.gov.ph).\nSource: https://www.philhealth.gov.ph/members/formal/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K163",
+  "section": "10.5",
+  "title": "10.5 Hiring employees > Minimum wage in Baguio City and Benguet (Cordillera, CAR)",
+  "text": "- Baguio City and all Benguet towns (including La Trinidad, Tuba, and Itogon) are in the Cordillera Administrative Region (CAR), so the CAR wage orders apply.\n- Private sector: **₱505.00 per day** under **Wage Order No. CAR-24**, effective **December 30, 2025**.\n- Domestic workers (kasambahay): **₱6,600.00 per month** under **Wage Order No. CAR-DW-07**, effective December 30, 2025.\n- Wage orders change. Check the National Wages and Productivity Commission for the current order: https://nwpc.dole.gov.ph/\nSource: https://nwpc.dole.gov.ph/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K164",
+  "section": "11.1",
+  "title": "11.1 Customer discounts > PWD discount: what businesses must give",
+  "text": "- Persons with disabilities get **at least 20% discount and VAT exemption** (if applicable) on goods and services for their exclusive use, including: hotels, restaurants, and recreation centers; admission to theaters, cinemas, and similar venues; medicines in drugstores; medical and dental services; domestic air and sea fares; land transport fares; and funeral and burial services. (RA 10754)\n- Proof: a PWD ID issued by the city or municipal mayor or barangay captain, the PWD's passport, or a transportation discount ID from the national council.\n- The PWD discount cannot be combined with a higher discount or another discount program.\nSource: https://ncda.gov.ph/disability-laws/republic-acts/republic-act-no-10754-an-act-expanding-the-benefits-and-privileges-of-persons-with-disability-pwd/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K165",
+  "section": "11.1",
+  "title": "11.1 Customer discounts > PWD discount: tax deduction for the business",
+  "text": "- A business can claim the PWD discount it gave (except on government medical services) as a **tax deduction**, based on the net cost of the goods sold or services rendered, in the same taxable year, with proper documentation. (RA 10754)\n- Rules for the senior citizen discount (RA 9994) are not covered here; ask the BIR or the city's Office of Senior Citizens Affairs.\nSource: https://ncda.gov.ph/disability-laws/republic-acts/republic-act-no-10754-an-act-expanding-the-benefits-and-privileges-of-persons-with-disability-pwd/ (checked November 23, 2026)\n(Status: VERIFIED)"
  }
 ]
