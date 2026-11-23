@@ -11,7 +11,7 @@ This is our **final project (Lab 5.2, "The Right Tool for the Job")** from the O
 The **Small Business and Livelihood Development Knowledge Assistant** (University of Baguio group project). It answers small business and livelihood questions for **Baguio City and Benguet**: DTI business name registration, Baguio City business permits (Mayor's Permit, eBPLS), BIR, livelihood and loan programs (DOLE DILP, SB Corp, DSWD, TESDA, Negosyo Centers).
 
 It is an **agent with two tools** (the Lab 5.2 architecture):
-1. **`search_knowledge_base`** (RAG tool, Lab 2.1): searches our 165 passages.
+1. **`search_knowledge_base`** (RAG tool, Lab 2.1): searches our 196 passages.
 2. **`web_search`** (Lab 3.1): Tavily web search for current news and updates.
 
 A small model (llama3.2:3b) **decides which tool to use**. A second model (gemma3:4b) **writes the answer** only from what the tool returned. The page shows the answer with its **sources**.
@@ -109,7 +109,7 @@ sbl-chatbot/
 └─ rag-service/
    ├─ .gitignore             .venv/  __pycache__/  chroma_db/  chat.db
    ├─ requirements.txt
-   ├─ data/chunks.json       given, 165 passages
+   ├─ data/chunks.json       given, 196 passages
    ├─ build_index.py         chunks → Documents → MiniLM → Chroma
    ├─ retrieval.py           embeddings, vector_store, retriever
    ├─ search.py              debug printout of retrieval
@@ -160,7 +160,7 @@ Never commit `.venv/`, `__pycache__/`, `chroma_db/`, `chat.db`, or any API key.
 
 ## 6. Knowledge base: `rag-service/data/chunks.json`
 
-A JSON array of 165 objects, ids `K001`–`K165`. `K144`–`K165` were added on November 23, 2026 from official government pages (see `docs/kb_research_2026-11-23.md`); they sit next to their section in the file, so ids are not in file order. New sections: `04.5` agricultural loans, `10` hiring employees, `11` customer discounts.
+A JSON array of 196 objects, ids `K001`–`K165` and `K200`–`K230`. `K144`–`K165` were added on November 23, 2026 from official government pages (see `docs/kb_research_2026-11-23.md`); they sit next to their section in the file, so ids are not in file order. New sections: `04.5` agricultural loans, `10` hiring employees, `11` customer discounts. `K200`–`K230` (phase 1 expansion, November 23, 2026, see `docs/kb_research_phase1.md`) add sections `12` tourism businesses, `13` food businesses, `14` online selling, `15` closing a business, `16` transport livelihoods, `17` contact directory, `18` business-type checklists. Ids `K166`–`K199` are reserved for the phase 2 expansion.
 ```json
 {"id": "K004", "section": "01.2 ...", "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Who can register", "text": "..."}
 ```
@@ -181,7 +181,7 @@ return found[-1] if found else ""
 
 | File | Main parts |
 |---|---|
-| `build_index.py` | `Document(page_content=title + "\n" + text, metadata={id, section, title, status})`; deletes `chroma_db/` with `shutil.rmtree`; `Chroma.from_documents(..., ids=chunk ids, collection_name="knowledge_base", persist_directory=...)`; prints `Done. The collection has 165 chunks.` |
+| `build_index.py` | `Document(page_content=title + "\n" + text, metadata={id, section, title, status})`; deletes `chroma_db/` with `shutil.rmtree`; `Chroma.from_documents(..., ids=chunk ids, collection_name="knowledge_base", persist_directory=...)`; prints `Done. The collection has 196 chunks.` |
 | `retrieval.py` | `embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)`; `vector_store = Chroma(...)`; `retriever = vector_store.as_retriever(search_kwargs={"k": TOP_K})`, `TOP_K = 3` (Lab 2.1) |
 | `generator.py` | `CHAT_MODEL = "gemma3:4b"`, `OFF_TOPIC_REPLY`, `NO_RESULTS_REPLY`, `RULES`, `clean_context(text)`, `stream_answer(question, context)` |
 | `knowledge_tool.py` | `@tool(response_format="content_and_artifact", return_direct=True)` → returns `(context text, docs)` |
@@ -263,10 +263,10 @@ Still current and used as taught: the Ollama CLI and Python library (`ollama.cha
 
 | Check | Expected |
 |---|---|
-| `python build_index.py` | ends `Done. The collection has 165 chunks.` (also on re-run, ~15 s) |
+| `python build_index.py` | ends `Done. The collection has 196 chunks.` (also on re-run, ~15 s) |
 | `search.py` default question | closest distance ≈ 0.464; retriever picks `K003, K031, K057` |
 | `search.py "How much is the DTI business name registration fee?"` | ≈ 0.453; picks `K005, K131, K035` |
-| `search.py "What is the weather in Baguio today?"` | ≈ 1.169 |
+| `search.py "What is the weather in Baguio today?"` | ≈ 1.132 |
 | DTI fee question | tool `search_knowledge_base`; ₱200 barangay, ₱500 city/municipality, ₱1,000 regional, ₱2,000 national, + ₱30 documentary stamp tax |
 | "How much is the permit fee for a sari-sari store?" | no invented amount; says it doesn't have it and names an office |
 | "Are there new livelihood grants announced this month?" | tool `web_search` |
