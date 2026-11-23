@@ -48,6 +48,12 @@
   "text": "- A DTI business name registration is valid for **5 years** from the date of registration.\n- **Early renewal:** up to 180 calendar days before expiry.\n- **Regular renewal:** within 90 calendar days after expiry.\n- **Grace period:** within the next 90 calendar days after the regular period, with a 50% surcharge on the registration fee.\n- A business name not renewed within the grace period is cancelled.\n- The renewal fee follows the same territorial-scope schedule.\nSource: https://bnrs.dti.gov.ph/faq (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K301",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration > Renewing online, downloading the certificate, and certifications",
+  "text": "- **Renew:** BNRS > Renewal, enter your Reference Code, then 'Renew and Update Info' or 'Update Scope and Renew'. You may update email, home address, and business address within the same scope; a new scope means a new name check. Pay within 7 calendar days.\n- **Lost certificate:** Transaction Inquiry, enter Reference Code and the code emailed to you, then download.\n- **Certifications** (including negative certification) are requested online and emailed after payment.\n- Other transactions: nearest Negosyo Center. BNRS help: text/Viber 0917 595 3930; calls 0917 863 0669 or 0917 845 7104; bnrs.support@dti.gov.ph. Applies in Baguio City and Benguet.\nSource: https://bnrs.dti.gov.ph/resources/registration-guide (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K009",
   "section": "01.2",
   "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Cancellation",
@@ -84,6 +90,12 @@
   "text": "- Registering online at https://bnrs.dti.gov.ph is the usual way (step-by-step guide: bnrs.dti.gov.ph/resources/registration-guide).\n- **In person** at a DTI regional or provincial office (such as DTI Benguet): bring the accomplished business name registration form for sole proprietorship and a **valid government-issued ID**. A representative may file with their own valid ID and an **authorization letter signed by the owner**.\n- **Non-Philippine nationals** also need a certified copy of the Alien Certificate of Registration and a Certificate of Registration for Sole Proprietorship or Certificate of Authority to engage in business.\n- A business name registration is **not a license to operate**; you still need the Mayor's Permit and BIR registration (see 01.1).\nSource: https://www.dti.gov.ph/dti-business-center/dti-business-registration-permits (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K300",
+  "section": "01.2",
+  "title": "01.2 DTI Business Name Registration > How to register a business name online, step by step",
+  "text": "Steps on BNRS (https://bnrs.dti.gov.ph) for sole proprietors in Baguio City and Benguet: 1. Choose New Registration, agree to the terms, fill in owner details. 2. Pick the territorial scope, type the dominant name and a business descriptor, and click Check Name Availability (try again if taken). 3. Write down the Reference Code; it is used for all BNRS transactions. 4. Fill in business and residence addresses, review the forms, accept the Undertaking. 5. Pay (GCash, Maya, card, DTI teller, Landbank Link.Biz) **within 7 calendar days** or the application is abandoned. The certificate is emailed after payment (check spam).\nSource: https://bnrs.dti.gov.ph/resources/registration-guide (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K012",
   "section": "01.3",
   "title": "01.3 SEC – Corporations and Partnerships",
@@ -96,16 +108,52 @@
   "text": "- Corporations, One Person Corporations (OPC), and partnerships register with the **Securities and Exchange Commission (SEC)**, not DTI.\n- Apply online through **SEC eSPARC** (https://esparc.sec.gov.ph). It handles One Person Corporations, domestic stock and non-stock corporations with 2 to 15 incorporators, the recording of partnerships, and licenses for foreign corporations. You submit the proposed company name and the details of the articles of incorporation for SEC review.\n- SEC hotline for registration questions: **1-4SEC (14732)**.\n- Applies to businesses in Baguio City and Benguet like everywhere in the Philippines.\nSource: https://www.sec.gov.ph/esparc/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K317",
+  "section": "01.3",
+  "title": "01.3 SEC - Corporations and Partnerships > One Person Corporation (OPC): naming officers after registration",
+  "text": "A One Person Corporation (OPC) registers with SEC through eSPARC, like other corporations. After registration, an OPC must file the SEC Form for Appointment of Officers (OPC only) within 20 days from the approval of its Certificate of Incorporation, and within 5 days from any later appointment of officers or change. SEC requires this form strictly starting March 23, 2026 (SEC MC No. 10, s. 2026, Guidelines on the Compliances of OPCs). SEC also has an Application for Release of Bond form for OPCs. Applies to OPCs in Baguio City and Benguet like everywhere in the Philippines.\nSource: https://www.sec.gov.ph/reportorial-requirements/corporations-with-primary-licenses/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K318",
+  "section": "01.3",
+  "title": "01.3 SEC - Corporations and Partnerships > What is SEC eSECURE and what ID do I need",
+  "text": "eSECURE (Electronic SEC Universal Registration Environment) is SEC's credentialing service for the security and authenticity of your online identity with SEC (https://esecure.sec.gov.ph/). It is an electronic Know Your Customer (KYC) step: SEC collects your personal information and takes a live photo. Acceptable government IDs listed by SEC: driver's license, OFW ID, passport, postal ID, SSS ID, UMID, and voter's ID. Business owners in Baguio City and Benguet use the same online system.\nSource: https://www.sec.gov.ph/sec-esecure/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K184",
   "section": "01.3",
   "title": "01.3 SEC – Corporations and Partnerships > SEC registration fees for a stock corporation",
   "text": "- **Filing fee:** 1/5 of 1% of the authorized capital stock, or of the subscription price of the subscribed capital stock, whichever is higher, but **not less than ₱2,000**.\n- **Legal research fee:** 1% of the filing fee, but not less than ₱10.\n- **Name verification/reservation:** ₱100 per allowed name for 30 days.\n- A new corporation must also get a **Stock and Transfer Book**, about ₱470 (including its registration).\n- By-laws fees are added; use the SEC Registration Calculator (https://www.sec.gov.ph/online-services/registration-calculator/) for the approximate total.\nSource: https://www.sec.gov.ph/online-services/registration-calculator/ and https://www.sec.gov.ph/forms-and-fees/schedules-of-fees/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K316",
+  "section": "01.3",
+  "title": "01.3 SEC - Corporations and Partnerships > Yearly reports after registering (GIS and AFS)",
+  "text": "A corporation registered with SEC, in Baguio City, Benguet, or elsewhere, must keep filing reports. The Audited Financial Statements (AFS), stamped \"RECEIVED\" by the BIR, are due within 120 calendar days after the end of the fiscal year shown in the statements. The General Information Sheet (GIS) is also required; the 2026 GIS form is used from January 30, 2026 (launch of SEC's HARBOR system). The Beneficial Ownership Declaration is filed through HARBOR, on the same due date as the GIS. Non-stock corporations with total assets or liabilities under ₱3,000,000 use Unaudited Financial Statements. For the GIS deadline, ask SEC (1-4SEC).\nSource: https://www.sec.gov.ph/reportorial-requirements/corporations-with-primary-licenses/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K185",
   "section": "01.10",
   "title": "01.10 Trademarks (IPOPHL) > What a trademark is and how long it lasts",
-  "text": "- A **trademark** is a word, group of words, sign, symbol, logo, or a combination that identifies and sets apart a business's goods or services. Registering it gives the owner exclusive rights to stop others from using it.\n- Trademarks are registered with the **Intellectual Property Office of the Philippines (IPOPHL)**, not DTI. DTI business name registration does not protect a brand as a trademark.\n- Protection lasts **10 years from registration** and can be renewed again and again if the mark is maintained.\n- Apply online through IPOPHL's **eTMFile**, or in person. IPOPHL also runs free trademark seminars.\n- IPOPHL contact: (02) 7238-6300 (online filing: local 8601/8602).\n- Applies to businesses in Baguio City and Benguet like everywhere in the Philippines.\nSource: https://www.ipophil.gov.ph/trademark/ (checked November 23, 2026)\n(Status: VERIFIED)"
+  "text": "- A **trademark** is a word, group of words, sign, symbol, logo, or a combination that identifies and sets apart a business's goods or services. Registering it gives the owner exclusive rights to stop others from using it.\n- Trademarks are registered with the **Intellectual Property Office of the Philippines (IPOPHL)**, not DTI. DTI business name registration does not protect a brand as a trademark.\n- Protection lasts **10 years from registration** and can be renewed again and again if the mark is maintained.\n- Apply online through IPOPHL's **eTMFile**: since September 1, 2020, new trademark applications are accepted online only (IPOPHL trademark FAQ). IPOPHL also runs free trademark seminars.\n- IPOPHL contact: (02) 7238-6300 (online filing: local 8601/8602).\n- Applies to businesses in Baguio City and Benguet like everywhere in the Philippines.\nSource: https://www.ipophil.gov.ph/trademark/ and https://www.ipophil.gov.ph/help-and-support/trademark/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K320",
+  "section": "01.10",
+  "title": "01.10 Trademarks (IPOPHL) > How to file a trademark application online (eTMFile)",
+  "text": "IPOPHL's FAQ says new trademark applications are accepted only online through eTMFile, effective September 1, 2020 (IPOPHL MC No. 2020-036). You need the form, a copy of the mark, and the goods or services covered (Nice classes). First-to-file rule: the filing date is the day IPOPHL receives your identity and contact details, the mark, the list of goods or services, and the filing fee. Pay via DragonPay (online banking, 7-Eleven, GCash, LBC, SM Bayad Center, Cebuana); paying at the IPOPHL cashier is disabled. E-receipts arrive by email in 1 to 3 working days. Baguio City and Benguet applicants can get help at IPSO Baguio.\nSource: https://www.ipophil.gov.ph/etm-file-trademark/ and https://www.ipophil.gov.ph/help-and-support/trademark/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K321",
+  "section": "01.10",
+  "title": "01.10 Trademarks (IPOPHL) > How to check if a brand name is already taken or check my application status",
+  "text": "Before filing, search whether a similar mark is already registered or applied for. IPOPHL links two free searches: Trademark Search (WIPO Publish) at https://wipopublish.ipophil.gov.ph/wopublish-search/public/trademarks and the WIPO Global Brand Database at https://www.wipo.int/branddb/ph/en/. Both cover registrations and applications. eTMFile is also linked to ASEAN TMview and TMclass for a preliminary search. To check your own application, search the Philippine trademark database by the name of the mark, the applicant's name, or the application number, then read the Status column. Same for Baguio City and Benguet.\nSource: https://www.ipophil.gov.ph/trademark/filing/ and https://www.ipophil.gov.ph/help-and-support/trademark/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K325",
+  "section": "01.10",
+  "title": "01.10 Trademarks (IPOPHL) > Free IPOPHL webinars on trademarks (iLEAP Plus)",
+  "text": "IPOPHL runs iLEAP Plus, a series of free online webinars on intellectual property for creators, inventors, and business owners who want to protect product designs and brands; Baguio City and Benguet entrepreneurs can join online. The 2026 schedule lists iLEAP Plus on Trademark Registration (November 11), on Navigating eDocFile for Trademarks (November 20), and on IP Utilization (November 25), each 1:30 to 3:30 PM, with registration links on the page until slots are filled; check the page for the current schedule. Taught in mixed English and Filipino. A Certificate of Participation needs full attendance, at least 70% in the post-test, and the feedback form. Inquiries: dittb@ipophl.gov.ph.\nSource: https://www.ipophil.gov.ph/ileap-ip/ (checked November 23, 2026)\n(Status: FOR VALIDATION)"
  },
  {
   "id": "K186",
@@ -114,10 +162,34 @@
   "text": "IPOPHL trademark fees for a **small entity** (big entity in brackets), per class of goods or services:\n- Filing fee: **₱1,200** (₱2,592)\n- Claim of color: ₱280 (₱600)\n- Publication for opposition: ₱900 (₱960)\n- Issuance of the Certificate of Registration: ₱570 (₱1,200)\n- Declaration of Actual Use (DAU) in the 3rd year: ₱900 (₱1,920); 5th year: ₱1,100 (₱2,400)\n- Renewal: ₱3,100 (₱6,600); late renewal surcharge ₱1,500 (₱3,300)\nSource: https://www.ipophil.gov.ph/services/schedule-of-fees/trademark-related-fees/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K319",
+  "section": "01.10",
+  "title": "01.10 Trademarks (IPOPHL) > Am I a small entity for trademark fees?",
+  "text": "IPOPHL charges lower trademark fees to a small entity, defined as a business with ₱100 million worth of assets or less. A big entity has more than ₱100 million in assets. A Baguio City or Benguet business with assets of ₱100 million or less pays the small-entity rates. IPOPHL's FAQ gives the basic filing fee including the 1% Legal Research Fund: ₱1,212 for small entities and ₱2,617 for big entities. All IPOPHL fees carry the 1% Legal Research Fund; if a fee is below ₱1,000, the LRF is ₱10. Total charges vary with the number of classes and claims.\nSource: https://www.ipophil.gov.ph/trademark/filing/ and https://www.ipophil.gov.ph/help-and-support/trademark/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K322",
+  "section": "01.10",
+  "title": "01.10 Trademarks (IPOPHL) > When to file the Declaration of Actual Use (DAU): deadlines",
+  "text": "DAU deadlines: to keep a trademark, the owner must prove the mark is used by filing a Declaration of Actual Use (DAU) with IPOPHL: (1) within 3 years from the filing date of the application; (2) within 1 year from the 5th anniversary of registration; and (3) within 1 year from the 5th anniversary of each renewal (and, per Rule 204, within 1 year from the renewal date for marks renewed from January 1, 2017). A 6-month extension is possible only if requested before the 3-year period ends, with the fee paid. The 3rd-year and 5th-year DAU cannot be filed together. Not filing on time removes the mark from the register. Applies to Baguio City and Benguet trademark owners.\nSource: https://www.ipophil.gov.ph/help-and-support/trademark/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K323",
+  "section": "01.10",
+  "title": "01.10 Trademarks (IPOPHL) > What proof of use to attach to the DAU",
+  "text": "A Declaration of Actual Use (DAU) needs proof that the mark is used, plus the filing fee. Acceptable evidence under Rule 210 of IPOPHL MC No. 2017-010: labels of the mark as used; downloaded web pages clearly showing the goods sold or services offered in the Philippines; photos of goods or containers bearing the mark, or of the establishment where services are given; brochures or ads showing the mark in use; receipts or invoices of sale; and copies of service contracts showing use of the mark. A Baguio City or Benguet business can attach, for example, photos of its labeled products and its sales invoices. The DAU can also be submitted through eTMFile.\nSource: https://www.ipophil.gov.ph/help-and-support/trademark/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K187",
   "section": "01.10",
   "title": "01.10 Trademarks (IPOPHL) > Juana Make a Mark: trademark fee waiver for MSMEs",
   "text": "- IPOPHL's **Juana Make a Mark** program lets eligible micro, small, and medium enterprises register a trademark at reduced cost, saving up to about **₱2,400**: it waives the basic filing fee, the claim-of-color fee, and the publication fee.\n- Who qualifies (selection criteria): women-led enterprises; businesses in DTI or IPOPHL priority sectors (such as food processing, tourism, IT, design furniture and garments); businesses in disaster-prone or economically challenged areas; with a DTI-registered business name; at most 2 unregistered marks; no more than 5 employees; in business at least 1 year or with limited financial capacity.\n- How to apply: fill out the incentive package and trademark application form, submit them at any DTI business office (including in Baguio City and Benguet), get the DTI endorsement to IPOPHL, then submit to the IP Satellite Officer. Contact ipso@ipophl.gov.ph.\nSource: https://www.ipophil.gov.ph/juana-make-a-mark-trademark-assistance-program/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K324",
+  "section": "01.10",
+  "title": "01.10 Trademarks (IPOPHL) > IPOPHL office in Baguio City (IPSO Baguio - CAR)",
+  "text": "IPOPHL's Intellectual Property Satellite Office for the Cordillera (CAR) is IPSO Baguio, at the 2nd Floor, DTI-CAR Pine Lake View Building, #9 Otek St. corner Rizal Park, Salvosa Drive, Baguio City 2600. Officer: Engr. Jeanne D. Dangkeo; phone 074-442-6185, 074-442-7859, 0939-904-4329; email jeanne.dangkeo@ipophl.gov.ph. There is also an IP Help Desk at the DTI Ifugao Provincial Office in Lagawe. Satellite offices do not accept manual (paper) trademark filing, but the satellite officer can help you file online. IPSOs are housed in DTI offices.\nSource: https://www.ipophil.gov.ph/intellectual-property-satellite-office-ipso-2/ and https://www.ipophil.gov.ph/help-and-support/trademark/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K013",
@@ -174,6 +246,12 @@
   "text": "Required:\n1. BIR Form 1901, two originals (for manual applications).\n2. One photocopy of a government-issued ID showing name, address, and birthdate. If the ID has no address, add proof of residence or business address. Online applicants upload a selfie holding the ID.\n3. Invoices: either buy BIR Printed Invoices, or submit one final sample of your own invoices printed by an accredited printer.\n\nIf applicable:\n- DTI business name certificate (photocopy).\n- Special Power of Attorney and IDs if a representative files for you.\n- BMBE Certificate of Authority, if registered as a Barangay Micro Business Enterprise.\n- Work visa (foreign nationals); franchise documents (common carriers); proof of BOI/PEZA or similar registration."
  },
  {
+  "id": "K342",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Authority to Print your own invoices",
+  "text": "If you print your own invoices instead of buying BIR Printed Invoices, get an Authority to Print (ATP) from BIR on or before you start business, and use a BIR-accredited printer. Requirements (bound invoices): BIR Form 1906 (2 originals, manual filing) and a final clear sample of your own invoices; for later batches, your last ATP or Printer's Certificate of Delivery, or a booklet from it. Loose-leaf invoices also need a Permit to Use Loose Leaf Invoices. No fee. Printed invoices are stamped by the Client Support Section of your RDO (RDO 8 Baguio City, RDO 9 La Trinidad, see 17.6).\nSource: https://www.bir.gov.ph/secondary-registration (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K021",
   "section": "01.6",
   "title": "01.6 BIR Tax Registration > Documentary requirements: sole proprietor (BIR checklist F1101, revised July 2025)",
@@ -190,6 +268,30 @@
   "section": "01.6",
   "title": "01.6 BIR Tax Registration > After registration",
   "text": "- **Display the Certificate of Registration** at the place of business. Businesses that sell through a website, social media, or another online platform must also display an electronic copy of their COR there. (RR 7-2024, as summarized by Grant Thornton) Status: FOR VALIDATION.\n- **Books of accounts:** new businesses using manual books must register them before the deadline of the first quarterly or annual income tax return, whichever is earlier. (RMC 91-2024) Status: VERIFIED.\n- **Invoices:** issue BIR-registered invoices for sales."
+ },
+ {
+  "id": "K340",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Official receipts replaced by invoices (EOPT Act)",
+  "text": "Under RA 11976 (Ease of Paying Taxes Act), an Official Receipt (OR) can no longer be used as your main receipt. The invoice is now the proof of sale of goods and of services, for both cash and credit sales. ORs, delivery receipts, order slips, acknowledgment and collection receipts are only supplementary documents and must carry the phrase \"THIS DOCUMENT IS NOT VALID FOR CLAIM OF INPUT TAX.\" Tape invoices from a BIR-registered cash register or POS machine (with the BIR sticker signed by the RDO) count as invoices. Applies to businesses in Baguio City and Benguet.\nSource: https://www.bir.gov.ph/secondary-registration (Authority to Print Receipts & Invoices, FAQ) (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K341",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > What must be printed on an invoice",
+  "text": "BIR's required invoice details: your BIR-registered name (you may add your DTI business name or trade name); \"VAT Reg TIN\" or \"Non-VAT Reg TIN\" with your TIN and branch code; registered business address; the word \"Invoice\" (e.g. Sales Invoice, Service Invoice); date; serial number; quantity, unit cost, description, and total amount. The buyer's name, address and TIN are not needed for sales to end consumers (B2C). Non-VAT sellers with exempt sales mark \"EXEMPT\". Add spaces for senior citizen/PWD/solo parent ID numbers and discount details. Applies in Baguio City and Benguet.\nSource: https://www.bir.gov.ph/secondary-registration (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K343",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > How to register books of accounts",
+  "text": "Every business taxpayer must keep a journal and ledger or equivalent (e.g. subsidiary ledgers, simplified books). Register them with BIR online through ORUS (https://orus.bir.gov.ph), which generates a QR Stamp to paste on the first page of your books, or manually with BIR Form 1905 (2 originals) plus a new set of permanently bound books. Loose-leaf books also need the Permit to Use Loose Leaf Books and an affidavit on the completeness of entries; computerized books need the CAS/CBA acknowledgment or permit and the files on DVD/USB. No fee. For the deadline see 01.6 (After registration). Applies in Baguio City and Benguet.\nSource: https://www.bir.gov.ph/secondary-registration (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K355",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Registering a cash register (CRM) or POS machine",
+  "text": "A business in Baguio City or Benguet that issues tape invoices from a cash register machine (CRM) or point-of-sale (POS) system needs a BIR Permit to Use (PTU) before using the machine. The software supplier or provider applies for you online through BIR's eAccReg system; the business owner submits no documents. BIR emails you when the PTU is approved or denied, and you print the PTU from eAccReg. Tape invoices from a BIR-registered CRM/POS count as invoices.\nSource: https://www.bir.gov.ph/secondary-registration (Application for Permit to Use CRM/POS) (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K024",
@@ -216,6 +318,12 @@
   "text": "- File BIR Form 1905 to close the business registration. Requirements include the form (two originals), a list of ending inventory, an inventory of unused invoices, and the original Certificate of Registration and other BIR permits. A ₱30 DST is affixed to the tax clearance issued for closure. (BIR checklist F1105C, July 2025)\n- RMC No. 47-2026 streamlines closure procedures. A business that stops operating without closing its BIR registration stays liable for filing returns and paying taxes and penalties until closure is completed. (PwC Tax Alert No. 28, 2026)\n(Status: VERIFIED, FOR VALIDATION)"
  },
  {
+  "id": "K356",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Moving your business to another RDO (e.g. Baguio City to La Trinidad)",
+  "text": "If your business moves to an address under a different BIR Revenue District Office (for example from RDO 8 Baguio City to RDO 9 La Trinidad, see 17.6), transfer your BIR registration. At the old RDO: BIR Form 1905 (3 originals) and an inventory list of unused invoices (to destroy them, or a letter asking to keep using them), plus a notarized Transfer Commitment Form if you have open cases. At the new RDO: BIR Form 1905 (2 originals); for sole proprietors and companies, the new Mayor's Permit or the received permit application; unused invoices for re-stamping. Corporations also submit amended SEC articles.\nSource: https://www.bir.gov.ph/primary-registration (Application for Registration Update) (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K028",
   "section": "01.7",
   "title": "01.7 Sector-Specific Permits (initial notes)",
@@ -232,6 +340,12 @@
   "section": "01.7",
   "title": "01.7 Sector-Specific Permits > FDA License to Operate: how to apply",
   "text": "- **Manufacturers** apply through the FDA e-Portal (https://eportal.fda.gov.ph). First request a user account by emailing fdac@fda.gov.ph, with a notarized authorization letter.\n- **Distributors and traders** apply through FDA eServices (http://eservices.fda.gov.ph). No account needed; the email you declare cannot be changed later.\n- Initial LTO requirements: the online application form (location plan, GPS coordinates, name of the Qualified Person); proof of business name registration (DTI certificate, SEC or CDA registration); the business permit if the address differs from the registration; and proof of capital (latest financial statement).\n- If the application is disapproved, the payment is forfeited.\nSource: https://www.fda.gov.ph/faqs/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K334",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits > Why an FDA License to Operate application can be denied",
+  "text": "The FDA may disapprove a License to Operate (LTO) application for: unclear, incomplete or non-compliant documents; no physical office found during inspection (without FDA permission); misrepresentation or false entries; or violating the terms of a license (AO 2020-0017, AO 2014-029). You may re-apply, but the payment is forfeited. In eServices, renewal and variation applications must be filed separately. Processing times per LTO type are in the FDA Citizen's Charter. For payment concerns email cashier@fda.gov.ph or fdac@fda.gov.ph. Applies to food businesses in Baguio City and Benguet.\nSource: https://www.fda.gov.ph/faqs/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K168",
@@ -252,10 +366,22 @@
   "text": "- Every processed food product (including food supplements, additives, and bottled water) that is manufactured, distributed, or repacked for sale needs an FDA **Certificate of Product Registration (CPR)** before it is sold.\n- Apply through the FDA E-Registration system. Requirements include compliant labels, photos of the product from all angles, and the loose labels or artwork.\n- The fee is computed by the system based on the product type and the validity applied for (2 to 5 years).\n- Processing takes about **20 working days**.\nSource: https://www.fda.gov.ph/faqs/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K333",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits > FDA food label rules: expiry date (no Best Before), artwork, label changes",
+  "text": "FDA food label rules for businesses in Baguio City and Benguet: FDA does not accept a \"Best Before\" date; labels must show an expiry, use-by or consume-before date (day/month/year, month spelled out). When registering a product you may submit a clear, complete artwork or proposed label instead of the printed label. Submit one label showing the main display and side panels for each package size, plus photos of the product from at least 2 angles. To change a label after getting a CPR, file an amendment in the e-portal with a letter of intent and the revised label; the FDA fee for this label amendment is ₱210. You cannot use a brand name already registered by another company without the owner's authorization.\nSource: https://www.fda.gov.ph/faqs/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K171",
   "section": "01.7",
   "title": "01.7 Sector-Specific Permits > FDA free LTO and product registration training for MSMEs (BBMSMEs)",
   "text": "- The FDA's **Bigyang-halaga, Bangon MSMEs (BBMSMEs)** program helps micro, small, and medium food businesses and cosmetics makers get their LTO and product registration.\n- It includes a **2-day training** by FDA experts on licensing, food product registration, and Good Manufacturing Practice, including how to use the FDA online systems.\n- The FDA runs it with local governments: ask your city or municipal LGU in Baguio City or Benguet for the schedule, or email bbmsme@fda.gov.ph.\nSource: https://www.fda.gov.ph/bbmsmes/ (program brochure) (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K335",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits > Proposed FDA rule for micro food producers using shared service facilities (draft)",
+  "text": "The FDA has published a DRAFT order, \"Guidance in the Authorization of Covered Micro Enterprise Utilizing Shared Service Facilities for Low-Risk Food Products\". It would cover only micro enterprises dealing solely in low-risk food products that use DTI Shared Service Facilities (SSF), as an alternative regulatory pathway for MSMEs. Comments were due November 16, 2026. It is a draft, not yet in force: until FDA issues the final rule, micro food producers in Baguio City and Benguet should follow the normal LTO and CPR rules (see 01.7) and ask FDA or DTI Benguet.\nSource: https://www.fda.gov.ph/draft-for-comments-guidance-in-the-authorization-of-covered-micro-enterprise-utilizing-shared-service-facilities-for-low-risk-food-products/ (checked November 23, 2026)\n(Status: FOR VALIDATION)"
  },
  {
   "id": "K191",
@@ -422,8 +548,38 @@
  {
   "id": "K055",
   "section": "02.7",
-  "title": "02.7 Other Benguet LGUs",
-  "text": "- Each municipality (for example La Trinidad, Itogon, Tuba) has its own revenue code, fees, and procedures. (DTI interview)\n- Example: Itogon's revenue code sets the renewal deadline without penalty at January 20; for 2026 the LGU extended it to January 30. (LGU Itogon, January 22, 2026)\n- The chatbot should direct users outside Baguio City to their municipal BPLO or Negosyo Center.\n(Status: VERIFIED, PENDING)"
+  "title": "02.7 Business permits in other Benguet towns (La Trinidad, Itogon, Tuba, Bokod)",
+  "text": "Baguio City rules do not apply outside the city. Each Benguet municipality has its own revenue code, fees, requirements and deadlines and issues its own Mayor's Permit through its Business Permits and Licensing Office (BPLO). Example: Itogon's revenue code sets the renewal deadline without penalty at January 20; for 2026 the LGU extended it to January 30 (LGU Itogon, January 22, 2026). Official guides were read for Itogon (02.9), Tuba (02.10) and Bokod (02.11). La Trinidad's official website could not be opened, so for La Trinidad ask the municipal BPLO or the nearest Negosyo Center.\nSource: https://itogon.gov.ph/, https://www.tuba.gov.ph/ and https://bokodbenguet.gov.ph/new-mayors-permit-business-permit/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K353",
+  "section": "02.11",
+  "title": "02.11 Business permit in Bokod, Benguet > Requirements and steps",
+  "text": "Bokod, Benguet, new or renewed Mayor's Permit: barangay clearance to do business and solid waste segregation certificate; application form and Mayor's clearance; health certificate and sanitary permit (Municipal Health Office); BIR proof of payment if applicable; police clearance; tax declaration; tax clearance; and if applicable zoning clearance, building permit, DTI/SEC/CDA registration, authorization letter, lease contract. Steps: submit at the BPLS, Mayor's Office, Poblacion, Bokod; pay at the Treasury Office (and BFP fire fees if required); return to claim the permit.\nSource: https://bokodbenguet.gov.ph/new-mayors-permit-business-permit/ (checked November 23, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K348",
+  "section": "02.10",
+  "title": "02.10 Business permit in Tuba, Benguet > Business tax and working permits",
+  "text": "Tuba, Benguet's Treasury Office Citizen's Charter (2025): for a new business, business tax is 1/20 of 1% of the capital investment; renewals follow tables based on the previous year's gross sales or receipts. Workers in Tuba need an occupational or working permit from the Mayor's Office: submit the form, pay the Tuba working permit fee of ₱200 at the Treasury Office, release in about 1 day (₱200 also applies to workers of eateries and shops serving the public). Special Mayor's Permits for stalls and booths during fiestas, trade fairs and foundation day cost ₱1,500 per activity.\nSource: https://www.tuba.gov.ph/offices/municipal-treasury-office/ and https://www.tuba.gov.ph/offices/municipal-mayors-office/ (checked November 23, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K350",
+  "section": "02.10",
+  "title": "02.10 Business permit in Tuba, Benguet > Public market and food court stall rental",
+  "text": "Tuba Public Market and Food Court rental rates, Tuba, Benguet (Treasury Office Citizen's Charter 2025): meat and fish section ₱100 per sq. m. plus ₱100 a month for water; fruits and vegetables by daily cash ticket; dry goods ₱100 per sq. m. plus ₱100 a month for water; food court ₱2,000 a month per stall plus ₱200 for water; product display center space ₱2,500 a month. Pay stall rent at the Treasury Office windows and bring your latest official receipt if you have one. The charter also covers the public market in the Philex Mines area.\nSource: https://www.tuba.gov.ph/offices/municipal-treasury-office/ (checked November 23, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K344",
+  "section": "02.9",
+  "title": "02.9 Business permit in Itogon, Benguet > New permit requirements and steps",
+  "text": "Itogon, Benguet's Citizen's Charter (2024) lists for a new Mayor's Permit: barangay business clearance with community tax certificate; Unified Application Form; DTI, SEC, CDA or association registration; sanitary permit; contract of lease if renting; occupancy permit if required. Some businesses need more: eateries, bakeries, street food vendors and caterers need health certificates and a food handler's certificate. Steps: (1) file at the Business Permits and Licensing Section, which assigns a Business Identity Number; (2) pay at the Treasury Office; (3) claim the permit and business plate. About 1 hour if complete.\nSource: https://itogon.gov.ph/2024/07/citizens-charter/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K345",
+  "section": "02.9",
+  "title": "02.9 Business permit in Itogon, Benguet > Renewal and Mayor's Permit fees for small businesses",
+  "text": "Itogon, Benguet renewal: bring the barangay business clearance with community tax certificate, sanitary permit, and last year's audited financial statement, sworn declaration of gross sales or ITR; file, pay, then claim the permit and sticker (about 40 minutes). Itogon Mayor's Permit fees (2023 Revised Revenue Code, separate from business tax): retailers ₱400 (micro) to ₱3,000 (large); food stall, stand, cart or mobile food ₱400; vending machines ₱400; cafes, canteens and caterers ₱500 (micro) to ₱5,000 (large). Confirm with the Treasury Office.\nSource: https://itogon.gov.ph/2024/07/citizens-charter/ (checked November 23, 2026)\n(Status: FOR VALIDATION)"
  },
  {
   "id": "K056",
@@ -492,6 +648,12 @@
   "text": "Negosyo Centers are set up under the Go Negosyo Act (RA 10644) to promote ease of doing business and help MSMEs access services. They are located in DTI offices, LGUs, schools, NGOs, and malls.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-negosyo-center/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K302",
+  "section": "03.3",
+  "title": "03.3 Negosyo Centers > Who can use them, MSME size limits, and finding the nearest one",
+  "text": "- Business Counsellors at Negosyo Centers give tailored advice, help with registration papers, and link you to trainings.\n- Any MSME may use them (sole proprietorship, partnership, corporation or cooperative). Size by total assets excluding land: **micro** up to ₱3M; **small** ₱3M to ₱15M; **medium** ₱15M to ₱100M.\n- DTI's online Negosyo Center directory finds the center for Baguio City or a Benguet town and lists counsellors' contacts. National office: negosyocenter@dti.gov.ph, (02) 7791-3384, Mon-Fri 8 AM-5 PM.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-negosyo-center/dti-faqs and https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-negosyo-center/dti-contact-us (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K193",
   "section": "03.3",
   "title": "03.3 Negosyo Centers > What the Go Negosyo Act (RA 10644) provides",
@@ -519,7 +681,13 @@
   "id": "K069",
   "section": "03.5",
   "title": "03.5 DTI programs: overview",
-  "text": "| Program | Description | Who can join | How to join |\n|---|---|---|---|\n| Consumer advocacy | Consumer education and protection (see 09.3) | Public | DTI office |\n\n- DTI said all its programs are free; only registration fees are paid. (INTERVIEW-DERIVED)\n- Go Lokal! and SME Roving Academy were not discussed in the DTI interview and are not yet researched."
+  "text": "| Program | Description | Who can join | How to join |\n|---|---|---|---|\n| Consumer advocacy | Consumer education and protection (see 09.3) | Public | DTI office |\n\n- DTI said all its programs are free; only registration fees are paid. (INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K306",
+  "section": "03.5",
+  "title": "03.5 DTI programs > Go Lokal! (selling in stores through DTI)",
+  "text": "- **Go Lokal!** is a DTI market access program that helps MSMEs get into mainstream retail through partner malls and stores. DTI lists free services: merchandise development so products are commercially viable, and store space from retail partners.\n- The page names a Go Lokal! Concept Store in the Trade and Industry Building, Makati City, and links to www.golokal.dti.gov.ph.\n- The page dates from the COVID-19 'Buy Local, Go Lokal' campaign; how a Baguio City or Benguet business joins now is not confirmed. Ask DTI Benguet (see 17.1).\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-go-lokal (checked November 23, 2026)\n(Status: FOR VALIDATION)"
  },
  {
   "id": "K148",
@@ -532,6 +700,12 @@
   "section": "03.5",
   "title": "03.5 DTI programs > OTOP Next Gen",
   "text": "OTOP Next Gen helps MSMEs that already have a \"minimum viable product\" improve quality, design, packaging, standards compliance, and marketability. Contact otop@dti.gov.ph or the local DTI office.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-otop-philippines (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K354",
+  "section": "03.5",
+  "title": "03.5 DTI programs > OTOP Next Gen: who can join (business running at least 1 year)",
+  "text": "- DTI's Negosyo Center FAQ says the **basic requirement for OTOP Next Gen** is that **your business has been running for at least 1 year with a viable product**.\n- OTOP Next Gen gives product development, training and referrals to improve design, quality and volume; OTOP.PH (the OTOP Philippines Hub) gives physical and online stores to showcase OTOP products.\n- Businesses in Baguio City and Benguet apply through the DTI Benguet Provincial Office or a Negosyo Center (see 17.1).\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-negosyo-center/dti-faqs (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K150",
@@ -668,8 +842,8 @@
  {
   "id": "K090",
   "section": "04.2",
-  "title": "04.2 Loans through SB Corporation and partner institutions > Barangay Micro Business Enterprise (BMBE)",
-  "text": "- Small businesses can register as a BMBE at their city or municipal hall. Certified BMBEs are exempt from income tax on their business income and get priority access to credit. (First Circle guide; RA 9178)\n- Under RA 10644, Negosyo Centers handle BMBE registration. (See 03.)\n(Status: FOR VALIDATION)"
+  "title": "04.2 Barangay Micro Business Enterprise (BMBE): how to register and what you get",
+  "text": "- A **BMBE** (RA 9178) is a business in production, processing, trading or services with total assets, **excluding land**, of **₱3 million or less**.\n- Incentives: **income tax exemption** on business income, minimum wage law exemption, a special credit window at government banks.\n- **Register at a Negosyo Center** (or DTI office if none); DTI alone issues the BMBE Certificate of Authority.\n- Bring the DTI, SEC or CDA certificate and the BMBE form.\n- The **DTI BMBE Certificate of Authority is free of charge** and DTI issues it within 15 working days. Applies in Baguio City and Benguet.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-negosyo-center/dti-faqs (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K091",
@@ -694,6 +868,12 @@
   "section": "04.3",
   "title": "04.3 Pangkabuhayan sa Pagbangon at Ginhawa (PPG)",
   "text": "**What it is (official description):** A DTI livelihood seeding and entrepreneurship development program for micro-enterprises affected by fire incidents and other calamities. PPG provides information materials, business counseling and mentoring, enterprise development training, and livelihood kits.\n\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K307",
+  "section": "04.3",
+  "title": "04.3 Livelihood kits > Livelihood Seeding Program - Negosyo Serbisyo sa Barangay (LSP-NSB)",
+  "text": "- **LSP-NSB** brings DTI help to barangays through Negosyo Center counsellors. It covers sole proprietors, cooperatives and associations; **calamity-hit MSMEs get priority**. Each **DTI LSP-NSB livelihood kit is worth ₱5,000 to ₱8,000** in goods (not cash), chosen to fit the business.\n- For a kit: business name certificate or barangay permit; attend DTI sessions; Simplified Action Plan and Pledge of Commitment.\n- Ask a Negosyo Center or DTI Benguet. The page shows only FY 2020 program funding, so current funding is unconfirmed.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-livelihood-seeding-program-negosyo-serbisyo-sa-barangay (checked November 23, 2026)\n(Status: FOR VALIDATION)"
  },
  {
   "id": "K093",
@@ -744,16 +924,34 @@
   "text": "- OWWA's Education and Livelihood Assistance Program is for dependents of OFWs who died while active OWWA members.\n- It gives **₱15,000 for a livelihood activity** to the surviving family, plus education assistance for a dependent (up to ₱5,000 elementary, ₱8,000 high school, ₱10,000 college per school year).\nSource: https://owwa.gov.ph/education-and-livelihood-assistance-program-elap-2/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K336",
+  "section": "04.6",
+  "title": "04.6 Programs for OFWs > OWWA skills training scholarships for OFWs and dependents",
+  "text": "OWWA gives short-term training grants to qualified OFWs and their dependents. The Skills-for-Employment Scholarship Program (SESP) pays up to ₱14,500 per course for a 6-month to 2-year technical-vocational course in a school accredited by TESDA, MARINA or other government training institutions. The Information Technology Training Program (ITTP) is a 5-day computer course (internet, Word, Excel, PowerPoint). Seafarers have a separate upgrading program (up to ₱7,500 per course). In Baguio City and Benguet, ask OWWA RWO-CAR (see 17.9).\nSource: https://owwa.gov.ph/short-term-courses/ (checked November 23, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
   "id": "K175",
   "section": "04.7",
   "title": "04.7 DOST SETUP > Government help to buy equipment and upgrade technology for small businesses",
   "text": "- DOST's **Small Enterprise Technology Upgrading Program (SETUP)** helps small businesses in Baguio City, Benguet, and the rest of the country buy equipment and improve products and productivity with technology: equipment and technology acquisition, training and consultancy, help meeting standards (testing and calibration), packaging and label design, shop-floor research, and IT solutions, funded through its Innovation-Enabling Fund (iFund).\n- Priority sectors: food processing; furniture; gifts, decor, and handicrafts; agriculture, aquaculture, and forestry; metals and engineering; ICT; health and wellness; halal; energy and environment; creative industries.\n- Process: a Technology Needs Assessment by the Provincial S&T Office, then help acquiring the technology. Amounts and repayment terms are not on the page; ask DOST.\nSource: https://car.dost.gov.ph/technology-transfer-and-commercialization-innovation-system-support/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K338",
+  "section": "04.7",
+  "title": "04.7 DOST SETUP > Other DOST-CAR help for small businesses: lab testing, packaging design, consultancy, training",
+  "text": "Besides SETUP, DOST-CAR offers MSMEs in Baguio City and Benguet: (1) Regional Standards and Testing Laboratories (chemical, microbiological, metrology), FDA-accredited for food testing and DOH-accredited for water testing; (2) packaging and label design by DOST-CAR's artist-designer, with the ITDI Packaging Technology Division; (3) technical consultancy: Manufacturing Productivity Extension (MPEX), Consultancy for Agricultural Productivity Enhancement (CAPE), Food Safety, and Energy Audit; (4) technology trainings scheduled by MSME needs. Fees are not listed; ask the PSTO.\nSource: https://car.dost.gov.ph/testing-and-calibration-services/ and https://car.dost.gov.ph/technical-consultancy-services/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K176",
   "section": "04.7",
   "title": "04.7 DOST SETUP (technology upgrading) > DOST offices for Baguio City and Benguet",
   "text": "- **DOST Provincial S&T Office (PSTO) – Benguet:** Governor Pack Road, Baguio City; 0917-818-8175; pstc-benguet@car.dost.gov.ph; Facebook: DOST Baguio-Benguet.\n- **DOST-CAR Regional Office:** (074) 422-2214. Regional Standards and Testing Laboratory: 0908-233-8955. Regional Metrology Laboratory: 0960-895-7850.\nSource: https://car.dost.gov.ph/contact-us/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K339",
+  "section": "04.7",
+  "title": "04.7 DOST SETUP > DOST-CAR regional office address",
+  "text": "The DOST-CAR Regional Office is at the BSU Compound, Km. 6, La Trinidad, Benguet 2601. Email records@car.dost.gov.ph; tel. (074) 422-2214; mobile 0917-506-3610. The website footer lists the PSTO Baguio-Benguet email as dost-baguio-benguet@car.dost.gov.ph (the Contact Us page lists pstc-benguet@car.dost.gov.ph). Start with the PSTO for SETUP and other DOST help for businesses in Baguio City and Benguet.\nSource: https://car.dost.gov.ph/ (site footer) (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K095",
@@ -798,6 +996,18 @@
   "text": "- Assistance is given as working capital in the form of raw materials, tools, and equipment, plus basic training (business planning, bookkeeping), one year of group accident insurance, protective equipment, and advisory services. Group projects need a management team and a profit-sharing scheme in the business plan.\n- **How to apply:** through DOLE-accredited co-partners (ACPs), such as LGUs (often through the PESO), cooperatives, or organizations, which submit the proposal or business plan to DOLE. DTI can help prepare the proposal (INTERVIEW-DERIVED, see 04.4)."
  },
  {
+  "id": "K352",
+  "section": "05.5",
+  "title": "05.5 Livelihood > PESO referral to DOLE livelihood (DILP) in Tuba and Benguet",
+  "text": "In Tuba, Benguet, the Municipal Public Employment Services Office (PESO) reviews and endorses individual livelihood proposals to DOLE under the DOLE Integrated Livelihood Program (DILP). Submit the livelihood proposal form and documents to the PESO; no fee, about 20 minutes. DOLE does the final evaluation and approval, so keep your phone line open. The Province of Benguet PESO, whose mandate includes promoting livelihood and self-employment: (074) 422-2306, 422-5657 / 422-5760 local 133, pesobenguet@yahoo.com.\nSource: https://www.tuba.gov.ph/municipal-public-employment-services-office-mpeso/ and https://benguet.gov.ph/office-of-the-governor/peso/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K329",
+  "section": "05.3",
+  "title": "05.3 DOLE Integrated Livelihood Program (DILP / Kabuhayan Program) > DILP application forms in the Cordillera (CAR): proposal, letter of intent, profile",
+  "text": "DOLE-CAR, which serves Baguio City and Benguet, posts the DILP (livelihood) forms on its downloadable forms page:\n- **Project Proposal**: Individual (Annex N-1) or Group (Annex N-2).\n- **Letter of Intent** (Annex Q).\n- **Beneficiary Profile Form** in Tagalog (Annex O-1) or English (Annex O-2), and Profile of Authorized Representative/s (Annex AC).\n- Other forms used later in the process: Memorandum of Agreement (Annex R), project evaluation sheets (Annex S-1/S-2), Notice to Proceed (Annex T-1/T-2), and liquidation forms such as the Report on Disbursement, Final Fund Utilization Report and Deed of Donation.\nAsk the DOLE Baguio–Benguet Field Office (see 17.8) which forms you need.\nSource: https://car.dole.gov.ph/downloadable-links/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K102",
   "section": "05.3",
   "title": "05.3 DOLE Integrated Livelihood Program (DILP / Kabuhayan Program)",
@@ -826,6 +1036,12 @@
   "section": "06.1",
   "title": "06.1 Free DTI trainings",
   "text": "- DTI and Negosyo Centers run free trainings and seminars for entrepreneurs, including digitalization trainings with DICT. (INTERVIEW-DERIVED)\n- DTI offices also run short workshops such as costing and pricing. (DTI regional releases)\n- KMME mentoring and YEP workshops: see 03.5.2 and 03.5.5."
+ },
+ {
+  "id": "K305",
+  "section": "06.1",
+  "title": "06.1 Free DTI trainings > SME Roving Academy and DTI training partners",
+  "text": "- **SME Roving Academy (SMERA)** is DTI's continuous learning program for MSMEs. **Register with the DTI provincial office** (DTI Benguet for Baguio City and Benguet, see 17.1). An SME counsellor checks your needs, recommends trainings, tells you when and where partners (LGUs, schools, chambers, banks) hold them, and follows up.\n- DTI also trains through the **Philippine Trade Training Center** (market trends, standards, costing and pricing) and the Philippine Center for Entrepreneurship (KMME, see 03.5.2).\n- BSMED: bsmed@dti.gov.ph, (02) 7791-3310.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-sme-roving-academy (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K105",
@@ -906,6 +1122,36 @@
   "text": "- Follow consumer rules enforced by DTI, such as the Price Tag Act, proper product labeling, and the ban on giving candy instead of coins as change. Sales promotions need a DTI permit. (DTI interview; see 09.3)\n- Packaged food must meet FDA requirements; see 01.7."
  },
  {
+  "id": "K308",
+  "section": "07.4",
+  "title": "07.4 Rules for selling > Price tags are required, in stores and online",
+  "text": "- **RA 7394 (Consumer Act), Art. 81:** retail products must show their price on a tag, label or marking, and cannot be sold above it.\n- **RA 7581 (Price Act), Sec. 5:** selling a basic necessity or prime commodity without a price tag is prima facie evidence of profiteering.\n- **Online sellers too:** DTI warned against hiding prices with 'PM sent'. The **penalty under Art. 95 of RA 7394 for not showing prices** is a **fine of ₱200 to ₱5,000** and/or 1 to 6 months in jail. Applies in Baguio City and Benguet.\nSource: https://www.dti.gov.ph/dti-archives/dti-news-archived/dti-dti-warns-business-owners-establishments-that-price-tag-is-a-must (release dated May 6, 2022) (checked November 23, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K309",
+  "section": "07.4",
+  "title": "07.4 Rules for selling > 'No Return, No Exchange' signs are not allowed",
+  "text": "- Stores may **not** print or post 'No Return, No Exchange' anywhere (RA 7394 rules, DAO 2 s. 1993); blot it out of old receipts.\n- For a **hidden defect** or poor service the customer chooses replacement or refund; exchanges cannot be limited to once.\n- No return is owed for change of mind, a cheaper price elsewhere, or damage by the buyer.\n- No fixed deadline; a rule of reason applies. Other proof of purchase can replace the receipt.\n- **One price**, cash or card; **no credit card surcharge**. Applies in Baguio City and Benguet.\nSource: https://www.dti.gov.ph/dti-consumer-space/dti-consumer-education (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K310",
+  "section": "07.4",
+  "title": "07.4 Rules for selling > What must be on a product label",
+  "text": "DTI's minimum labeling for consumer products: registered brand name; name and address of the manufacturer or importer; general make or active ingredients; **net quantity**; **country of manufacture**. **Food** must also show the **expiration date**, whether semi- or fully processed, ready to cook or ready to eat, nutritive value, and whether ingredients are natural or synthetic. Food supplements must say 'No Approved Therapeutic Claim'. Use English or Filipino. For packaged food from Baguio City or Benguet, FDA rules also apply (see 01.7).\nSource: https://www.dti.gov.ph/dti-consumer-space/dti-consumer-education (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K311",
+  "section": "07.4",
+  "title": "07.4 Rules for selling > Gift certificates and gift cards cannot expire",
+  "text": "Shops and cafes in Baguio City or Benguet that sell gift certificates, checks or cards follow DTI DAO 10-04: - Since **July 1, 2012**, gift certificates **may not carry an expiry date**; they stay valid until used. - Free ones given in awards, loyalty or promo programs are not covered. - Purchases paid with them still get promos, warranties, return policies, and senior citizen and PWD discounts. - The seller is not liable for ones lost or defaced beyond checking through no fault of the seller.\nSource: https://www.dti.gov.ph/dti-consumer-space/dti-consumer-education (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K312",
+  "section": "07.4",
+  "title": "07.4 Rules for selling > Suggested retail prices (SRP) and e-Presyo",
+  "text": "- DTI publishes **suggested retail prices (SRPs)** for basic necessities and prime commodities (canned goods, bottled water, dairy, household supplies). The latest bulletin linked is dated **May 11, 2026**.\n- **e-Presyo**, DTI's online price monitoring system, lists SRPs, seasonal items (Noche Buena, school supplies), construction material prices, and price freezes.\n- Sari-sari stores in Baguio City and Benguet can use these as a price guide. Older data: CPAB@dti.gov.ph, (02) 7791-3148.\nSource: https://www.dti.gov.ph/dti-consumer-space/dti-programs-projects/dti-e-presyo (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K177",
   "section": "07.4",
   "title": "07.4 Rules for selling > Sales promotion permits from DTI",
@@ -916,6 +1162,18 @@
   "section": "07.5",
   "title": "07.5 Selling online: the Internet Transactions Act (RA 11967)",
   "text": "- RA 11967, the **Internet Transactions Act of 2023**, protects online consumers and merchants. DTI regulates e-commerce through its new **E-Commerce Bureau**.\n- The law took full effect on **June 20, 2025**, when its 18-month transition period ended. DTI can now issue compliance orders, take down websites, and blacklist or fine non-compliant online sellers.\n- Online merchants are primarily liable to consumers for complaints about their online sales; the platform is liable only in a secondary way.\n- The E-Commerce Bureau keeps an **Online Business Database** of online merchants and platforms.\n- Online sellers in Baguio also need a city business permit (02.1) and BIR registration, and must display their BIR certificate online (01.6)."
+ },
+ {
+  "id": "K313",
+  "section": "14.6",
+  "title": "14.6 Online selling > E-Commerce Philippine Trustmark: what it is and whether you need it",
+  "text": "- The **E-Commerce Philippine Trustmark** is a government digital badge from the DTI E-Commerce Bureau (RA 11967). It shows an online seller follows the law on registration, tax, privacy, pricing and complaints; it does not endorse product quality.\n- **Required?** The FAQ conflicts: one answer says all online merchants must be Trustmark-registered; another says it is **voluntary but strongly encouraged**. Check with DTI before advising a Baguio City or Benguet seller.\n- Each badge has a 14-digit number and QR code, verifiable on the site. Contact: trustmark@dti.gov.ph, (02) 7791-3282.\nSource: https://trustmark.dti.gov.ph/faqs (checked November 23, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K314",
+  "section": "14.6",
+  "title": "14.6 Online selling > How to apply for the Trustmark, fees and validity",
+  "text": "- Apply at https://trustmark.dti.gov.ph with: DTI (or SEC/CDA) registration; BIR Certificate of Registration with the trade name; list of your selling platforms; one ID (from Jan 8, 2026: driver's license, PhilSys, passport, TIN ID, UMID or ACR); and your complaint-handling steps.\n- **Total DTI Trustmark cost:** micro business (assets up to ₱3M) **₱130** (DTI waives the application fee; ₱100 web administration fee + ₱30 documentary stamp); small business ₱630 in total; medium business ₱1,130 in total.\n- Processed in **7 working days**; valid **1 year**; renew 3 months to 30 days before expiry. Applies to online sellers in Baguio City and Benguet.\nSource: https://trustmark.dti.gov.ph/faqs (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K117",
@@ -1017,7 +1275,7 @@
   "id": "K133",
   "section": "08.3",
   "title": "08.3 Topics not covered: refer to the office",
-  "text": "**Business permit requirements and fees in La Trinidad, Itogon, Tuba, and other Benguet towns**\nNot covered in detail. Each municipality has its own revenue code, requirements, fees, and deadlines, so Baguio City rules do not automatically apply. Ask the municipal Business Permits and Licensing Office (BPLO) or the nearest Negosyo Center. (See 02.7.)"
+  "text": "**Business permit requirements and fees in La Trinidad and other Benguet towns (except Itogon, Tuba and Bokod)**\nNot covered in detail for La Trinidad and the Benguet towns other than Itogon (02.9), Tuba (02.10) and Bokod (02.11). Each municipality has its own revenue code, requirements, fees, and deadlines, so Baguio City rules do not automatically apply. Ask the municipal Business Permits and Licensing Office (BPLO) or the nearest Negosyo Center. (See 02.7.)"
  },
  {
   "id": "K134",
@@ -1071,7 +1329,7 @@
   "id": "K142",
   "section": "09.2",
   "title": "09.2 Agency responsibilities (initial)",
-  "text": "| Concern | Agency |\n|---|---|\n| Trademarks | Intellectual Property Office of the Philippines (IPOPHL) |\n| BMBE registration | Negosyo Center / city or municipal hall |"
+  "text": "| Concern | Agency |\n|---|---|\n| Trademarks | Intellectual Property Office of the Philippines (IPOPHL) |\n| BMBE registration | Negosyo Center (DTI) |"
  },
  {
   "id": "K143",
@@ -1116,10 +1374,34 @@
   "text": "- Private-sector workers with an employer–employee relationship are covered under PhilHealth's formal economy program. The member submits a PhilHealth Member Registration Form.\n- PhilHealth employer registration steps and premium rates are not covered here; ask PhilHealth or register through the Central Business Portal (https://business.gov.ph).\n- For Pag-IBIG employer registration and contributions, see 10.7.\nSource: https://www.philhealth.gov.ph/members/formal/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K330",
+  "section": "10.8",
+  "title": "10.8 Hiring employees > When to remit Pag-IBIG contributions (deadlines)",
+  "text": "- Pag-IBIG asks all registered employers to use the **Electronic Submission of Remittance Schedule (eSRS)** through **Virtual Pag-IBIG for Employers** to pay employees' membership savings and loan payments. After submitting the remittance schedule online, you get a **Payment Reference Number** to pay through accredited collecting partners.\n- **Due dates** depend on the first letter of the employer's name:\n \n- A to F: 1st to 7th day of the month after the period covered\n \n- G to N: 5th to 11th day of the month after\n \n- O to Z, numbers or special characters: 9th to 15th day of the month after\n- Applies to employers in Baguio City and Benguet.\nSource: https://www.pagibigfund.gov.ph/ESRS.html (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K163",
   "section": "10.5",
   "title": "10.5 Hiring employees > Minimum wage in Baguio City and Benguet (Cordillera, CAR)",
   "text": "- Baguio City and all Benguet towns (including La Trinidad, Tuba, and Itogon) are in the Cordillera Administrative Region (CAR), so the CAR wage orders apply.\n- Private sector: **₱505.00 per day** under **Wage Order No. CAR-24**, effective **December 30, 2025**.\n- Domestic workers (kasambahay): **₱6,600.00 per month** under **Wage Order No. CAR-DW-07**, effective December 30, 2025.\n- Wage orders change. Check the National Wages and Productivity Commission for the current order: https://nwpc.dole.gov.ph/\nSource: https://nwpc.dole.gov.ph/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K331",
+  "section": "10.10",
+  "title": "10.10 Hiring employees > Pag-IBIG for a kasambahay (household employee)",
+  "text": "- Under the Batas Kasambahay (RA 10361), Pag-IBIG membership is **mandatory** once a kasambahay has worked for **at least one month**. The household employer must ensure registration and regular, correct remittance.\n- Covered: general househelp, yaya, cook, gardener, laundry person, and others regularly doing household work for one household (including live-out). Family drivers, service providers and occasional helpers may join as voluntary members.\n- The kasambahay registers online at Virtual Pag-IBIG (membership category: Employed – Private Household), gets the MID number after 2–3 working days, and gives it to the employer. Applies in Baguio City and Benguet.\nSource: https://www.pagibigfund.gov.ph/HouseholdEmployeeMembership.html (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K332",
+  "section": "10.10",
+  "title": "10.10 Hiring employees > Who pays the kasambahay's Pag-IBIG contribution",
+  "text": "Pag-IBIG's sharing rule for household employees (kasambahay):\n- Monthly salary **₱1,500 or less**: the employer pays everything (3% of monthly salary).\n- **More than ₱1,500 up to ₱4,999**: the employer pays everything (4% of monthly salary).\n- **₱5,000 or more**: the kasambahay pays 2% and the employer pays 2%, up to a maximum fund salary of ₱10,000 (e.g., ₱5,000 salary: ₱100 + ₱100).\n- The employer's share **cannot be deducted** from the kasambahay's salary. Extra savings above the required amount are voluntary and the employer does not have to match them.\nSource: https://www.pagibigfund.gov.ph/HouseholdEmployeeMembership.html (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K328",
+  "section": "10.9",
+  "title": "10.9 Hiring employees > Where to find DOLE rules on 13th month pay and holiday pay",
+  "text": "- DOLE's Bureau of Working Conditions (BWC) publishes the official guidance on pay rules. In 2026 it issued **Labor Advisory No. 21-26, Guidelines on the Payment of Thirteenth Month Pay**, and **Labor Advisory No. 17-26** on wages for regular holidays and special days in **2027**. These apply in Baguio City and Benguet too.\n- BWC also publishes the **Workers' Statutory Monetary Benefits Handbook (2024 edition)** and FAQs on 13th month pay.\n- This knowledge base does not contain the computation rules. Read them at the BWC site or ask the DOLE Baguio–Benguet Field Office (see 17.8).\nSource: https://bwc.dole.gov.ph/issuances/labor-advisories/ and https://bwc.dole.gov.ph/workers-statutory-monetary-benefits/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K190",
@@ -1138,6 +1420,18 @@
   "section": "10.7",
   "title": "10.7 Hiring employees > Pag-IBIG monthly contributions",
   "text": "- Since **February 2024**, the regular monthly Pag-IBIG contribution is **₱400**: **₱200 from the employee**, matched by **₱200 from the employer**.\n- It is based on 2% of the Maximum Fund Salary, now ₱10,000 (2% × ₱10,000 = ₱200). Members may save more than this.\n- Contributions go to the member's Regular Savings, which earns tax-free annual dividends (6.62% for 2025) and can be withdrawn at maturity after 20 years or at retirement.\n- Pag-IBIG contact: 8-724-4244 (8-Pag-IBIG); contactus@pagibigfund.gov.ph.\nSource: https://www.pagibigfund.gov.ph/Membership_RegularSavings.html (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K326",
+  "section": "10.6",
+  "title": "10.6 Hiring employees > How to register your business with DOLE online (Online Compliance Portal)",
+  "text": "- DOLE's **Online Compliance Portal (OCP)** at https://reports.dole.gov.ph is where an establishment **registers with DOLE** (see 10.6 for the Rule 1020 duty) and can **verify its DOLE registration certificate**. Click **Sign Up** to create an account, then log in to register the establishment and manage submissions.\n- The same portal is used to submit the Work Accident/Illness Report, the **13th Month Pay Report**, Telecommuting and Flexible Work Arrangements reports, and labor inspection forms.\n- Technical help: ocptechsupport@bwc.dole.gov.ph. Businesses in Baguio City and Benguet can also ask the DOLE Baguio–Benguet Field Office (see 17.8).\nSource: https://reports.dole.gov.ph/ and https://www.dole.gov.ph/e-services (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K327",
+  "section": "10.6",
+  "title": "10.6 Hiring employees > What safety documents DOLE-CAR asks for during inspection",
+  "text": "DOLE-CAR (Cordillera, which covers Baguio City and Benguet) lists these as **requirements for inspection** on its downloadable forms page:\n- An **OSH (occupational safety and health) Program**. DOLE-CAR provides a template for **micro establishments** and a separate one for small, medium and large establishments.\n- Workplace policies and programs on a drug-free workplace, Hepatitis B, HIV and AIDS prevention, and tuberculosis prevention.\n- Health reports: Report on Health and Safety Organization, Employer's Work Accident/Illness Report, Annual Work Accident/Illness Exposure Data Report, and Annual Medical Report.\nThe templates can be downloaded and edited.\nSource: https://car.dole.gov.ph/downloadable-links/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K164",
@@ -1218,6 +1512,18 @@
   "text": "- A carinderia or food stall in Baguio City needs the usual registrations (DTI business name, barangay clearance, Mayor's Permit, BIR) plus the **sanitary permit** (see 13.1) and **health certificates** for everyone who handles food (see 13.2). A step-by-step checklist is in section 18 (see 18.2).\n- PD 856 requires food to come from sources approved by the local health authority.\n- **Home-based food businesses:** PD 856 defines a food establishment by what is done there, not by size or location. Whether a home kitchen selling food needs a sanitary permit is decided by the City Health Services Office; ask them. A home-based business still needs a business permit (see 01.5).\n- Packaged or processed food products may also need FDA registration (see 01.7).\nSource: https://www.officialgazette.gov.ph/1975/12/23/presidential-decree-no-856-s-1975/ (checked November 23, 2026)\n(Status: VERIFIED, FOR VALIDATION)"
  },
  {
+  "id": "K349",
+  "section": "13.5",
+  "title": "13.5 Food businesses > Sanitary permit and health certificate in Tuba, Benguet",
+  "text": "In Tuba, Benguet, every business needs a sanitary permit before its business permit is issued or renewed, and food handlers need health certificates after laboratory exams and a food safety orientation. Labs at the Municipal Health Services Office (as of Jan 1, 2025): fecalysis ₱60, urinalysis ₱60, HBsAg ₱135. Fees, paid at the Treasury Office: sanitary permit ₱115 per business, health certificate ₱170 per food handler (₱285 for one business with one handler); about 1 hour. Water refilling or delivery businesses also need water analysis and a certificate of potability.\nSource: https://www.tuba.gov.ph/offices/municipal-health-office/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K346",
+  "section": "13.4",
+  "title": "13.4 Food businesses > Sanitary permit and health certificate in Itogon, Benguet",
+  "text": "In Itogon, Benguet, the Municipal Health Services Office issues sanitary permits and health certificates. Bring a barangay clearance, the application form and Mayor's permit form (Mayor's Office) and laboratory results. Steps: present documents at the health office for an order of payment, pay at the Treasury Office, then go to Environmental Health Services for the laboratory exam, consultation and issuance of the sanitary permit. Fees follow the municipal revenue code (amount not listed). Eateries, bakeries, street food vendors and caterers also need health certificates (X-ray, stool exam) and a food handler's certificate.\nSource: https://itogon.gov.ph/2024/07/citizens-charter/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K208",
   "section": "14.1",
   "title": "14.1 Online selling > Do online sellers need to register?",
@@ -1254,6 +1560,12 @@
   "text": "Closing a sole proprietorship in Baguio City or Benguet involves separate offices:\n1. **Retire the Mayor's Permit** with the city or municipality (Baguio City: City Hall) (see 15.2).\n2. **Close the BIR registration** with BIR Form 1905 (see 15.3 and 01.6).\n3. **Cancel the DTI business name** if the business stops before the registration expires (see 15.4 and 01.2).\n4. If the business had employees, ask SSS, PhilHealth and Pag-IBIG about closing the employer account; this knowledge base does not have their closure steps (see 17).\nA business that stops without closing its BIR registration stays liable for returns, taxes and penalties (see 01.6).\nSource: https://www.officialgazette.gov.ph/1991/10/10/republic-act-no-7160/ and https://bir-cdn.bir.gov.ph/BIR/pdf/CDR%20-%202025%20(1).pdf and https://bnrs.dti.gov.ph/faq (checked November 23, 2026)\n(Status: VERIFIED, FOR VALIDATION)"
  },
  {
+  "id": "K304",
+  "section": "15.5",
+  "title": "15.5 Closing a business > If you have employees: DOLE notice and separation pay",
+  "text": "DTI's closing-a-business guide lists these labor rules when a business with employees closes, including in Baguio City and Benguet: - Give **written notice to the employees and to DOLE at least one month before** the closure date. - The closure must be genuine (bona fide). - Pay **termination pay of at least half a month's pay per year of service, or one month's pay, whichever is higher** (Labor Code). SSS, PhilHealth and Pag-IBIG closure steps are not in this knowledge base (see 15.1).\nSource: https://www.dti.gov.ph/dti-business-center/dti-closing-a-business/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K214",
   "section": "15.2",
   "title": "15.2 Closing a business > Retiring the business permit in Baguio City",
@@ -1272,6 +1584,12 @@
   "text": "- Grounds for cancelling a DTI business name include stopping the business before the registration expires, or selling it (see 01.2).\n- BNRS says cancellation is done at selected DTI offices: **call your DTI Regional or Provincial Office first** to ask which DTI office or Negosyo Center near you offers it. For Baguio City and Benguet, that is the DTI Benguet Provincial Office (see 17.1).\n- DTI may also cancel a business name on its own, for example after it receives notice that the owner's business permit or license was cancelled.\nSource: https://bnrs.dti.gov.ph/faq (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K303",
+  "section": "15.4",
+  "title": "15.4 Closing a business > Documents to cancel a DTI business name (sole proprietor)",
+  "text": "Closing a sole proprietorship in Baguio City or Benguet? DTI says you **must apply to cancel the business name**. Requirements: 1. Other BN-Related Application Form (Annex D) signed by the owner; 2. one valid ID of the owner; 3. a **sworn declaration** that the cancellation does not defraud creditors and that you have no outstanding business debts, or have notified all creditors; 4. if filed by a representative, an authorization letter and their ID; 5. the cancellation fee (amount not on the page; ask DTI Benguet, see 17.1). Corporations and partnerships follow a different list.\nSource: https://www.dti.gov.ph/dti-business-center/dti-closing-a-business/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K217",
   "section": "16.1",
   "title": "16.1 Transport livelihoods > Tricycle franchise in Baguio City and Benguet",
@@ -1284,10 +1602,28 @@
   "text": "- **DTI Benguet Provincial Office** (covers Baguio City and Benguet): 1-2F Jesnor Bldg., 4 Cariño Street, Baguio City 2600. Telephone (074) 665-3526; telefax (074) 619-2722; email CAR.Benguet@dti.gov.ph.\n- **DTI Cordillera (CAR) Regional Office:** 2F Pine Lake View Bldg., No. 9 Otek St. cor. Rizal Park, Baguio City 2600. Telefax (074) 442-5688; email CAR@dti.gov.ph.\n- **Negosyo Centers in Benguet towns:** no official directory page could be read. Ask the DTI Benguet Provincial Office for the nearest Negosyo Center.\n- Office hours are not listed on these pages.\nSource: https://www.dti.gov.ph/wp-content/uploads/2025/06/25June_DTIDirectoryofKeyOfficials.pdf and https://www.dti.gov.ph/dti-regions/dti-car (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K315",
+  "section": "17.1",
+  "title": "17.1 Contact directory > DTI hotline and office hours",
+  "text": "- DTI's website lists **office hours Mon-Fri, 8:00 AM-5:00 PM** and its **Customer Contact Center Mon-Sun, 8:00 AM-5:00 PM** (except holidays). These are national hours; the DTI Benguet office in Baguio City does not post its own, so call ahead (see 17.1).\n- DTI hotline: 1-DTI (384) or (02) 7791-3100; text only 0917 834 3330; ask@dti.gov.ph.\n- BNRS (business name) help: text/Viber 0917 595 3930; calls 0917 863 0669 or 0917 845 7104.\nSource: https://www.dti.gov.ph/dti-business-center/dti-programs-projects/dti-negosyo-center/dti-contact-us and https://bnrs.dti.gov.ph/resources/registration-guide (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K219",
   "section": "17.2",
   "title": "17.2 Contact directory > Baguio City Hall offices for businesses",
   "text": "- **Business permits online (eBPLS):** https://ebpls.baguio.gov.ph; email bizpass@baguio.gov.ph; City Hall, Baguio City.\n- **Permits and Licensing Division** and **City Treasurer's Office:** both at Baguio City Hall (phone and email: see 09.1).\n- **City Health Services Office (sanitary permits, health certificates):** contact details were not found on an official page (the main city website could not be opened). Ask at City Hall.\n- **City Tourism, Culture and Arts Office (VISITA registration):** Baguio Convention and Cultural Center; (074) 446 2009; baguiovisita@gmail.com.\nSource: https://ebpls.baguio.gov.ph/ and https://visita.baguio.gov.ph/contact (checked November 23, 2026)\n(Status: VERIFIED, FOR VALIDATION)"
+ },
+ {
+  "id": "K351",
+  "section": "17.11",
+  "title": "17.11 Contact directory > Tuba, Benguet offices for businesses",
+  "text": "Municipality of Tuba, Benguet: Municipal Hall, Poblacion, Tuba, Benguet 2603; (074) 447 0064; tuba_municipal@yahoo.com. The LGU website links an online Business Permits and Licensing System at https://bpbc.ibpls.com/tubabenguet/. Business permit applications use the Unified Application Form at the BPLO; sanitary permits and health certificates are at the Municipal Health Services Office; taxes and fees are paid at the Municipal Treasury Office. Each office page on https://www.tuba.gov.ph/ posts its Citizen's Charter.\nSource: https://www.tuba.gov.ph/ and https://www.tuba.gov.ph/offices/municipal-health-office/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K347",
+  "section": "17.10",
+  "title": "17.10 Contact directory > Itogon, Benguet offices for businesses",
+  "text": "Itogon, Benguet (Poblacion, Itogon 2604): Business Permits and Licensing Office (Municipal Business Center), 2nd Floor, Legislative Bldg., bpls@itogon.gov.ph. Treasury Office, 1st Floor Left Wing, Municipal Hall, accitogon@gmail.com. Health Services Office, Municipal Health Office Bldg., 0946-201-3328. Mayor's Office, 2nd Floor, Municipal Hall, 0929-874-3798, mayorsoffice@itogon.gov.ph. DTI Negosyo Center Itogon, 2nd Floor, Legislative Bldg., 0966 917 0811, itogon.LGU@negosyocenter.gov.ph. (074) 619-1765 is the Sangguniang Bayan's number, not the LGU's.\nSource: https://itogon.gov.ph/2024/02/itogon-emergency-hotlines/ and https://itogon.gov.ph/dti-negosyo-center/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K220",
@@ -1323,7 +1659,13 @@
   "id": "K225",
   "section": "17.8",
   "title": "17.8 Contact directory > DOLE Baguio–Benguet Field Office",
-  "text": "- **DOLE Baguio–Benguet Field Office** (Kabuhayan/DILP, labor concerns for Baguio City and Benguet): DOLE-CAR New Building, Cabinet Hill, Baguio City. (074) 442-2447; car_baguiobenguet@dole.gov.ph.\n- **DOLE-CAR Regional Office:** Cabinet Hill, Baguio City; car@dole.gov.ph.\n- The DOLE-CAR contact page blocked our browser (bot check), so these details come from the search engine's copy of that official page, not from reading it directly. Confirm before relying on them.\nSource: https://car.dole.gov.ph/contact-us/ (checked November 23, 2026)\n(Status: FOR VALIDATION)"
+  "text": "- **DOLE Baguio–Benguet Field Office** (Kabuhayan/DILP, DOLE registration, labor concerns for Baguio City and Benguet): DOLE-CAR New Building, Cabinet Hill, Baguio City. Phone (074) 442-2447; car_baguiobenguet@dole.gov.ph.\n- **DOLE-CAR Regional Office** (Cordillera Administrative Region): Director's Office (074) 443-5339; Technical Services and Support Division (074) 443-5338; car@dole.gov.ph.\n- DOLE-CAR also has field offices in Abra, Ifugao, Kalinga and Mountain Province, and a satellite office in Apayao.\nSource: https://car.dole.gov.ph/contact-us/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K337",
+  "section": "17.9",
+  "title": "17.9 Contact directory > OWWA office for Baguio City and Benguet (RWO-CAR)",
+  "text": "OWWA Regional Welfare Office - Cordillera (RWO-CAR): 2nd Floor, Gestdan Centrum Building, 80 Bokawkan Road corner P. Burgos St., Baguio City 2600. Email car@owwa.gov.ph. Reintegration Unit (livelihood help such as Balik-Pinas Balik-Hanapbuhay and the OFW loan program, see 04.6): 0917-320-1091. Education and Training Unit: 0999-994-9296 / 0961-417-4767. Welfare Assistance / Social Benefits Unit: 0917-500-1294. OWWA 24/7 hotline: 1348.\nSource: https://owwa.gov.ph/key-officials-regional-welfare-offices/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K226",
