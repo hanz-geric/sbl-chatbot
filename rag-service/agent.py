@@ -29,7 +29,7 @@ def route(question):
     if last.type != "tool":
         return None, "", []
     if last.name == "search_knowledge_base":
-        sources = [{"title": d.metadata["title"], "status": d.metadata["status"], "url": ""} for d in last.artifact]
+        sources = [{"title": d.metadata["title"], "status": d.metadata["status"], "url": d.metadata.get("url", "")} for d in last.artifact]
     else:
         sources = [{"title": r["title"], "status": "WEB", "url": r["url"]} for r in last.artifact]
     return last.name, last.content, sources
