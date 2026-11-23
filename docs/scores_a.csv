@@ -1,0 +1,61 @@
+id,score,made_up,wrong_tool,note
+T01,5,no,no,
+T02,5,no,no,
+T03,4,no,no,Omits late renewal surcharge
+T04,2,no,no,Does not answer eligibility
+T05,5,no,no,
+T06,5,no,no,
+T07,4,no,no,Omits eSPARC OneSEC route
+T08,4,no,no,Omits e-CoopRIS
+T09,5,no,no,
+T10,4,no,no,Omits DTI certificate and DST
+T11,5,no,no,
+T12,4,no,no,
+T13,3,no,no,Does not identify ORUS
+T14,5,no,no,
+T15,5,no,no,
+T16,4,no,no,Omits email verification and upload limit
+T17,2,no,no,Missing required documents
+T18,5,no,no,
+T19,5,no,no,
+T20,5,no,no,
+T21,5,no,no,
+T22,5,no,no,
+T23,4,no,no,Omits examples and walk-in guidance
+T24,5,no,no,
+T25,2,no,yes,Incorrectly declined relevant question
+T26,4,no,no,Omits cooperator track record
+T27,4,no,no,Omits YEP program components
+T28,3,no,no,Omits permits and participant expenses
+T29,4,no,no,Incomplete priority industry list
+T30,4,no,no,Check registration fee claim against source
+T31,4,no,no,Unnecessary CPDO referral
+T32,4,no,no,Omits loan term and processing fee
+T33,2,no,no,Does not explain where to apply
+T34,4,no,no,Omits loan amount and interest rate
+T35,5,no,no,
+T36,5,no,no,
+T37,5,no,no,
+T38,4,no,no,Omits in-kind assistance detail
+T39,4,no,no,Omits government employee restriction
+T40,2,no,no,Does not answer free assistance question
+T41,4,no,no,Omits allowance and free assessment
+T42,5,no,no,
+T43,4,no,no,Omits NC and COC distinction
+T44,5,no,no,
+T45,5,no,no,
+T46,5,no,no,
+T47,5,no,no,
+T48,5,no,no,
+T49,4,no,no,Incomplete loan requirements
+T50,5,no,no,
+H01,5,no,no,
+H02,5,no,no,
+H03,4,no,no,Omits annual renewal
+H04,5,no,no,
+H05,5,no,no,
+H06,3,no,no,Incorrect referral office
+H07,5,no,no,
+H08,5,no,no,
+H09,5,no,no,
+H10,1,yes,yes,Used SB Corp rate for BDO loan
