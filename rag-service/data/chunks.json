@@ -183,7 +183,43 @@
   "id": "K028",
   "section": "01.7",
   "title": "01.7 Sector-Specific Permits (initial notes)",
-  "text": "- **Food manufacturers** need FDA registration and a License to Operate (LTO). Products should be properly labeled and packed. The office raised this mainly for trade fair participation, but it reflects the general FDA requirement.\n(Status: FOR VALIDATION, INTERVIEW-DERIVED)\n- Other sector permits: PENDING research."
+  "text": "- **Food businesses that manufacture, repack, import, distribute, or sell processed food under their own brand** need an FDA **License to Operate (LTO)**, and each processed food product needs a **Certificate of Product Registration (CPR)**. Details, fees, and steps are in 01.7 (FDA).\n- Products should be properly labeled and packed. The DTI office raised this for trade fair participation (see 03.6).\n- Other sector permits: PENDING research.\n(Status: VERIFIED, INTERVIEW-DERIVED)"
+ },
+ {
+  "id": "K166",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits > FDA License to Operate (LTO): who needs it",
+  "text": "- An LTO is the FDA's permission for an establishment to manufacture, import, export, sell, or distribute food products.\n- Food businesses that need one: **manufacturers**, **repackers**, toll manufacturers, distributors, importers, exporters, **traders** (own the brand but have a licensed manufacturer make it), and wholesalers. A distributor that sells to the general public is treated as a retailer.\n- Applies to food businesses in Baguio City and Benguet like anywhere in the Philippines.\nSource: https://www.fda.gov.ph/faqs/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K167",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits > FDA License to Operate: how to apply",
+  "text": "- **Manufacturers** apply through the FDA e-Portal (https://eportal.fda.gov.ph). First request a user account by emailing fdac@fda.gov.ph, with a notarized authorization letter.\n- **Distributors and traders** apply through FDA eServices (http://eservices.fda.gov.ph). No account needed; the email you declare cannot be changed later.\n- Initial LTO requirements: the online application form (location plan, GPS coordinates, name of the Qualified Person); proof of business name registration (DTI certificate, SEC or CDA registration); the business permit if the address differs from the registration; and proof of capital (latest financial statement).\n- If the application is disapproved, the payment is forfeited.\nSource: https://www.fda.gov.ph/faqs/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K168",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits > FDA License to Operate: fees",
+  "text": "LTO fees for **food manufacturers and traders**, by capital (initial for 2 years / renewal for 5 years):\n| Capital | Initial | Renewal |\n|---|---|---|\n| ₱250,000 and below | ₱1,010 | ₱2,525 |\n| Over ₱250,000, below ₱500,000 | ₱1,515 | ₱3,788 |\n| ₱500,000, below ₱1 million | ₱2,020 | ₱5,050 |\n| Over ₱1 million, below ₱5 million | ₱4,040 | ₱10,100 |\n| ₱5 million, below ₱10 million | ₱6,060 | ₱15,150 |\nFood distributors (importer, exporter, wholesaler): ₱8,080 initial, ₱20,200 renewal. Larger manufacturers pay more; see the FDA FAQ.\n- Pay through Landbank, Bancnet, 7-Eleven, Bayad Center, or Landbank Link.BizPortal.\nSource: https://www.fda.gov.ph/faqs/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K169",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits > FDA License to Operate: validity, renewal, and penalties",
+  "text": "- An initial LTO is valid for **2 years**; a renewed LTO for **5 years** (bottled water renewals: 3 years).\n- Renew within **90 days before** the expiry date.\n- A renewal filed after expiry is charged a surcharge of **twice the renewal fee plus 10% per month**, up to 120 days. After 120 days the LTO is considered expired, and you must file a new initial application plus the penalties.\n- To cancel an LTO or report that the business closed, send a letter to fdac.letters@fda.gov.ph.\nSource: https://www.fda.gov.ph/faqs/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K170",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits > FDA product registration (CPR)",
+  "text": "- Every processed food product (including food supplements, additives, and bottled water) that is manufactured, distributed, or repacked for sale needs an FDA **Certificate of Product Registration (CPR)** before it is sold.\n- Apply through the FDA E-Registration system. Requirements include compliant labels, photos of the product from all angles, and the loose labels or artwork.\n- The fee is computed by the system based on the product type and the validity applied for (2 to 5 years).\n- Processing takes about **20 working days**.\nSource: https://www.fda.gov.ph/faqs/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K171",
+  "section": "01.7",
+  "title": "01.7 Sector-Specific Permits > FDA free LTO and product registration training for MSMEs (BBMSMEs)",
+  "text": "- The FDA's **Bigyang-halaga, Bangon MSMEs (BBMSMEs)** program helps micro, small, and medium food businesses and cosmetics makers get their LTO and product registration.\n- It includes a **2-day training** by FDA experts on licensing, food product registration, and Good Manufacturing Practice, including how to use the FDA online systems.\n- The FDA runs it with local governments: ask your city or municipal LGU in Baguio City or Benguet for the schedule, or email bbmsme@fda.gov.ph.\nSource: https://www.fda.gov.ph/bbmsmes/ (program brochure) (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K029",
@@ -642,6 +678,36 @@
   "text": "- DA-ACPC and DBP loan for farmers, fisherfolk, and micro and small enterprises registered with SEC, DTI, or CDA.\n- Up to 90% of the project cost: ₱100,000 to ₱500,000 for individual farmers; ₱500,000 to ₱5 million for farmer-enterprises.\n- Term loan up to 10 years including up to 2 years grace. Service fee 3.5%. The interest rate is not stated on the page; ask DBP.\n- Individual farmers must be RSBSA-registered and trained for the project.\nSource: https://www.dbp.ph/developmental-banking/micro-small-and-medium-enterprises/dbp-agrinegosyo-loan-program/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K172",
+  "section": "04.6",
+  "title": "04.6 Programs for OFWs > Financial help for returning OFWs starting a business: OWWA ₱20,000 livelihood assistance (Balik-Pinas Balik-Hanapbuhay)",
+  "text": "- OWWA's livelihood package for **returning OFWs who are OWWA members**:\n  - **₱20,000 cash assistance** as start-up or additional capital for a livelihood project;\n  - entrepreneurship development training;\n  - other help such as marketing linkages and job referral.\n- National program, so returning OFWs in Baguio City and Benguet can apply.\n- OWWA hotline 1348 (24/7); owwacares@owwa.gov.ph.\nSource: https://owwa.gov.ph/balik-pinas-balik-hanapbuhay-program-bpbh/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K173",
+  "section": "04.6",
+  "title": "04.6 Programs for OFWs > Business loan for OFWs and their families: OWWA–Landbank Enterprise Development and Loan Program (EDLP)",
+  "text": "- For OFWs and their families who want to start a business, including in Baguio City and Benguet. OWWA runs it with Landbank (LBP).\n- First, enterprise development: a business appreciation seminar, skills self-assessment, referral to training, and a business plan seminar.\n- After completing the Enhanced Enterprise Development Training (EEDT), borrowers can get a loan of **₱100,000 up to ₱2 million** (individual) or **up to ₱5 million** (group), at a **fixed 7.5% a year**.\n- Apply within **3 years of arriving** in the Philippines, unless the business was already running before the application.\n- SB Corp's Franchise Funding is also open to returning OFWs (see 04.2).\nSource: https://owwa.gov.ph/ofw-enterprise-development-and-loan-program-formerly-p2b-ofw-reintegration-program/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K174",
+  "section": "04.6",
+  "title": "04.6 Programs for OFWs > OWWA livelihood help for families of deceased OFWs (ELAP)",
+  "text": "- OWWA's Education and Livelihood Assistance Program is for dependents of OFWs who died while active OWWA members.\n- It gives **₱15,000 for a livelihood activity** to the surviving family, plus education assistance for a dependent (up to ₱5,000 elementary, ₱8,000 high school, ₱10,000 college per school year).\nSource: https://owwa.gov.ph/education-and-livelihood-assistance-program-elap-2/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K175",
+  "section": "04.7",
+  "title": "04.7 DOST SETUP > Government help to buy equipment and upgrade technology for small businesses",
+  "text": "- DOST's **Small Enterprise Technology Upgrading Program (SETUP)** helps small businesses in Baguio City, Benguet, and the rest of the country buy equipment and improve products and productivity with technology: equipment and technology acquisition, training and consultancy, help meeting standards (testing and calibration), packaging and label design, shop-floor research, and IT solutions, funded through its Innovation-Enabling Fund (iFund).\n- Priority sectors: food processing; furniture; gifts, decor, and handicrafts; agriculture, aquaculture, and forestry; metals and engineering; ICT; health and wellness; halal; energy and environment; creative industries.\n- Process: a Technology Needs Assessment by the Provincial S&T Office, then help acquiring the technology. Amounts and repayment terms are not on the page; ask DOST.\nSource: https://car.dost.gov.ph/technology-transfer-and-commercialization-innovation-system-support/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K176",
+  "section": "04.7",
+  "title": "04.7 DOST SETUP (technology upgrading) > DOST offices for Baguio City and Benguet",
+  "text": "- **DOST Provincial S&T Office (PSTO) – Benguet:** Governor Pack Road, Baguio City; 0917-818-8175; pstc-benguet@car.dost.gov.ph; Facebook: DOST Baguio-Benguet.\n- **DOST-CAR Regional Office:** (074) 422-2214. Regional Standards and Testing Laboratory: 0908-233-8955. Regional Metrology Laboratory: 0960-895-7850.\nSource: https://car.dost.gov.ph/contact-us/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K095",
   "section": "05.1",
   "title": "05.1 Livelihood assistance versus business loans",
@@ -780,6 +846,12 @@
   "text": "- Follow consumer rules enforced by DTI, such as the Price Tag Act, proper product labeling, and the ban on giving candy instead of coins as change. Sales promotions need a DTI permit. (DTI interview; see 09.3)\n- Packaged food must meet FDA requirements; see 01.7."
  },
  {
+  "id": "K177",
+  "section": "07.4",
+  "title": "07.4 Rules for selling > Sales promotion permits from DTI",
+  "text": "- Sales promos (raffles, contests, discounts with conditions) need a **DTI sales promotion permit**.\n- Nationwide and NCR promos are applied for online through DTI's **IRegIS** (https://iregis.dti.gov.ph; sign up as a Negosyo Applicant). You first need a **NegosyoKonek Reference Number** (https://negosyokonek.dti.gov.ph, \"Konek Your Business\"), created once per business; sole proprietors, partnerships, corporations, and cooperatives can all get one.\n- IRegIS covers only nationwide and NCR promos. For a promo only in Baguio City or Benguet, ask DTI Benguet or the nearest Negosyo Center.\n- Contact: DTI Fair Trade Enforcement Bureau, Sales Promotion Division, (02) 8811-8233, FTEB@dti.gov.ph.\nSource: https://www.dti.gov.ph/dti-consumer-space/dti-newly-accredited-licensed-business/dti-sales-promotion-application (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K116",
   "section": "07.5",
   "title": "07.5 Selling online: the Internet Transactions Act (RA 11967)",
@@ -897,7 +969,7 @@
   "id": "K135",
   "section": "08.3",
   "title": "08.3 Topics not covered: refer to the office",
-  "text": "**FDA fees and processing times**\nNot covered. The FDA requirements in 01.7 are general notes only. Ask the Food and Drug Administration."
+  "text": "**FDA product registration (CPR) fees**\nNot covered. The FDA system computes the CPR fee based on the product type and the validity applied for (2 to 5 years). Ask the Food and Drug Administration (info@fda.gov.ph). FDA License to Operate fees are covered in 01.7."
  },
  {
   "id": "K136",
@@ -948,6 +1020,18 @@
   "text": "- DTI handles consumer concerns such as violations of the Price Tag Act, giving candy as change, improper labeling, unauthorized sales promos (these need a DTI permit), and defective products, including online purchases. Disputes may be resolved through DTI mediation.\n- Consumers may file reports anonymously or through dummy accounts, as long as the claim is factual and backed by evidence. DTI does not disclose the identity of the complainant. DTI verifies, monitors, and inspects before taking enforcement action.\n\n(Status: INTERVIEW-DERIVED)"
  },
  {
+  "id": "K178",
+  "section": "09.3",
+  "title": "09.3 Consumer complaints > How to file a complaint with DTI",
+  "text": "- File a consumer complaint online through DTI's **Consumer Complaints Assistance and Resolution System (CAReS)**, linked from https://www.dti.gov.ph/dti-consumer-space/dti-complaints\n- Technical help: consumercare@dti.gov.ph or 7791-3148.\n- Outside Metro Manila (including Baguio City and Benguet), you can also go to the DTI provincial office.\n- DTI general contact: ask@dti.gov.ph; 1-DTI (384) or (02) 7791-3100; text 0917 834 3330.\nSource: https://www.dti.gov.ph/dti-consumer-space/dti-complaints (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K179",
+  "section": "09.3",
+  "title": "09.3 Consumer complaints > Which agency handles which complaint",
+  "text": "- **DTI:** manufactured products.\n- **FDA / DOH:** processed foods, drugs, cosmetics, household hazardous products.\n- **City Health Office of the LGU:** food in restaurants, eateries, and sidewalk vendors, and weights and measures.\n- **BSP:** banks, pawnshops, credit cards. **SEC:** lending and financing companies. **Insurance Commission:** insurance and pre-need plans.\n- **NTC:** phone, internet, TV, radio. **ERC / DOE:** electricity. **DOE-OIMB:** LPG and fuels.\n- **NMIS:** meat and dressed chicken. **BPI:** fruits and vegetables. **BFAR:** fish. **NFA:** rice.\nSource: https://www.dti.gov.ph/dti-consumer-space/dti-complaints (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K159",
   "section": "10.1",
   "title": "10.1 Hiring employees > Overview",
@@ -987,6 +1071,24 @@
   "id": "K165",
   "section": "11.1",
   "title": "11.1 Customer discounts > PWD discount: tax deduction for the business",
-  "text": "- A business can claim the PWD discount it gave (except on government medical services) as a **tax deduction**, based on the net cost of the goods sold or services rendered, in the same taxable year, with proper documentation. (RA 10754)\n- Rules for the senior citizen discount (RA 9994) are not covered here; ask the BIR or the city's Office of Senior Citizens Affairs.\nSource: https://ncda.gov.ph/disability-laws/republic-acts/republic-act-no-10754-an-act-expanding-the-benefits-and-privileges-of-persons-with-disability-pwd/ (checked November 23, 2026)\n(Status: VERIFIED)"
+  "text": "- A business can claim the PWD discount it gave (except on government medical services) as a **tax deduction**, based on the net cost of the goods sold or services rendered, in the same taxable year, with proper documentation. (RA 10754)\n- For the senior citizen discount, see 11.2.\nSource: https://ncda.gov.ph/disability-laws/republic-acts/republic-act-no-10754-an-act-expanding-the-benefits-and-privileges-of-persons-with-disability-pwd/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K180",
+  "section": "11.2",
+  "title": "11.2 Customer discounts > Senior citizen discount: what businesses must give",
+  "text": "- Senior citizens (resident Filipino citizens aged **60 or older**) get a **20% discount and VAT exemption** (if applicable) on goods and services for their exclusive use, including: medicines and some vaccines; doctors' fees and medical, dental, and lab services in private facilities; land transport, domestic air and sea fares; **hotels and lodging, restaurants, and recreation centers**; admission to theaters, cinemas, and amusement places; and funeral and burial services. (RA 9994)\n- Applies to businesses in Baguio City and Benguet like everywhere in the Philippines.\nSource: https://www.ncsc.gov.ph/post/what-are-the-rights-and-privileges-of-senior-citizens (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K181",
+  "section": "11.2",
+  "title": "11.2 Customer discounts > Senior citizen discount: proof, promos, and combining discounts",
+  "text": "- Proof the senior can show: an **OSCA ID** (from the Office of Senior Citizens Affairs; honored nationwide), a passport, or other documents proving citizenship and age 60+.\n- If an item is already on promo, the senior gets either the promo discount or the 20% discount, **whichever is higher**, not both.\n- The National Commission of Senior Citizens says discounts follow the rules on promotional discounts and the prohibition on combining discounts, after an October 2026 Supreme Court ruling.\n- NCSC contact: (02) 8567-5646, contact@ncsc.gov.ph.\nSource: https://www.ncsc.gov.ph/post/what-are-the-rights-and-privileges-of-senior-citizens and https://www.ncsc.gov.ph/post/pahayag-ng-ncsc-sa-no-double-discount-ruling-ng-korte-suprema (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K182",
+  "section": "11.2",
+  "title": "11.2 Customer discounts > Senior citizen discount: tax deduction for the business",
+  "text": "- A business can claim the senior citizen discounts it gave as a **tax deduction**, based on the cost of the goods sold or services rendered, in the same taxable year. The amount, net of VAT, must be included in gross sales receipts and properly documented under the Tax Code. (RA 9994)\nSource: https://www.ncsc.gov.ph/post/what-are-the-rights-and-privileges-of-senior-citizens (checked November 23, 2026)\n(Status: VERIFIED)"
  }
 ]
