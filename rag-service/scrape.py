@@ -1,16 +1,22 @@
 import re
 from html.parser import HTMLParser
-from urllib.parse import urldefrag, urljoin, urlparse
+from io import BytesIO
+from urllib.parse import unquote, urldefrag, urljoin, urlparse
 from urllib.robotparser import RobotFileParser
+
+from pypdf import PdfReader
 
 SKIP_TAGS = {"script", "style", "nav", "header", "footer", "aside", "form", "noscript", "svg", "button", "select", "iframe", "template"}
 HEADING_TAGS = {"h1", "h2", "h3", "h4", "h5", "h6"}
 BLOCK_TAGS = {"p", "li", "td", "th", "dd", "dt", "div", "section", "br", "tr", "table", "ul", "ol", "blockquote", "pre"} | HEADING_TAGS
 MAIN_TAGS = {"main", "article"}
 VOID_TAGS = {"br", "img", "hr", "input", "meta", "link", "source", "wbr", "col", "area", "base", "embed", "param", "track"}
-SKIP_WORDS = ["bid", "procurement", "vacanc", "career", "hiring-for", "gallery", "photo", "video", "transparency", "award", "tender", "canvass", "rfq", "quotation", "job-opening", "jobs", "recruitment", "saln", "annual-report", "audit-report", "privacy-policy", "sitemap", "login", "wp-admin", "feed", "news", "press-release", "events", "governance", "scorecard", "graduates", "accomplishment", "report", "funeral", "death", "sickness", "maternity", "retirement", "pension", "salary-loan", "calamity-loan", "unemployment", "survivor"]
+SKIP_WORDS = ["bid", "procurement", "vacanc", "career", "hiring-for", "gallery", "photo", "video", "transparency", "award", "tender", "canvass", "rfq", "quotation", "job-opening", "jobs", "recruitment", "saln", "annual-report", "audit-report", "privacy-policy", "sitemap", "login", "wp-admin", "feed", "news", "press-release", "events", "governance", "scorecard", "graduates", "accomplishment", "report", "funeral", "death", "sickness", "maternity", "retirement", "pension", "salary-loan", "calamity-loan", "unemployment", "survivor", "coa-aar", "audit", "magazine", "newsletter", "journal", "sinag", "available-slots", "list-of-qualifications", "circular"]
 KEYWORDS = ["business", "registration", "register", "permit", "license", "fee", "loan", "grant", "livelihood", "training", "msme", "micro", "enterprise", "entrepreneur", "negosyo", "tax", "employer", "contribution", "discount", "consumer", "complaint", "cooperative", "corporation", "requirement", "apply", "application", "financing", "capital", "seed", "assistance", "program", "scholarship", "farmer", "trademark", "product", "export", "price", "wage"]
 MIN_PAGE_CHARS = 300
+MIN_PDF_YEAR = 2024
+ANNUAL_REPORT = r"[-_]ar[-_\d]|(?:^|[-_/])cv[-_.]"
+YEAR = r"(?<!\d)(?:19|20)\d{2}(?!\d)"
 MIN_KEYWORD_HITS = 3
 MIN_CHUNK_CHARS = 400
 MAX_CHUNK_CHARS = 800
@@ -99,6 +105,8 @@ def extract_page(html):
 def is_relevant(url, title, text):
     label = (url + " " + title).lower().replace(" ", "-")
     if any(word in label for word in SKIP_WORDS):
+        return False
+    if re.search(ANNUAL_REPORT, label):
         return False
     if any(0x1D400 <= ord(char) <= 0x1D7FF for char in title):
         return False
@@ -193,7 +201,7 @@ def allowed(robots_text, url):
     return robots.can_fetch(USER_AGENT, url)
 
 
-def extract_links(html, base_url, prefixes):
+def collect_hrefs(html):
     found = []
 
     def start(tag, attrs):
@@ -205,7 +213,11 @@ def extract_links(html, base_url, prefixes):
     parser.handle_starttag = start
     parser.feed(html)
     parser.close()
+    return found
 
+
+def extract_links(html, base_url, prefixes):
+    found = collect_hrefs(html)
     host = urlparse(base_url).netloc
     links = []
     for href in found:
@@ -230,3 +242,36 @@ def is_useful_chunk(body):
         return False
     lowered = body.lower()
     return sum(1 for word in BUSINESS_WORDS if word in lowered) >= MIN_BUSINESS_HITS
+
+
+def extract_pdf_links(html, base_url):
+    found = collect_hrefs(html)
+    host = urlparse(base_url).netloc
+    links = []
+    for href in found:
+        url = urldefrag(urljoin(base_url, href))[0]
+        parts = urlparse(url)
+        if not parts.path.lower().endswith(".pdf"):
+            continue
+        if parts.netloc != host and not parts.netloc.endswith(".gov.ph"):
+            continue
+        if url not in links:
+            links.append(url)
+    return links
+
+
+def extract_pdf(data):
+    reader = PdfReader(BytesIO(data))
+    title = (reader.metadata.title if reader.metadata and reader.metadata.title else "").strip()
+    sections = []
+    for page in reader.pages:
+        lines = [" ".join(line.split()) for line in (page.extract_text() or "").splitlines()]
+        body = "\n".join(line for line in lines if line)
+        if body:
+            sections.append(("", body))
+    return title, sections
+
+
+def is_recent_pdf(url):
+    years = [int(year) for year in re.findall(YEAR, unquote(url))]
+    return not years or max(years) >= MIN_PDF_YEAR

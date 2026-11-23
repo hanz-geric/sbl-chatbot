@@ -118,3 +118,65 @@ def test_is_relevant_drops_social_media_style_posts():
 def test_is_useful_chunk_drops_link_and_archive_lists():
     archive = "May 2022 (1) | April 2022 (1) | February 2022 (2) | January 2022 (1) | November 2021 (4) | business loan registration | " * 3
     assert not scrape.is_useful_chunk(archive)
+
+
+def test_extract_pdf_links_keeps_official_pdfs_only():
+    html = """<a href="/files/loan-guide.pdf">Guide</a>
+<a href="https://bir-cdn.bir.gov.ph/BIR/pdf/online-seller.pdf">BIR</a>
+<a href="https://example.com/brochure.pdf">Other site</a>
+<a href="/loans/">Page</a>"""
+    links = scrape.extract_pdf_links(html, "https://sbcorp.gov.ph/programs/")
+
+    assert links == [
+        "https://sbcorp.gov.ph/files/loan-guide.pdf",
+        "https://bir-cdn.bir.gov.ph/BIR/pdf/online-seller.pdf",
+    ]
+
+
+def make_pdf(title, pages):
+    objects = ["<< /Type /Catalog /Pages 2 0 R >>", ""]
+    kids = []
+    for text in pages:
+        stream = f"BT /F1 12 Tf 72 720 Td ({text}) Tj ET"
+        objects.append(f"<< /Length {len(stream)} >>\nstream\n{stream}\nendstream")
+        objects.append(f"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents {len(objects)} 0 R /Resources << /Font << /F1 FONT 0 R >> >> >>")
+        kids.append(f"{len(objects)} 0 R")
+    objects.append("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>")
+    font = len(objects)
+    objects.append(f"<< /Title ({title}) >>")
+    objects[1] = f"<< /Type /Pages /Kids [{' '.join(kids)}] /Count {len(kids)} >>"
+    objects = [o.replace("FONT", str(font)) for o in objects]
+    out = "%PDF-1.4\n"
+    offsets = []
+    for i, body in enumerate(objects, start=1):
+        offsets.append(len(out))
+        out += f"{i} 0 obj\n{body}\nendobj\n"
+    xref = len(out)
+    out += f"xref\n0 {len(objects) + 1}\n0000000000 65535 f \n" + "".join(f"{o:010d} 00000 n \n" for o in offsets)
+    out += f"trailer\n<< /Size {len(objects) + 1} /Root 1 0 R /Info {len(objects)} 0 R >>\nstartxref\n{xref}\n%%EOF\n"
+    return out.encode("latin-1")
+
+
+def test_extract_pdf_returns_title_and_text_per_page():
+    data = make_pdf("SB Corp Loan Guide", ["Micro loans up to PHP 300,000.", "Apply online at app.sbcorp.ph."])
+
+    title, sections = scrape.extract_pdf(data)
+
+    assert title == "SB Corp Loan Guide"
+    assert sections == [("", "Micro loans up to PHP 300,000."), ("", "Apply online at app.sbcorp.ph.")]
+
+
+def test_is_recent_pdf_drops_pdfs_dated_only_before_2024():
+    assert scrape.is_recent_pdf("https://www.dbp.ph/wp-content/uploads/2026/11/AgriNegosyo-Brochure-2.pdf")
+    assert scrape.is_recent_pdf("https://bir-cdn.bir.gov.ph/BIR/pdf/flyer-eopt.pdf")
+    assert not scrape.is_recent_pdf("https://nwpc.dole.gov.ph/wp-content/uploads/2023/04/car-wo-13.pdf")
+    assert not scrape.is_recent_pdf("https://www.tesda.gov.ph/Uploads/File/TWSP/List of Qualifications with Available Slots FY 2022.pdf")
+    assert not scrape.is_recent_pdf("https://acpc.gov.ph/wp-content/uploads/Vol11No2_2013.pdf")
+
+
+def test_is_relevant_drops_annual_and_audit_reports_and_magazines():
+    assert not scrape.is_relevant("https://www.sss.gov.ph/wp-content/uploads/2025/09/SSS_2024-AR_015.pdf", "SSS 2024 AR 015", RELEVANT_TEXT)
+    assert not scrape.is_relevant("https://sbcorp.gov.ph/wp-content/uploads/2026/05/COA-AAR-on-SB-Corporation-for-CY-2025.pdf", "COA AAR on SB Corporation", RELEVANT_TEXT)
+    assert not scrape.is_relevant("https://acpc.gov.ph/wp-content/uploads/for-pub_ACPC-Magazine-2026.pdf", "ACPC Magazine", RELEVANT_TEXT)
+    assert not scrape.is_relevant("https://www.sss.gov.ph/wp-content/uploads/2026/01/Updated-CV_Limlingan_2026.pdf", "Updated CV Limlingan 2026", RELEVANT_TEXT)
+    assert scrape.is_relevant("https://www.sss.gov.ph/wp-content/uploads/2026/07/2026-SSS-Citizens-Charter.pdf", "SSS Citizens Charter", RELEVANT_TEXT)
