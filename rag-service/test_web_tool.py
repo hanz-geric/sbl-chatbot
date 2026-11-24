@@ -32,7 +32,7 @@ def test_results_become_content_and_artifact(monkeypatch):
 
     assert out.content == "### DTI news\nNew MSME program."
     assert out.artifact == results
-    assert seen["query"].startswith("MSME loans")
+    assert seen["query"] == "MSME loans"
 
 
 def test_empty_results_give_empty_content(monkeypatch):
@@ -92,19 +92,6 @@ def test_searches_only_trusted_sites(monkeypatch):
 
     assert "dole.gov.ph" in seen["include_domains"]
     assert "facebook.com" not in seen["include_domains"]
-
-
-def test_search_adds_local_place_names(monkeypatch):
-    seen = {}
-
-    def fake_invoke(args):
-        seen.update(args)
-        return {"results": []}
-
-    monkeypatch.setattr(web_tool, "tavily", SimpleNamespace(invoke=fake_invoke))
-    invoke("new DTI programs this year")
-
-    assert seen["query"] == "new DTI programs this year Baguio Benguet Cordillera"
 
 
 def test_results_without_a_title_are_skipped(monkeypatch):

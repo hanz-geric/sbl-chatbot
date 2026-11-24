@@ -22,9 +22,6 @@ TRUSTED_SITES = [
     "mb.com.ph",
     "philstar.com",
 ]
-# Added to every search so results from the Cordillera rank higher.
-LOCAL_PLACES = "Baguio Benguet Cordillera"
-
 tavily = TavilySearch(max_results=WEB_RESULTS)
 
 
@@ -32,7 +29,7 @@ tavily = TavilySearch(max_results=WEB_RESULTS)
 def web_search(query: str):
     """Search the web for current news and recent updates (this month, this year, new or latest programs, announcements) about small business and livelihood in the Philippines."""
     try:
-        found = tavily.invoke({"query": f"{query} {LOCAL_PLACES}", "topic": SEARCH_TOPIC, "time_range": SEARCH_TIME_RANGE, "include_domains": TRUSTED_SITES})
+        found = tavily.invoke({"query": query, "topic": SEARCH_TOPIC, "time_range": SEARCH_TIME_RANGE, "include_domains": TRUSTED_SITES})
     except ToolException:
         return "", []
     # When nothing is found, Tavily returns a plain message string instead of a dict.
