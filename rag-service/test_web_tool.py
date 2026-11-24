@@ -64,3 +64,43 @@ def test_search_error_returns_empty_result(monkeypatch):
 
     assert out.content == ""
     assert out.artifact == []
+
+
+def test_searches_only_this_months_news(monkeypatch):
+    seen = {}
+
+    def fake_invoke(args):
+        seen.update(args)
+        return {"results": []}
+
+    monkeypatch.setattr(web_tool, "tavily", SimpleNamespace(invoke=fake_invoke))
+    invoke("new livelihood grants this month")
+
+    assert seen["topic"] == "news"
+    assert seen["time_range"] == "month"
+
+
+def test_searches_only_trusted_sites(monkeypatch):
+    seen = {}
+
+    def fake_invoke(args):
+        seen.update(args)
+        return {"results": []}
+
+    monkeypatch.setattr(web_tool, "tavily", SimpleNamespace(invoke=fake_invoke))
+    invoke("latest DOLE livelihood news")
+
+    assert "dole.gov.ph" in seen["include_domains"]
+    assert "facebook.com" not in seen["include_domains"]
+
+
+def test_results_without_a_title_are_skipped(monkeypatch):
+    kept = {"title": "DTI news", "content": "New MSME program."}
+    results = [{"title": "", "content": "Untitled page."}, kept]
+    monkeypatch.setattr(
+        web_tool, "tavily", SimpleNamespace(invoke=lambda args: {"results": results})
+    )
+    out = invoke("MSME loans")
+
+    assert out.content == "### DTI news\nNew MSME program."
+    assert out.artifact == [kept]

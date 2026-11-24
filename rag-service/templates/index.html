@@ -15,7 +15,9 @@
             border: solid black 1px;
             padding: 30px;
             border-radius: 25px;
-            width: 700px;
+            max-width: 700px;
+            width: 100%;
+            box-sizing: border-box;
         }
         #chatbox{
             display: flex;
@@ -58,6 +60,35 @@
             flex: 1;
             height: 50px;
         }
+        .text ul{
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+        .example{
+            display: block;
+            margin-top: 8px;
+            padding: 6px 10px;
+            border: 1px solid #1f6f50;
+            border-radius: 12px;
+            background: white;
+            color: #1f6f50;
+            cursor: pointer;
+            text-align: left;
+        }
+        #message{
+            color: #c0392b;
+            margin-top: 8px;
+        }
+        .waiting::after{
+            content: "";
+            animation: dots 1.5s steps(4) infinite;
+        }
+        @keyframes dots{
+            0%{ content: ""; }
+            25%{ content: "."; }
+            50%{ content: ".."; }
+            75%{ content: "..."; }
+        }
     </style>
 </head>
 <body>
@@ -66,7 +97,7 @@
         <div id="chatbox">{% include "messages.html" %}</div>
         <form id="askForm">
             <div class="align">
-                <textarea name="question" placeholder="Type your question..."></textarea>
+                <textarea name="question" maxlength="500" placeholder="Type your question..."></textarea>
                 <button name="submit">Send</button>
             </div>
         </form>
@@ -92,25 +123,72 @@
             form.reset();
             chatbox.innerHTML += `
                 <div class="user"><div class="text">${escapeHtml(question)}</div></div>
-                <div class="bot">Thinking...</div>
+                <div class="bot waiting">Searching the knowledge base and writing an answer. This can take up to 30 seconds</div>
             `;
             chatbox.scrollTop = chatbox.scrollHeight;
+            sendButton.disabled = true;
 
             fetch('/ask', { method: 'post', body: formData })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.status != 'success') {
-                        document.getElementById('message').innerHTML = escapeHtml(data.message);
+                .then(response => {
+                    // JSON means an error; plain text is the answer as gemma writes it
+                    if (response.headers.get('Content-Type').startsWith('application/json')) {
+                        return response.json().then(data => {
+                            document.getElementById('message').innerHTML = escapeHtml(data.message);
+                            sendButton.disabled = false;
+                            questionBox.focus();
+                            loadMessages();
+                        });
                     }
-                    loadMessages();
+                    const reader = response.body.getReader();
+                    const decoder = new TextDecoder();
+                    const bubble = chatbox.lastElementChild;
+                    let answer = '';
+                    function readPiece(){
+                        return reader.read().then(result => {
+                            if (result.done) {
+                                sendButton.disabled = false;
+                                questionBox.focus();
+                                loadMessages();
+                                return;
+                            }
+                            answer += decoder.decode(result.value, { stream: true });
+                            bubble.classList.remove('waiting');
+                            bubble.innerHTML = `<div class="text">${escapeHtml(answer)}</div>`;
+                            chatbox.scrollTop = chatbox.scrollHeight;
+                            return readPiece();
+                        });
+                    }
+                    return readPiece();
                 })
                 .catch(error => {
                     console.error(error);
-                    document.getElementById('message').innerHTML = 'Server error';
+                    document.getElementById('message').innerHTML = 'Could not reach the server. Is app.py running?';
+                    sendButton.disabled = false;
+                    questionBox.focus();
                     loadMessages();
                 });
         });
+
+        // Enter sends the question; Shift+Enter adds a new line
+        questionBox.addEventListener('keydown', function(e){
+            if (e.key == 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                if (!sendButton.disabled) askForm.requestSubmit();
+            }
+        });
+
+        // Example questions in the welcome message
+        document.getElementById('chatbox').addEventListener('click', function(e){
+            if (e.target.classList.contains('example') && !sendButton.disabled) {
+                questionBox.value = e.target.textContent;
+                askForm.requestSubmit();
+            }
+        });
     }
+
+    const askForm = document.getElementById('askForm');
+    const questionBox = askForm.querySelector('textarea');
+    const sendButton = askForm.querySelector('button');
 
     function loadMessages(){
         fetch('/messages')

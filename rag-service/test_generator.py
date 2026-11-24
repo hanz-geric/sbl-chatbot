@@ -50,3 +50,23 @@ def test_removing_a_section_reference_leaves_no_double_space():
 
 def test_status_line_is_removed():
     assert clean_context("Fee is \u20b1200.\n(Status: VERIFIED)") == "Fee is \u20b1200."
+
+
+def test_source_line_naming_internal_sections_is_removed():
+    text = "Sari-sari store checklist.\nSource: sections 01.2, 01.6, 02 and 10 of this knowledge base (checked November 23, 2026)"
+
+    assert clean_context(text) == "Sari-sari store checklist."
+
+
+def test_section_number_at_start_of_title_is_removed():
+    text = "01.6 BIR Tax Registration > When to register\nRegister on or before the first sale."
+
+    assert clean_context(text) == "BIR Tax Registration > When to register\nRegister on or before the first sale."
+
+
+def test_model_is_told_to_decline_web_results_off_the_topic(monkeypatch):
+    context = "### DOLE intensifies inspection drive\nDOLE inspected bus terminals in Baguio City."
+
+    sent = messages_sent_to_model(monkeypatch, "What is the latest DOLE livelihood news?", context)
+
+    assert "no current announcements were found" in sent

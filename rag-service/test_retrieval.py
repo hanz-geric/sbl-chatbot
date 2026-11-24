@@ -55,3 +55,16 @@ def test_search_keeps_document_list_for_ebpls_question():
     found = retrieval.search("What documents does the Baguio eBPLS portal ask for when applying for a new business permit?")
 
     assert "K048" in [d.metadata["id"] for d in found]
+
+
+def test_search_finds_baguio_mayors_permit_requirements_not_other_towns():
+    found = [d.metadata["id"] for d in retrieval.search("What are the requirements for a Mayor's Permit in Baguio?")]
+
+    assert "K047" in found
+    assert "K353" not in found
+
+
+def test_search_finds_dti_fee_table_for_cost_question():
+    found = [d.metadata["id"] for d in retrieval.search("How much does DTI business name registration cost?")]
+
+    assert "K005" in found

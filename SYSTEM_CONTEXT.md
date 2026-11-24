@@ -36,7 +36,7 @@ Flask    app.py ── saves messages ──► SQLite chat.db (table messages)
    ▼
 Agent    agent.py: create_agent(llama3.2:3b, tools) picks ONE tool (or none = off-topic)
    ├─► knowledge_tool.py  search_knowledge_base ─► retrieval.py: Chroma + all-MiniLM-L6-v2 and BM25 keyword search, fused, top 5 (hand-checked preferred)
-   └─► web_tool.py        web_search ─► Tavily (internet), top 3, Philippines boost
+   └─► web_tool.py        web_search ─► Tavily (internet), top 3, news from the last month, trusted PH sites
    │  tool text = CONTEXT, tool results = sources
    ▼
 Answer   generator.py: RULES + CONTEXT ─► gemma3:4b (Ollama, localhost:11434)
@@ -45,9 +45,9 @@ Answer   generator.py: RULES + CONTEXT ─► gemma3:4b (Ollama, localhost:11434
 Request flow for one question:
 1. Browser POSTs the question to `/ask`. Flask saves the user message.
 2. `route(question)` runs the agent. Both tools are `return_direct=True`, so the agent stops right after the tool runs (about 2 s). No tool call → off-topic.
-3. Off-topic → `OFF_TOPIC_REPLY`. Tool returned nothing → `NO_RESULTS_REPLY`. Otherwise gemma3:4b answers from the tool's text with `RULES`.
-4. Flask saves the bot message (answer + sources JSON + seconds) and returns `{"status": "success"}`.
-5. Browser reloads the bubbles from `/messages`.
+3. Off-topic → `OFF_TOPIC_REPLY`. Tool returned nothing → `NO_RESULTS_REPLY`. Otherwise gemma3:4b answers from the tool's text with `RULES`, streamed piece by piece.
+4. Flask takes the first piece before replying, so "Cannot reach Ollama" and model errors still come back as `{"status": "failed", "message": ...}`. Otherwise it returns a streamed plain-text `Response` (off-topic and no-results replies are one piece). After the last piece it saves the bot message (answer + sources JSON + seconds).
+5. Browser shows the "Searching the knowledge base..." bubble while the router runs, adds each piece to the bot bubble as it arrives (raw text, through `escapeHtml()`), then reloads the bubbles from `/messages` so the formatting and sources show.
 
 Why two models: llama3.2:3b supports tool calling but ignores the answer rules (it invented barangay clearance requirements and called DOLE DILP off-topic in testing). gemma3:4b has no tool calling in Ollama (`ollama show gemma3:4b` lists only completion and vision) but follows the answer rules well. Measured in testing: routing ~2 s, full answer ~13–20 s.
 
@@ -62,7 +62,7 @@ Why two models: llama3.2:3b supports tool calling but ignores the answer rules (
 | Ollama | `localhost:11434`; models `llama3.2:3b` (router, ~2 GB, has `tools`) and `gemma3:4b` (answers, ~3.4 GB) |
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` through `HuggingFaceEmbeddings` (downloads ~90 MB on first use, runs on CPU, not in Ollama) |
 | Vector store | Chroma, folder `rag-service/chroma_db/`, collection `knowledge_base` |
-| Web search | Tavily, free API key in the `TAVILY_API_KEY` environment variable; `country="philippines"` boosts Philippine pages |
+| Web search | Tavily, free API key in the `TAVILY_API_KEY` environment variable; `topic="news"`, `time_range="month"`, `include_domains` = Philippine government and news sites (issue #31) |
 | Chat history | SQLite file `rag-service/chat.db` (created by `app.py`) |
 | Site URL | http://127.0.0.1:5000/ |
 
@@ -110,7 +110,7 @@ sbl-chatbot/
 └─ rag-service/
    ├─ .gitignore             .venv/  __pycache__/  chroma_db/  chat.db  crawl_cache/
    ├─ requirements.txt
-   ├─ data/chunks.json       hand-checked, 307 passages
+   ├─ data/chunks.json       hand-checked, 306 passages
    ├─ data/scraped_chunks.json  1,114 passages written by crawl.py (do not edit by hand)
    ├─ scrape.py              extract_page, is_relevant, chunk_page, finalize, allowed, extract_links, is_useful_chunk
    ├─ crawl.py               crawls SEEDS → data/scraped_chunks.json (cache in crawl_cache/)
@@ -164,7 +164,7 @@ Never commit `.venv/`, `__pycache__/`, `chroma_db/`, `chat.db`, or any API key.
 
 ## 6. Knowledge base: `rag-service/data/chunks.json`
 
-A JSON array of 307 objects, ids `K001`–`K197`, `K200`–`K230` and `K300`–`K378`. These were added on November 23, 2026 from official government pages: `K144`–`K165` (see `docs/kb_research_2026-11-23.md`), `K166`–`K182` (phase 2, see `docs/kb_research_phase2.md`) and `K200`–`K230` (phase 1, see `docs/kb_research_phase1.md`). New chunks sit next to their section in the file, so ids are not in file order. New sections: `04.5` agricultural loans, `04.6` OFW programs, `04.7` DOST SETUP, `10` hiring employees, `11` customer discounts (`11.2` senior citizen discount), `12` tourism businesses, `13` food businesses, `14` online selling, `15` closing a business, `16` transport livelihoods, `17` contact directory, `18` business-type checklists. `K183`–`K193` are hand-read passages from issue #29 (SEC, IPOPHL, DOLE, DTI; see `docs/kb_research_phase2.md`); `K194`–`K195` are Pag-IBIG employer registration and contributions (section `10.7`); `K196` and `K197` (08.3) say bank business loan rates and the barangay clearance fee are not covered (issue #30); `K198`–`K199` are unused. `K300`–`K378` come from a thorough hand-read pass of DTI, SEC, IPOPHL, DOLE, Pag-IBIG, FDA, OWWA, DOST-CAR, BIR and Benguet LGU sites (see `docs/kb_research_manual_pass.md`); new sections `02.9`–`02.12` Itogon, Tuba, Bokod and La Trinidad permits, `10.8`–`10.10` Pag-IBIG remittance, DOLE pay rules and kasambahay, `14.6` Trustmark.
+A JSON array of 306 objects, ids `K001`–`K197` (`K046` was folded into `K047`), `K200`–`K230` and `K300`–`K378`. These were added on November 23, 2026 from official government pages: `K144`–`K165` (see `docs/kb_research_2026-11-23.md`), `K166`–`K182` (phase 2, see `docs/kb_research_phase2.md`) and `K200`–`K230` (phase 1, see `docs/kb_research_phase1.md`). New chunks sit next to their section in the file, so ids are not in file order. New sections: `04.5` agricultural loans, `04.6` OFW programs, `04.7` DOST SETUP, `10` hiring employees, `11` customer discounts (`11.2` senior citizen discount), `12` tourism businesses, `13` food businesses, `14` online selling, `15` closing a business, `16` transport livelihoods, `17` contact directory, `18` business-type checklists. `K183`–`K193` are hand-read passages from issue #29 (SEC, IPOPHL, DOLE, DTI; see `docs/kb_research_phase2.md`); `K194`–`K195` are Pag-IBIG employer registration and contributions (section `10.7`); `K196` and `K197` (08.3) say bank business loan rates and the barangay clearance fee are not covered (issue #30); `K198`–`K199` are unused. `K300`–`K378` come from a thorough hand-read pass of DTI, SEC, IPOPHL, DOLE, Pag-IBIG, FDA, OWWA, DOST-CAR, BIR and Benguet LGU sites (see `docs/kb_research_manual_pass.md`); new sections `02.9`–`02.12` Itogon, Tuba, Bokod and La Trinidad permits, `10.8`–`10.10` Pag-IBIG remittance, DOLE pay rules and kasambahay, `14.6` Trustmark.
 
 **Extracted passages: `rag-service/data/scraped_chunks.json`** (issue #29). Same fields plus `url` and `agency`; ids `S00001`…; `section` is the agency; text ends with `Source: <url> (checked <date>)` and `(Status: VERIFIED, AUTO-EXTRACTED)`. Written only by `crawl.py`: it reads the `SEEDS` list, obeys `robots.txt` (DTI blocks all crawlers), waits 1.5 s per request, caps 150 pages per site, reads up to 40 linked PDFs per site plus the `PDF_SEEDS` list with `pypdf` (skips PDFs dated before 2024, annual reports and CVs), filters pages (`is_relevant`) and passages (`is_useful_chunk`), and removes duplicates. Re-run with `python crawl.py` (uses `crawl_cache/`; delete it to re-download), then `python build_index.py`. Sites that block scripts (SEC, DOLE, IPOPHL, Pag-IBIG, DTI) are read by hand into `chunks.json` instead.
 ```json
@@ -187,12 +187,12 @@ return found[-1] if found else ""
 
 | File | Main parts |
 |---|---|
-| `build_index.py` | `Document(page_content=title + "\n" + text, metadata={id, section, title, status})`; deletes `chroma_db/` with `shutil.rmtree`; `Chroma.from_documents(..., ids=chunk ids, collection_name="knowledge_base", persist_directory=...)`; loads `chunks.json` and, if present, `scraped_chunks.json`; metadata also has `url`; prints `Done. The collection has 1421 chunks (307 hand-checked + 1114 extracted).` |
+| `build_index.py` | `Document(page_content=title + "\n" + text, metadata={id, section, title, status})`; deletes `chroma_db/` with `shutil.rmtree`; `Chroma.from_documents(..., ids=chunk ids, collection_name="knowledge_base", persist_directory=...)`; loads `chunks.json` and, if present, `scraped_chunks.json`; metadata also has `url`; prints `Done. The collection has 1420 chunks (306 hand-checked + 1114 extracted).` |
 | `retrieval.py` | `embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)`; `vector_store = Chroma(...)`; `retriever = SimpleNamespace(invoke=search)`: `search` fetches `CANDIDATES = 12` passages with `similarity_search_with_score`, subtracts `HAND_CHECKED_BONUS = 0.1` from the distance of hand-checked (`K…`) passages, and orders them (`rank`). Without the bonus, extracted pages crowded out hand-checked answers (e.g. "TESDA STEP"). It also runs BM25 keyword search (`keyword_scores`, plain Python, `BM25_K1 = 1.5`, `BM25_B = 0.75`) over all passages loaded from Chroma at start-up, takes the best `CANDIDATES`, and merges both lists by reciprocal rank fusion (`fuse`, `RRF_K = 60`), keeping `TOP_K = 5`. Before searching it removes the phrase "in Baguio City and Benguet" (`REGION_PHRASE`) that the router often adds, because every passage is about that area and the phrase pulled in directory and checklist passages (issue #30). |
 | `generator.py` | `CHAT_MODEL = "gemma3:4b"`, `OFF_TOPIC_REPLY`, `NO_RESULTS_REPLY`, `RULES`, `clean_context(text)`, `stream_answer(question, context)` |
 | `knowledge_tool.py` | `@tool(response_format="content_and_artifact", return_direct=True)` → returns `(context text, docs)` |
-| `web_tool.py` | `tavily = TavilySearch(max_results=3, country="philippines")`; same decorator → returns `(context text, results)`; Tavily's `ToolException` (no results) → `("", [])` |
-| `agent.py` | `ROUTER_MODEL = "llama3.2:3b"`, `ROUTER_PROMPT`, `router = create_agent(...)`, `route(question)` → `(tool name or None, context, sources)` |
+| `web_tool.py` | `tavily = TavilySearch(max_results=3)`; each search passes `topic="news"` (`SEARCH_TOPIC`), `time_range="month"` (`SEARCH_TIME_RANGE`) and `include_domains=TRUSTED_SITES` (dti, dole, dswd, tesda, sbcorp, baguio, benguet, pna and pia `.gov.ph`, plus sunstar.com.ph, inquirer.net, mb.com.ph, philstar.com). Adding "Baguio Benguet Cordillera" to the query was tried and dropped: it ranked off-topic local news above on-topic livelihood news. `country="philippines"` was dropped because Tavily allows it only with topic "general". Results with an empty title are dropped from both the context and the sources. Same decorator → returns `(context text, results)`; Tavily's `ToolException` or "no results" string → `("", [])`. `generator.py` rule 9: if no result is about a small business or livelihood program, reply that no current announcements were found and suggest the DTI, DOLE or DSWD Cordillera office (issue #31) |
+| `agent.py` | `ROUTER_MODEL = "llama3.2:3b"`, `ROUTER_PROMPT`, `router = create_agent(...)`, `route(question)` → `(tool name or None, context, sources)`; when the router picks `search_knowledge_base`, `route()` searches again with the user's question as typed, because the router's own query is sometimes cut short ("Mayor" for "Mayor's Permit") |
 | `app.py` | Flask routes `GET /`, `GET /messages`, `POST /ask`; SQLite `messages` table |
 
 **Source format** (stored as JSON in `messages.sources`):
@@ -269,7 +269,7 @@ Still current and used as taught: the Ollama CLI and Python library (`ollama.cha
 
 | Check | Expected |
 |---|---|
-| `python build_index.py` | ends `Done. The collection has 1421 chunks (307 hand-checked + 1114 extracted).` (also on re-run, ~15 s) |
+| `python build_index.py` | ends `Done. The collection has 1420 chunks (306 hand-checked + 1114 extracted).` (also on re-run, ~15 s) |
 | `search.py` default question | closest distance ≈ 0.464; retriever picks `K003, K031, K057` |
 | `search.py "How much is the DTI business name registration fee?"` | ≈ 0.453; picks `K005, K035, K131` |
 | `search.py "What is the weather in Baguio today?"` | ≈ 1.132 |
@@ -284,7 +284,7 @@ Still current and used as taught: the Ollama CLI and Python library (`ollama.cha
 ---
 
 ## 12. Known limitations
-- The router sometimes rewords the query, which can change which passages are found (the added "in Baguio City and Benguet" is now removed before searching).
+- The router sometimes rewords or cuts short its query, so `route()` searches the knowledge base with the user's question as typed. The added "in Baguio City and Benguet" is still removed before searching.
 - llama3.2:3b sometimes writes a malformed tool call (seen once in 10 tests); that question gets the off-topic reply.
 - Prompt-injection defences only reduce attacks on a 4b model; they don't stop all of them (see `injection_results.md`).
 - One CPU = one answer at a time.

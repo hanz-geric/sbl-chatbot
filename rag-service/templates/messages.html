@@ -1,6 +1,18 @@
+{% if not messages %}
+    <div class="bot welcome">
+        <div class="text">Hi! I answer questions about starting and running a small business or livelihood in Baguio City and Benguet. Try one of these:</div>
+        <button type="button" class="example">How do I register my business name with DTI?</button>
+        <button type="button" class="example">What are the requirements for a Mayor's Permit in Baguio?</button>
+        <button type="button" class="example">What loans can I get for my small business?</button>
+    </div>
+{% endif %}
 {% for msg in messages %}
     <div class="{{ msg.role }}">
-        <div class="text">{{ msg.content }}</div>
+        {% if msg.role == "bot" %}
+            <div class="text">{{ msg.content|answer }}</div>
+        {% else %}
+            <div class="text">{{ msg.content }}</div>
+        {% endif %}
         {% if msg.role == "bot" and msg.sources %}
             <div class="sources">
                 Sources:
@@ -16,7 +28,7 @@
             </div>
         {% endif %}
         {% if msg.role == "bot" and msg.response_time %}
-            <div class="sources">{{ msg.response_time }} s</div>
+            <div class="sources">Answered in {{ msg.response_time }} s</div>
         {% endif %}
     </div>
 {% endfor %}

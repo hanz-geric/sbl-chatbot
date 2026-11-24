@@ -47,6 +47,10 @@ def route(question):
         last = search_knowledge_base_directly(question)
     elif last.type == "tool" and last.name == "web_search" and not any(cue in lowered for cue in NEWS_CUES):
         last = search_knowledge_base_directly(question)
+    elif last.type == "tool" and last.name == "search_knowledge_base":
+        # The router writes its own query and sometimes cuts it short ("Mayor" for
+        # "Mayor's Permit"), so search with the user's question as typed.
+        last = search_knowledge_base_directly(question)
     if last.type != "tool":
         return None, "", []
     if last.name == "search_knowledge_base":
