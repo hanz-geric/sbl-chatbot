@@ -30,7 +30,12 @@ def format_answer(text):
     return Markup(text)
 
 
+def source_title(title):
+    return re.sub(r"^\d\d(?:\.\d*[A-Z]?)?\s+", "", title)
+
+
 app.jinja_env.filters["answer"] = format_answer
+app.jinja_env.filters["source_title"] = source_title
 
 
 def get_db():

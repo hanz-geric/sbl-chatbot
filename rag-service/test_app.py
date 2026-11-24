@@ -85,3 +85,33 @@ def test_response_time_is_labelled(tmp_path, monkeypatch):
     app.save_message("test", "bot", "Hello", None, 12.3)
     html = client.get("/messages").get_data(as_text=True)
     assert "Answered in 12.3 s" in html
+
+
+def messages_html(tmp_path, monkeypatch, sources):
+    monkeypatch.setattr(app, "DB_PATH", tmp_path / "chat.db")
+    app.create_table()
+    client = app.app.test_client()
+    with client.session_transaction() as s:
+        s["sid"] = "test"
+    app.save_message("test", "bot", "Answer", json.dumps(sources), 9.3)
+    return client.get("/messages").get_data(as_text=True)
+
+
+def test_sources_are_collapsed_with_a_count_and_no_status_tag(tmp_path, monkeypatch):
+    html = messages_html(tmp_path, monkeypatch, [
+        {"title": "BNRS FAQ", "status": "VERIFIED, AUTO-EXTRACTED", "url": "https://bnrs.dti.gov.ph/faq"},
+        {"title": "DTI programs", "status": "VERIFIED", "url": ""},
+    ])
+    assert "<details" in html
+    assert "<summary>Sources (2)</summary>" in html
+    assert "VERIFIED" not in html
+
+
+def test_section_numbers_are_removed_from_source_titles(tmp_path, monkeypatch):
+    html = messages_html(tmp_path, monkeypatch, [
+        {"title": "08.3 Topics not covered: refer to the office", "status": "VERIFIED", "url": ""},
+        {"title": "02.1A Official eBPLS portal", "status": "VERIFIED", "url": ""},
+        {"title": "07. Marketing and Business Management", "status": "VERIFIED", "url": ""},
+    ])
+    assert "Topics not covered: refer to the office" in html
+    assert "08.3" not in html and "02.1A" not in html and "07." not in html
