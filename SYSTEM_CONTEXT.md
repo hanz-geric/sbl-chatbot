@@ -236,7 +236,7 @@ CREATE TABLE IF NOT EXISTS messages (
 | Tools `return_direct=True` | the agent stops after the tool; gemma answers with our tested RULES |
 | Off-topic = "no tool called" | tested: weather, tourist spots, jokes and "ignore your rules" prompts all got no tool call |
 | all-MiniLM-L6-v2 embeddings | what Lab 2.1 teaches; English-only questions, so no multilingual model needed |
-| Top 5 passages, hybrid search | Lab 2.1 used `k: 3`; with 1,397 passages the answer was often 4th or 5th. Hybrid search + top 5 raised the evaluation from 4.27 to 4.60 (issue #30, `docs/evaluation_issue30.md`) for ~4 s more per answer |
+| Top 5 passages, hybrid search | Lab 2.1 used `k: 3`; with 1,397 passages the answer was often 4th or 5th. Hybrid search + top 5 raised the evaluation from 4.27 to 4.60 (4.75 with the passage fixes) (issue #30, `docs/evaluation_issue30.md`) for ~4 s more per answer |
 | Status labels and "see 01.6" removed before the model sees text | the model copied them into answers; sources are shown separately |
 | "(Answer in English.)" after the question | keeps gemma in English |
 | Sources from tool results | the model can't make up sources |
