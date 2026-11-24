@@ -68,3 +68,21 @@ def test_search_finds_dti_fee_table_for_cost_question():
     found = [d.metadata["id"] for d in retrieval.search("How much does DTI business name registration cost?")]
 
     assert "K005" in found
+
+
+def test_search_returns_nothing_when_no_passage_is_close():
+    for message in ["hello", "good morning", "thanks!", "ok", "can you help me?", "hatdog", "asdfgh", "tell me a story"]:
+        assert retrieval.search(message) == [], message
+
+
+def test_search_still_finds_passages_for_the_weakest_real_questions():
+    # The six test-set questions whose best match is furthest away (closest to MAX_DISTANCE).
+    for question in [
+        "What is a BMBE and what are its benefits?",
+        "Saan ang opisina ng TESDA sa La Trinidad?",
+        "Magsasara na ako ng negosyo, ano ang gagawin ko sa BIR?",
+        "Ano ang OTOP Next Gen at para kanino ito?",
+        "Saan ako pwedeng mag-training sa TESDA dito sa Baguio?",
+        "magkano magpa register ng business bossing?",
+    ]:
+        assert retrieval.search(question) != [], question

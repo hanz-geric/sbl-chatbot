@@ -11,7 +11,7 @@ from flask import Flask, Response, jsonify, render_template, request, session
 from markupsafe import Markup, escape
 
 from agent import route
-from generator import GREETING_REPLY, NO_RESULTS_REPLY, OFF_TOPIC_REPLY, stream_answer
+from generator import NO_RESULTS_REPLY, OFF_TOPIC_REPLY, stream_answer
 
 BASE = Path(__file__).parent
 DB_PATH = BASE / "chat.db"
@@ -104,8 +104,6 @@ def ask():
         tool, context, sources = route(question)
         if tool is None:
             pieces, sources = iter([OFF_TOPIC_REPLY]), []
-        elif tool == "greeting":
-            pieces = iter([GREETING_REPLY])
         elif not context:
             pieces = iter([NO_RESULTS_REPLY])
         else:

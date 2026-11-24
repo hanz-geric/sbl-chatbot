@@ -55,14 +55,14 @@ def test_ask_sends_off_topic_reply_as_one_piece(client, monkeypatch):
     assert bot["sources"] is None
 
 
-def test_ask_sends_greeting_reply_without_sources(client, monkeypatch):
-    monkeypatch.setattr(app, "route", lambda question: ("greeting", "", []))
+def test_message_with_nothing_to_look_up_gets_no_results_reply_without_sources(client, monkeypatch):
+    monkeypatch.setattr(app, "route", lambda question: ("search_knowledge_base", "", []))
 
     response = client.post("/ask", data={"question": "hello"})
 
-    assert response.get_data(as_text=True) == app.GREETING_REPLY
+    assert response.get_data(as_text=True) == app.NO_RESULTS_REPLY
     [bot] = bot_messages()
-    assert bot["content"] == app.GREETING_REPLY
+    assert bot["content"] == app.NO_RESULTS_REPLY
     assert bot["sources"] is None
 
 

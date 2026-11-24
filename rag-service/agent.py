@@ -1,5 +1,3 @@
-import re
-
 from langchain.agents import create_agent
 from langchain_ollama import ChatOllama
 
@@ -35,12 +33,6 @@ NEWS_CUES = ("news", "latest", "recent", "update", "announce", "current", "today
              "this month", "this year", "upcoming")
 
 
-# The router searches the knowledge base for greetings ("hello" returned five unrelated
-# passages), so messages made only of these words get a fixed greeting instead.
-GREETING_WORDS = {"hi", "hello", "hey", "good", "morning", "afternoon", "evening", "day", "there",
-                  "thanks", "thank", "you", "salamat", "po", "magandang", "umaga", "hapon", "gabi"}
-
-
 def search_knowledge_base_directly(question):
     return search_knowledge_base.invoke(
         {"name": "search_knowledge_base", "args": {"query": question}, "id": "fallback", "type": "tool_call"}
@@ -48,9 +40,6 @@ def search_knowledge_base_directly(question):
 
 
 def route(question):
-    words = re.findall(r"[a-z]+", question.lower())
-    if words and all(word in GREETING_WORDS for word in words):
-        return "greeting", "", []
     result = router.invoke({"messages": [{"role": "user", "content": question}]})
     last = result["messages"][-1]
     lowered = question.lower()
