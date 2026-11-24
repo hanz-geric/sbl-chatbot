@@ -11,12 +11,14 @@ from flask import Flask, Response, jsonify, render_template, request, session
 from markupsafe import Markup, escape
 
 from agent import route
-from generator import NO_RESULTS_REPLY, OFF_TOPIC_REPLY, stream_answer
+from generator import GREETING_REPLY, NO_RESULTS_REPLY, OFF_TOPIC_REPLY, stream_answer
 
 BASE = Path(__file__).parent
 DB_PATH = BASE / "chat.db"
 SECRET_KEY = "sbl-chatbot-local"
 MAX_QUESTION_LENGTH = 500
+# Sources are not shown under an answer that declines; they were not used.
+DECLINE_PHRASES = ("I don't have that information", "No current announcements were found")
 
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
@@ -102,6 +104,8 @@ def ask():
         tool, context, sources = route(question)
         if tool is None:
             pieces, sources = iter([OFF_TOPIC_REPLY]), []
+        elif tool == "greeting":
+            pieces = iter([GREETING_REPLY])
         elif not context:
             pieces = iter([NO_RESULTS_REPLY])
         else:
@@ -119,7 +123,9 @@ def ask():
             answer += piece
             yield piece
         seconds = round(time.time() - start, 2)
-        save_message(session_id, "bot", answer.strip(), json.dumps(sources) if sources else None, seconds)
+        declined = any(phrase in answer.replace("\u2019", "'") for phrase in DECLINE_PHRASES)
+        saved_sources = json.dumps(sources) if sources and not declined else None
+        save_message(session_id, "bot", answer.strip(), saved_sources, seconds)
 
     return Response(generate(), mimetype="text/plain")
 

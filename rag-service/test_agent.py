@@ -85,3 +85,37 @@ def test_knowledge_base_is_searched_with_the_full_question_not_the_router_query(
     agent.route("What are the requirements for a Mayor's Permit in Baguio?")
 
     assert queries == ["What are the requirements for a Mayor's Permit in Baguio?"]
+
+
+def test_greetings_and_thanks_skip_the_router(monkeypatch):
+    def router_must_not_run(state):
+        raise AssertionError("router was called")
+
+    monkeypatch.setattr(agent, "router", SimpleNamespace(invoke=router_must_not_run))
+
+    for greeting in ["hello", "Hi!", "good morning", "thanks!", "Salamat po", "hi there, thank you"]:
+        assert agent.route(greeting) == ("greeting", "", [])
+
+
+def test_question_that_starts_with_a_greeting_still_goes_to_the_router(monkeypatch):
+    router_replies(monkeypatch, SimpleNamespace(type="tool", name="search_knowledge_base", content="DTI text", artifact=[]))
+    knowledge_base_has(monkeypatch, "01.2 DTI business name registration")
+
+    tool, context, sources = agent.route("Hi, how do I register my business name?")
+
+    assert tool == "search_knowledge_base"
+
+
+def test_each_source_title_is_listed_once(monkeypatch):
+    docs = [
+        SimpleNamespace(page_content="part 1", metadata={"title": "08.3 Topics not covered", "status": "VERIFIED"}),
+        SimpleNamespace(page_content="part 2", metadata={"title": "08.3 Topics not covered", "status": "VERIFIED"}),
+        SimpleNamespace(page_content="faq", metadata={"title": "08.2 Common questions", "status": "VERIFIED"}),
+        SimpleNamespace(page_content="part 3", metadata={"title": "08.3 Topics not covered", "status": "VERIFIED"}),
+    ]
+    router_replies(monkeypatch, SimpleNamespace(type="tool", name="search_knowledge_base", content="text", artifact=docs))
+    monkeypatch.setattr(knowledge_tool, "retriever", SimpleNamespace(invoke=lambda query: docs))
+
+    tool, context, sources = agent.route("How much is the CDA registration fee?")
+
+    assert [s["title"] for s in sources] == ["08.3 Topics not covered", "08.2 Common questions"]

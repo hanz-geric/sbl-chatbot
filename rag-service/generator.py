@@ -4,6 +4,7 @@ import ollama
 
 CHAT_MODEL = "gemma3:4b"
 OFF_TOPIC_REPLY = "I can only help with small business and livelihood questions for Baguio City and Benguet."
+GREETING_REPLY = "Hi! Ask me about starting or running a small business or livelihood in Baguio City or Benguet."
 NO_RESULTS_REPLY = "I could not find any information about that. Please try asking in a different way."
 RULES = """You are the Small Business and Livelihood Assistant for Baguio City and Benguet, Philippines.
 Rules:
