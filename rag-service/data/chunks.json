@@ -276,6 +276,18 @@
   "text": "Under RA 11976 (Ease of Paying Taxes Act), an Official Receipt (OR) can no longer be used as your main receipt. The invoice is now the proof of sale of goods and of services, for both cash and credit sales. ORs, delivery receipts, order slips, acknowledgment and collection receipts are only supplementary documents and must carry the phrase \"THIS DOCUMENT IS NOT VALID FOR CLAIM OF INPUT TAX.\" Tape invoices from a BIR-registered cash register or POS machine (with the BIR sticker signed by the RDO) count as invoices. Applies to businesses in Baguio City and Benguet.\nSource: https://www.bir.gov.ph/secondary-registration (Authority to Print Receipts & Invoices, FAQ) (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K366",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > Micro and small taxpayers: classes and lower penalties (EOPT Act)",
+  "text": "Under RA 11976 (Ease of Paying Taxes Act), effective January 22, 2024, BIR classifies taxpayers by gross sales: micro, less than ₱3,000,000; small, ₱3,000,000 to less than ₱20,000,000; medium, ₱20,000,000 to less than ₱1,000,000,000; large, ₱1,000,000,000 and above. Micro and small taxpayers get a 2-page simplified income tax return, a reduced 10% civil penalty (Tax Code Sec. 248), 50% less interest (Sec. 249), a reduced BIR fine of ₱500 for failure to file certain information (Sec. 250), and a 50% lower compromise penalty for some violations. This applies to small businesses in Baguio City and Benguet.\nSource: https://bir-cdn.bir.gov.ph/BIR/pdf/flyer-eopt.pdf (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K367",
+  "section": "01.6",
+  "title": "01.6 BIR Tax Registration > File and pay anywhere, invoice threshold, keeping books (EOPT Act)",
+  "text": "Under the EOPT Act (RA 11976), you may file BIR returns and pay taxes electronically or manually with any authorized agent bank, any Revenue District Office (through its Revenue Collection Officers) or an authorized tax software provider (no more 'wrong venue' penalty). Issuing an invoice is mandatory for sales of ₱500 or more (BIR adjusts this every 3 years); if single sales are below ₱500 but the day's total reaches ₱500, issue one invoice for the day's total. and 'business style' is no longer required on invoices. The BIR Authority to Print is free. Keep books of accounts for 5 years from the day after the return deadline. BIR EOPT questions: eopt@bir.gov.ph or (02) 8538-3200.\nSource: https://bir-cdn.bir.gov.ph/BIR/pdf/flyer-eopt.pdf (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K341",
   "section": "01.6",
   "title": "01.6 BIR Tax Registration > What must be printed on an invoice",
@@ -951,7 +963,25 @@
   "id": "K175",
   "section": "04.7",
   "title": "04.7 DOST SETUP > Government help to buy equipment and upgrade technology for small businesses",
-  "text": "- DOST's **Small Enterprise Technology Upgrading Program (SETUP)** helps small businesses in Baguio City, Benguet, and the rest of the country buy equipment and improve products and productivity with technology: equipment and technology acquisition, training and consultancy, help meeting standards (testing and calibration), packaging and label design, shop-floor research, and IT solutions, funded through its Innovation-Enabling Fund (iFund).\n- Priority sectors: food processing; furniture; gifts, decor, and handicrafts; agriculture, aquaculture, and forestry; metals and engineering; ICT; health and wellness; halal; energy and environment; creative industries.\n- Process: a Technology Needs Assessment by the Provincial S&T Office, then help acquiring the technology. Amounts and repayment terms are not on the page; ask DOST.\nSource: https://car.dost.gov.ph/technology-transfer-and-commercialization-innovation-system-support/ (checked November 23, 2026)\n(Status: VERIFIED)"
+  "text": "- DOST's **Small Enterprise Technology Upgrading Program (SETUP)** helps small businesses in Baguio City, Benguet, and the rest of the country buy equipment and improve products and productivity with technology: equipment and technology acquisition, training and consultancy, help meeting standards (testing and calibration), packaging and label design, shop-floor research, and IT solutions, funded through its Innovation-Enabling Fund (iFund).\n- Priority sectors: food processing; furniture; gifts, decor, and handicrafts; agriculture, aquaculture, and forestry; metals and engineering; ICT; health and wellness; halal; energy and environment; creative industries.\n- Process: a Technology Needs Assessment by the Provincial S&T Office, then help acquiring the technology. Eligibility, documents and refund terms: see the other 04.7 SETUP passages.\nSource: https://car.dost.gov.ph/technology-transfer-and-commercialization-innovation-system-support/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K363",
+  "section": "04.7",
+  "title": "04.7 DOST SETUP > Who can get SETUP funding and how to apply",
+  "text": "Under DOST AO 002, s. 2016 (Revised SETUP Guidelines), SETUP funding is for MSMEs wholly owned by Filipino citizens that will upgrade their technology. Priority: micro (assets below ₱3M), small (₱3M to ₱15M) and medium (₱15M to ₱100M) enterprises. Steps: (1) send a letter of intent to the PSTO Baguio-Benguet; (2) DOST assesses your needs (TNA); (3) submit a proposal on SETUP Form 1; (4) if approved, sign a notarized agreement (MOA).\nSource: https://dost.gov.ph/knowledge-resources/downloads/file/6188-administrative-order-no-02-revised-small-enterprise-technology-upgrading-program-setup-guidelines.html (checked November 24, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K364",
+  "section": "04.7",
+  "title": "04.7 DOST SETUP > Documents to apply for SETUP",
+  "text": "DOST SETUP application documents (DOST AO 002, s. 2016), filed through the PSTO Baguio-Benguet: letter of intent committing to refund the assistance and insure the equipment; DOST TNA Form 1; proposal on SETUP Form 1; business permits and licenses; DTI, SEC or CDA registration; board resolution (corporations, cooperatives); financial statements for the past 3 years (small and medium) or at least 1 year (micro); projected financial statements for 5 years; equipment specifications; 3 supplier quotations per equipment.\nSource: https://dost.gov.ph/knowledge-resources/downloads/file/6188-administrative-order-no-02-revised-small-enterprise-technology-upgrading-program-setup-guidelines.html (checked November 24, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K365",
+  "section": "04.7",
+  "title": "04.7 DOST SETUP > Paying back SETUP funding (refund terms)",
+  "text": "DOST SETUP funding is refunded, not a grant (DOST AO 002, s. 2016). Funds are released against post-dated checks for the total plus a DOST SETUP transfer fee of 0.5% of the equipment's cost. The project runs 6 to 12 months. Refund starts no later than 12 months after the equipment is acquired, installed and running, and lasts 3 to 5 years; it can be extended by up to 2 more years with approval. After full refund and the 0.5% fee, DOST transfers the equipment to you. Ask the PSTO Baguio-Benguet if newer rules apply.\nSource: https://dost.gov.ph/knowledge-resources/downloads/file/6188-administrative-order-no-02-revised-small-enterprise-technology-upgrading-program-setup-guidelines.html (checked November 24, 2026)\n(Status: FOR VALIDATION)"
  },
  {
   "id": "K338",

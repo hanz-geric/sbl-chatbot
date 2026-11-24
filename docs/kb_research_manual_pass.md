@@ -2,7 +2,7 @@
 
 Checked November 23–24, 2026. Official sites that block crawlers or that the crawler got nothing from were read by hand in the user's own Chrome (Claude in Chrome), one page at a time, five site groups read in parallel in separate tabs. No bot check, CAPTCHA, consent box or certificate error was bypassed, and nothing was downloaded (PDFs were read only when Chrome displayed their text).
 
-Result: **63 new passages, `K300`–`K362`**, in `rag-service/data/chunks.json` (287 hand-checked passages in total). `K357`–`K362` (La Trinidad) were added in the follow-up lookup on November 24, 2026 (see below). Each new passage is 300–800 characters and ends with its source URL and status. Wherever a passage gives an amount, it names the agency and the exact item in the same sentence.
+Result: **68 new passages, `K300`–`K367`**, in `rag-service/data/chunks.json` (292 hand-checked passages in total). `K357`–`K362` (La Trinidad) and `K363`–`K367` (DOST SETUP guidelines, BIR EOPT flyer) were added in the follow-up on November 24, 2026 (see below). Each new passage is 300–800 characters and ends with its source URL and status. Wherever a passage gives an amount, it names the agency and the exact item in the same sentence.
 
 ## Passages added
 
@@ -71,6 +71,11 @@ Result: **63 new passages, `K300`–`K362`**, in `rag-service/data/chunks.json` 
 | K360 | 15.2 Closing a business > Retiring the business permit in La Trinidad, Benguet | FOR VALIDATION |
 | K361 | 13.6 Food businesses > Sanitary permit and health certificate in La Trinidad, Benguet | VERIFIED |
 | K362 | 17.12 Contact directory > La Trinidad, Benguet offices for businesses | VERIFIED |
+| K363 | 04.7 DOST SETUP > Who can get SETUP funding and how to apply | FOR VALIDATION |
+| K364 | 04.7 DOST SETUP > Documents to apply for SETUP | FOR VALIDATION |
+| K365 | 04.7 DOST SETUP > Paying back SETUP funding (refund terms) | FOR VALIDATION |
+| K366 | 01.6 BIR Tax Registration > Micro and small taxpayers: classes and lower penalties (EOPT Act) | VERIFIED |
+| K367 | 01.6 BIR Tax Registration > File and pay anywhere, invoice threshold, keeping books (EOPT Act) | VERIFIED |
 ## Existing passages changed
 
 | id | change | why |
@@ -80,6 +85,7 @@ Result: **63 new passages, `K300`–`K362`**, in `rag-service/data/chunks.json` 
 | K090 | BMBE rewritten: register at a Negosyo Center (not the city/municipal hall), DTI issues the Certificate of Authority free in 15 working days | DTI Negosyo Center FAQ contradicts the old First Circle text |
 | K133 | 08.3 "Not covered" narrowed to Benguet towns other than Itogon, Tuba and Bokod; follow-up (Nov 24): La Trinidad also removed, title no longer names it | those three are now covered; a broad "not covered" passage makes the answer model decline |
 | K142 | BMBE registration row: "Negosyo Center / city or municipal hall" → "Negosyo Center (DTI)" | same as K090 |
+| K175 | DOST SETUP: "Amounts and repayment terms are not on the page; ask DOST." replaced by a pointer to the new 04.7 passages | refund terms now covered (K365); a "not on the page" line makes the model decline |
 | K185 | "Apply online through eTMFile, or in person" → online only since September 1, 2020; added the FAQ source | IPOPHL trademark FAQ (IPSOs do not accept paper filing) |
 | K225 | DOLE Baguio–Benguet Field Office: was FOR VALIDATION (search-engine copy), now read directly and VERIFIED; adds DOLE-CAR regional phone numbers | car.dole.gov.ph/contact-us loaded this time |
 
@@ -95,6 +101,15 @@ Retried in the Claude desktop app's built-in browser and searched the web for ot
 - **SEC (www.sec.gov.ph) and DOLE BWC PDFs (bwc.dole.gov.ph):** now show a Cloudflare "Just a moment" check in the built-in browser. Not passed.
 - **Pag-IBIG late-remittance penalty, SEC OPC fees:** web search found only commentaries, news and old (2009, 2019) documents that disagree with each other; nothing drafted.
 - Live check after the merge (1151 chunks; `pytest -q` 23 passed): La Trinidad new-permit requirements, health certificate fee (₱50), closing a business (20 days), BPLS phone number all correct; a Kapangan question still gets the "ask the BPLO" answer.
+
+## Official PDFs downloaded with the user's approval (November 24, 2026)
+
+Saved to a scratch folder, read locally, not committed.
+
+- **BIR "Salient Features of the EOPT Act" flyer** (bir-cdn.bir.gov.ph/BIR/pdf/flyer-eopt.pdf, 333 KB, has a text layer) → K366, K367. K367 also repeats the daily-total invoice rule from K210 after a live check answered "no invoice needed" for a ₱300 sale.
+- **DOST AO 002, s. 2016, Revised SETUP Guidelines** (dost.gov.ph download 6188, 5.2 MB, 40 scanned pages read as images; pages 1–2 and 6–11) → K363–K365, FOR VALIDATION because it is dated January 12, 2016. K175 updated.
+- **Pag-IBIG:** the circulars page links Circulars 275 (employer registration and remittance), 452, 454 and 504 (penalty condonation), but each link returns an HTML page, not the PDF. Circular 499 (eSRS) returned HTML too; a retry with a browser user-agent was blocked by this session's permission check and not attempted again. Late-remittance penalties are still not covered.
+- Live check (1156 chunks; `pytest -q` 23 passed): SETUP refund period, SETUP documents, micro taxpayer threshold, file-and-pay anywhere, invoice for a ₱300 sale (after the K367 fix) all correct.
 
 ## Still not covered / needs the user
 
