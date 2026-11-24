@@ -11,6 +11,7 @@ BASE = Path(__file__).parent
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 DB_PATH = BASE / "chroma_db"
 COLLECTION = "knowledge_base"
+SCRAPED_PATH = BASE / "data" / "scraped_chunks.json"
 
 
 def get_status(text):
@@ -19,13 +20,18 @@ def get_status(text):
 
 
 with open(BASE / "data" / "chunks.json", encoding="utf-8") as f:
-    chunks = json.load(f)
-print(f"Loaded {len(chunks)} chunks")
+    hand_checked = json.load(f)
+scraped = []
+if SCRAPED_PATH.exists():
+    with open(SCRAPED_PATH, encoding="utf-8") as f:
+        scraped = json.load(f)
+chunks = hand_checked + scraped
+print(f"Loaded {len(hand_checked)} hand-checked chunks and {len(scraped)} extracted chunks")
 
 documents = [
     Document(
         page_content=c["title"] + "\n" + c["text"],
-        metadata={"id": c["id"], "section": c["section"], "title": c["title"], "status": get_status(c["text"])},
+        metadata={"id": c["id"], "section": c["section"], "title": c["title"], "status": get_status(c["text"]), "url": c.get("url", "")},
     )
     for c in chunks
 ]
@@ -41,4 +47,4 @@ vector_store = Chroma.from_documents(
     persist_directory=str(DB_PATH),
 )
 
-print(f"Done. The collection has {len(vector_store.get()['ids'])} chunks.")
+print(f"Done. The collection has {len(vector_store.get()['ids'])} chunks ({len(hand_checked)} hand-checked + {len(scraped)} extracted).")

@@ -45,6 +45,16 @@ def test_empty_results_give_empty_content(monkeypatch):
     assert out.artifact == []
 
 
+def test_no_results_message_gives_empty_content(monkeypatch):
+    # TavilySearch returns a plain string, not a dict, when nothing is found.
+    message = "No search results found for 'What is the capital of France?'. Suggestions: Try a more detailed search."
+    monkeypatch.setattr(web_tool, "tavily", SimpleNamespace(invoke=lambda args: message))
+    out = invoke("What is the capital of France?")
+
+    assert out.content == ""
+    assert out.artifact == []
+
+
 def test_search_error_returns_empty_result(monkeypatch):
     def failing_invoke(args):
         raise ToolException("quota exceeded")

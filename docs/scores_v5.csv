@@ -1,0 +1,81 @@
+id,v4,control,v5,v5_seconds,note,control_note
+T01,5,5,4,12.9,Correct; names the wrong office (CPDO) for permits,
+T02,5,5,5,10.6,,same as v5
+T03,5,3,4,11.4,Leaves out the late-renewal surcharge,Leaves out surcharge; names CPDO for permits
+T04,5,2,2,10.8,Did not say who can register (retrieved 'what it is' instead of 'who can register'),Says 'any individual' can register
+T05,5,5,5,14.3,,same as v5
+T06,5,5,5,14.0,,same as v5
+T07,5,3,5,24.2,,Says SEC or CDA; no eSPARC
+T08,5,4,4,14.5,Leaves out the online system,Leaves out online system
+T09,5,3,3,22.4,Answered only for online sellers; missed first sale / 30-day rule,same as v5
+T10,5,5,4,22.3,Leaves out DTI certificate and DST,
+T11,5,4,4,16.9,Adds an unrelated City Treasurer line,same as v5
+T12,4,5,5,20.3,,same as v5
+T13,5,3,3,26.0,Missed ORUS; gave a PDF link and the RDO,same as v5
+T14,5,5,5,28.2,,same as v5
+T15,5,5,5,18.6,,same as v5
+T16,5,4,4,19.1,Leaves out email code / PDF upload details,same as v5
+T17,5,3,3,19.5,Did not list the documents,same as v5
+T18,4,3,3,26.8,"Gave the 2026 staggered schedule, not the standard Jan 1-20 period",same as v5
+T19,5,2,2,19.8,Gave the business-tax 'not covered' text instead of the 25% + 2% penalty,same as v5
+T20,5,5,5,23.6,,same as v5
+T21,5,5,5,19.4,,same as v5
+T22,5,5,5,16.4,,same as v5
+T23,5,5,5,17.5,,same as v5
+T24,5,5,5,25.4,,same as v5
+T25,5,5,4,33.3,Router used web search (Wikipedia among sources),
+T26,5,5,5,20.6,,same as v5
+T27,5,4,4,20.3,Leaves out the program parts,same as v5
+T28,5,4,4,16.2,Leaves out that travel and lodging are not covered,same as v5
+T29,5,5,5,14.3,,same as v5
+T30,5,5,5,12.8,,same as v5
+T31,5,5,5,10.7,,same as v5
+T32,5,4,4,25.7,Leaves out term and processing fee,same as v5
+T33,5,3,3,36.0,Listed requirements but not where to apply (app.sbcorp.ph),same as v5
+T34,4,2,5,31.4,,"Gives an unsupported PHP 1,000,000 ceiling"
+T35,5,5,5,13.8,,same as v5
+T36,5,5,5,18.2,,same as v5
+T37,5,5,5,18.7,,same as v5
+T38,5,5,5,15.8,,same as v5
+T39,4,4,4,18.5,Leaves out government employees,same as v5
+T40,5,3,3,24.3,Missed SLP and DOLE Kabuhayan; only Negosyo Center,same as v5
+T41,5,5,5,17.9,,same as v5
+T42,5,5,5,27.3,,same as v5
+T43,5,5,5,23.2,,
+T44,5,5,5,29.0,,same as v5
+T45,5,5,5,19.4,,same as v5
+T46,5,5,4,33.4,Now answerable (01.10); states Juana criteria as if all are required,Referred to IPOPHL (expected decline)
+T47,5,5,5,19.8,,same as v5
+T48,5,5,5,26.6,Now answerable from K184; the expected 'decline' is outdated,Declined and referred to SEC/eSPARC (expected decline)
+T49,4,4,4,19.7,Approval not promised; requirements summary garbled,same as v5
+T50,3,5,5,1.8,,same as v5
+H01,5,5,5,16.1,,same as v5
+H02,5,5,5,8.3,,same as v5
+H03,5,5,5,13.4,,same as v5
+H04,5,5,5,14.1,,same as v5
+H05,5,5,5,29.8,,same as v5
+H06,3,3,3,13.8,Declined but named the wrong office (City Tourism),same as v5
+H07,3,5,5,23.7,Now answerable from K163; the expected 'decline' is outdated,same as v5
+H08,5,1,5,10.2,,Invented that BFP charges no fee
+H09,5,3,2,17.3,Gave the CDA name reservation fee as the registration fee,"Gave name reservation fees, labelled as such"
+H10,5,3,5,22.8,,Declined but referred to SB Corp
+V01,,3,5,22.5,,Declined: SEC fees not in this knowledge base
+V02,,2,5,26.5,,Wrong: sent to DTI
+V03,,3,5,18.4,,Declined but referred to DTI
+V04,,3,5,25.4,,No fee: trademarks not in this knowledge base
+V05,,3,4,33.1,States Juana criteria as if all are required,No Juana Make a Mark
+V06,,5,3,15.3,Declined but referred to SEC instead of IPOPHL,
+V07,,3,5,31.9,,Declined: TUPAD not in this knowledge base
+V08,,3,5,29.3,,Vague; no Rule 1020
+V09,,5,1,30.5,Invented a fee: used DTI business name fees as the Rule 1020 fee,
+V10,,5,5,33.3,,same as v5
+V11,,4,4,22.8,Leaves out the 90-day renewal window,same as v5
+V12,,5,5,26.7,,same as v5
+V13,,5,5,85.3,,same as v5
+V14,,5,5,86.6,,same as v5
+V15,,3,5,46.2,,No payment deadline
+V16,,5,5,34.3,,same as v5
+V17,,5,4,47.4,Adds RAPID facility from an extracted page; main facts right,
+V18,,5,5,42.2,,same as v5
+V19,,5,5,49.8,,same as v5
+V20,,3,2,40.8,Presented the OWWA-Landbank EDLP rate as Landbank's business loan rate,Declined but referred to OWWA

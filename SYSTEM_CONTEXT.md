@@ -11,7 +11,7 @@ This is our **final project (Lab 5.2, "The Right Tool for the Job")** from the O
 The **Small Business and Livelihood Development Knowledge Assistant** (University of Baguio group project). It answers small business and livelihood questions for **Baguio City and Benguet**: DTI business name registration, Baguio City business permits (Mayor's Permit, eBPLS), BIR, livelihood and loan programs (DOLE DILP, SB Corp, DSWD, TESDA, Negosyo Centers).
 
 It is an **agent with two tools** (the Lab 5.2 architecture):
-1. **`search_knowledge_base`** (RAG tool, Lab 2.1): searches our 143 passages.
+1. **`search_knowledge_base`** (RAG tool, Lab 2.1): searches 224 hand-checked passages plus 864 passages extracted automatically from official sites (issue #29).
 2. **`web_search`** (Lab 3.1): Tavily web search for current news and updates.
 
 A small model (llama3.2:3b) **decides which tool to use**. A second model (gemma3:4b) **writes the answer** only from what the tool returned. The page shows the answer with its **sources**.
@@ -35,7 +35,7 @@ Flask    app.py ── saves messages ──► SQLite chat.db (table messages)
    │  route(question)
    ▼
 Agent    agent.py: create_agent(llama3.2:3b, tools) picks ONE tool (or none = off-topic)
-   ├─► knowledge_tool.py  search_knowledge_base ─► retrieval.py: Chroma + all-MiniLM-L6-v2, top 3
+   ├─► knowledge_tool.py  search_knowledge_base ─► retrieval.py: Chroma + all-MiniLM-L6-v2 and BM25 keyword search, fused, top 5 (hand-checked preferred)
    └─► web_tool.py        web_search ─► Tavily (internet), top 3, Philippines boost
    │  tool text = CONTEXT, tool results = sources
    ▼
@@ -79,8 +79,9 @@ langchain-tavily==0.2.18
 ollama==0.6.3
 flask==3.1.3
 pytest==9.1.1
+pypdf==7.1.1
 ```
-`sentence-transformers` is needed by `HuggingFaceEmbeddings` but is not installed with it, so it is listed. `pytest` is listed so the unit tests can be run from a clean checkout. `chromadb`, `langgraph`, `langchain-core`, `httpx` and `torch` come in as dependencies.
+`sentence-transformers` is needed by `HuggingFaceEmbeddings` but is not installed with it, so it is listed. `pytest` is listed so the unit tests can be run from a clean checkout. `pypdf` lets `crawl.py` read official PDFs (issue #29, approved). `chromadb`, `langgraph`, `langchain-core`, `httpx` and `torch` come in as dependencies.
 
 ### Setup (per member)
 ```
@@ -107,10 +108,13 @@ sbl-chatbot/
 │  ├─ test_questions.csv     60 test questions with expected facts
 │  └─ score_sheet.xlsx       1-5 scoring rubric
 └─ rag-service/
-   ├─ .gitignore             .venv/  __pycache__/  chroma_db/  chat.db
+   ├─ .gitignore             .venv/  __pycache__/  chroma_db/  chat.db  crawl_cache/
    ├─ requirements.txt
-   ├─ data/chunks.json       given, 143 passages
-   ├─ build_index.py         chunks → Documents → MiniLM → Chroma
+   ├─ data/chunks.json       hand-checked, 296 passages
+   ├─ data/scraped_chunks.json  1,114 passages written by crawl.py (do not edit by hand)
+   ├─ scrape.py              extract_page, is_relevant, chunk_page, finalize, allowed, extract_links, is_useful_chunk
+   ├─ crawl.py               crawls SEEDS → data/scraped_chunks.json (cache in crawl_cache/)
+   ├─ build_index.py         chunks.json + scraped_chunks.json → Documents → MiniLM → Chroma
    ├─ retrieval.py           embeddings, vector_store, retriever
    ├─ search.py              debug printout of retrieval
    ├─ generator.py           RULES, clean_context, stream_answer (gemma3:4b)
@@ -160,7 +164,9 @@ Never commit `.venv/`, `__pycache__/`, `chroma_db/`, `chat.db`, or any API key.
 
 ## 6. Knowledge base: `rag-service/data/chunks.json`
 
-A JSON array of 143 objects, ids `K001`–`K143`:
+A JSON array of 296 objects, ids `K001`–`K197`, `K200`–`K230` and `K300`–`K367`. These were added on November 23, 2026 from official government pages: `K144`–`K165` (see `docs/kb_research_2026-11-23.md`), `K166`–`K182` (phase 2, see `docs/kb_research_phase2.md`) and `K200`–`K230` (phase 1, see `docs/kb_research_phase1.md`). New chunks sit next to their section in the file, so ids are not in file order. New sections: `04.5` agricultural loans, `04.6` OFW programs, `04.7` DOST SETUP, `10` hiring employees, `11` customer discounts (`11.2` senior citizen discount), `12` tourism businesses, `13` food businesses, `14` online selling, `15` closing a business, `16` transport livelihoods, `17` contact directory, `18` business-type checklists. `K183`–`K193` are hand-read passages from issue #29 (SEC, IPOPHL, DOLE, DTI; see `docs/kb_research_phase2.md`); `K194`–`K195` are Pag-IBIG employer registration and contributions (section `10.7`); `K196` and `K197` (08.3) say bank business loan rates and the barangay clearance fee are not covered (issue #30); `K198`–`K199` are unused. `K300`–`K367` come from a thorough hand-read pass of DTI, SEC, IPOPHL, DOLE, Pag-IBIG, FDA, OWWA, DOST-CAR, BIR and Benguet LGU sites (see `docs/kb_research_manual_pass.md`); new sections `02.9`–`02.12` Itogon, Tuba, Bokod and La Trinidad permits, `10.8`–`10.10` Pag-IBIG remittance, DOLE pay rules and kasambahay, `14.6` Trustmark.
+
+**Extracted passages: `rag-service/data/scraped_chunks.json`** (issue #29). Same fields plus `url` and `agency`; ids `S00001`…; `section` is the agency; text ends with `Source: <url> (checked <date>)` and `(Status: VERIFIED, AUTO-EXTRACTED)`. Written only by `crawl.py`: it reads the `SEEDS` list, obeys `robots.txt` (DTI blocks all crawlers), waits 1.5 s per request, caps 150 pages per site, reads up to 40 linked PDFs per site plus the `PDF_SEEDS` list with `pypdf` (skips PDFs dated before 2024, annual reports and CVs), filters pages (`is_relevant`) and passages (`is_useful_chunk`), and removes duplicates. Re-run with `python crawl.py` (uses `crawl_cache/`; delete it to re-download), then `python build_index.py`. Sites that block scripts (SEC, DOLE, IPOPHL, Pag-IBIG, DTI) are read by hand into `chunks.json` instead.
 ```json
 {"id": "K004", "section": "01.2 ...", "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Who can register", "text": "..."}
 ```
@@ -181,8 +187,8 @@ return found[-1] if found else ""
 
 | File | Main parts |
 |---|---|
-| `build_index.py` | `Document(page_content=title + "\n" + text, metadata={id, section, title, status})`; deletes `chroma_db/` with `shutil.rmtree`; `Chroma.from_documents(..., ids=chunk ids, collection_name="knowledge_base", persist_directory=...)`; prints `Done. The collection has 143 chunks.` |
-| `retrieval.py` | `embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)`; `vector_store = Chroma(...)`; `retriever = vector_store.as_retriever(search_kwargs={"k": TOP_K})`, `TOP_K = 3` (Lab 2.1) |
+| `build_index.py` | `Document(page_content=title + "\n" + text, metadata={id, section, title, status})`; deletes `chroma_db/` with `shutil.rmtree`; `Chroma.from_documents(..., ids=chunk ids, collection_name="knowledge_base", persist_directory=...)`; loads `chunks.json` and, if present, `scraped_chunks.json`; metadata also has `url`; prints `Done. The collection has 1410 chunks (296 hand-checked + 1114 extracted).` |
+| `retrieval.py` | `embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)`; `vector_store = Chroma(...)`; `retriever = SimpleNamespace(invoke=search)`: `search` fetches `CANDIDATES = 12` passages with `similarity_search_with_score`, subtracts `HAND_CHECKED_BONUS = 0.1` from the distance of hand-checked (`K…`) passages, and orders them (`rank`). Without the bonus, extracted pages crowded out hand-checked answers (e.g. "TESDA STEP"). It also runs BM25 keyword search (`keyword_scores`, plain Python, `BM25_K1 = 1.5`, `BM25_B = 0.75`) over all passages loaded from Chroma at start-up, takes the best `CANDIDATES`, and merges both lists by reciprocal rank fusion (`fuse`, `RRF_K = 60`), keeping `TOP_K = 5`. Before searching it removes the phrase "in Baguio City and Benguet" (`REGION_PHRASE`) that the router often adds, because every passage is about that area and the phrase pulled in directory and checklist passages (issue #30). |
 | `generator.py` | `CHAT_MODEL = "gemma3:4b"`, `OFF_TOPIC_REPLY`, `NO_RESULTS_REPLY`, `RULES`, `clean_context(text)`, `stream_answer(question, context)` |
 | `knowledge_tool.py` | `@tool(response_format="content_and_artifact", return_direct=True)` → returns `(context text, docs)` |
 | `web_tool.py` | `tavily = TavilySearch(max_results=3, country="philippines")`; same decorator → returns `(context text, results)`; Tavily's `ToolException` (no results) → `("", [])` |
@@ -230,7 +236,7 @@ CREATE TABLE IF NOT EXISTS messages (
 | Tools `return_direct=True` | the agent stops after the tool; gemma answers with our tested RULES |
 | Off-topic = "no tool called" | tested: weather, tourist spots, jokes and "ignore your rules" prompts all got no tool call |
 | all-MiniLM-L6-v2 embeddings | what Lab 2.1 teaches; English-only questions, so no multilingual model needed |
-| Top 3 passages | Lab 2.1 `search_kwargs={"k": 3}`; small context keeps gemma fast |
+| Top 5 passages, hybrid search | Lab 2.1 used `k: 3`; with 1,397 passages the answer was often 4th or 5th. Hybrid search + top 5 raised the evaluation from 4.27 to 4.60 (4.75 with the passage fixes) (issue #30, `docs/evaluation_issue30.md`) for ~4 s more per answer |
 | Status labels and "see 01.6" removed before the model sees text | the model copied them into answers; sources are shown separately |
 | "(Answer in English.)" after the question | keeps gemma in English |
 | Sources from tool results | the model can't make up sources |
@@ -263,10 +269,10 @@ Still current and used as taught: the Ollama CLI and Python library (`ollama.cha
 
 | Check | Expected |
 |---|---|
-| `python build_index.py` | ends `Done. The collection has 143 chunks.` (also on re-run, ~15 s) |
+| `python build_index.py` | ends `Done. The collection has 1410 chunks (296 hand-checked + 1114 extracted).` (also on re-run, ~15 s) |
 | `search.py` default question | closest distance ≈ 0.464; retriever picks `K003, K031, K057` |
-| `search.py "How much is the DTI business name registration fee?"` | ≈ 0.453; picks `K005, K131, K008` |
-| `search.py "What is the weather in Baguio today?"` | ≈ 1.169 |
+| `search.py "How much is the DTI business name registration fee?"` | ≈ 0.453; picks `K005, K035, K131` |
+| `search.py "What is the weather in Baguio today?"` | ≈ 1.132 |
 | DTI fee question | tool `search_knowledge_base`; ₱200 barangay, ₱500 city/municipality, ₱1,000 regional, ₱2,000 national, + ₱30 documentary stamp tax |
 | "How much is the permit fee for a sari-sari store?" | no invented amount; says it doesn't have it and names an office |
 | "Are there new livelihood grants announced this month?" | tool `web_search` |
@@ -278,8 +284,7 @@ Still current and used as taught: the Ollama CLI and Python library (`ollama.cha
 ---
 
 ## 12. Known limitations
-- all-MiniLM ranks **K004** ("Who can register") 5th for "Who can register a business name with DTI?", so it is not in the top 3. Fixing it is optional issue (keyword search + hybrid).
-- The router sometimes rewords the query (e.g. adds "in Baguio City and Benguet"), which can change which passages are found.
+- The router sometimes rewords the query, which can change which passages are found (the added "in Baguio City and Benguet" is now removed before searching).
 - llama3.2:3b sometimes writes a malformed tool call (seen once in 10 tests); that question gets the off-topic reply.
 - Prompt-injection defences only reduce attacks on a 4b model; they don't stop all of them (see `injection_results.md`).
 - One CPU = one answer at a time.

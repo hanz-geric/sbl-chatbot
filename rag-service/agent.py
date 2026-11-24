@@ -10,7 +10,7 @@ Tools:
 - search_knowledge_base: use it for questions about registering a business, permits, taxes, loans, grants, livelihood programs, trainings and offices.
 - web_search: use it only, with the user's question word for word, when the user asks for current or recent news, updates or announcements.
 Rules:
-1. If the question is not about business, livelihood, permits, taxes, loans, or training (for example weather, tourist spots, food, news, or general knowledge), do not use any tool and reply with exactly this sentence: "I can only help with small business and livelihood questions for Baguio City and Benguet."
+1. If the question is not about business, livelihood, permits, taxes, loans, training, or hiring employees (for example weather, tourist spots, food, news, or general knowledge), do not use any tool and reply with exactly this sentence: "I can only help with small business and livelihood questions for Baguio City and Benguet."
 2. Answer ONLY from the tool results. Do not use outside knowledge. If the results do not have the answer, say you don't have that information.
 3. Never invent amounts, fees, rates, dates or offices.
 4. Never promise that a loan, grant, or application will be approved.
@@ -29,7 +29,7 @@ def route(question):
     if last.type != "tool":
         return None, "", []
     if last.name == "search_knowledge_base":
-        sources = [{"title": d.metadata["title"], "status": d.metadata["status"], "url": ""} for d in last.artifact]
+        sources = [{"title": d.metadata["title"], "status": d.metadata["status"], "url": d.metadata.get("url", "")} for d in last.artifact]
     else:
         sources = [{"title": r["title"], "status": "WEB", "url": r["url"]} for r in last.artifact]
     return last.name, last.content, sources
