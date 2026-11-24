@@ -23,9 +23,30 @@ router = create_agent(
 )
 
 
+# The small router model treats some employer pay questions (holidays, night shift) as
+# general knowledge and calls no tool, so these terms always go to the knowledge base.
+PAY_TERMS = ("holiday", "13th month", "thirteenth month", "night shift", "overtime", "non-working",
+             "service incentive leave", "minimum wage", "service charge")
+# Web search is only for news (see ROUTER_PROMPT); the router sometimes picks it for office
+# addresses or rules that the knowledge base has, so it needs one of these cues.
+NEWS_CUES = ("news", "latest", "recent", "update", "announce", "current", "today", "this week",
+             "this month", "this year", "upcoming")
+
+
+def search_knowledge_base_directly(question):
+    return search_knowledge_base.invoke(
+        {"name": "search_knowledge_base", "args": {"query": question}, "id": "fallback", "type": "tool_call"}
+    )
+
+
 def route(question):
     result = router.invoke({"messages": [{"role": "user", "content": question}]})
     last = result["messages"][-1]
+    lowered = question.lower()
+    if last.type != "tool" and any(term in lowered for term in PAY_TERMS):
+        last = search_knowledge_base_directly(question)
+    elif last.type == "tool" and last.name == "web_search" and not any(cue in lowered for cue in NEWS_CUES):
+        last = search_knowledge_base_directly(question)
     if last.type != "tool":
         return None, "", []
     if last.name == "search_knowledge_base":

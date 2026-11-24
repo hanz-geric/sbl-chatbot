@@ -34,7 +34,29 @@ def clean_context(text):
     return re.sub(r"\n{3,}", "\n\n", text).strip()
 
 
+# gemma3:4b sometimes obeys instructions planted in the question or in a web result despite
+# rule 8, so sentences that try to instruct the assistant are removed before it sees them.
+INJECTED_INSTRUCTION = re.compile(
+    r"\b(?:ignore|disregard|forget|override)\b[^.!?\n]*\b(?:instructions?|rules?|prompts?)\b"
+    r"|\b(?:end|start|begin|finish|conclude)\s+(?:your|the)\s+(?:answer|reply|response)\b"
+    r"|\bat the (?:end|start|beginning) of (?:your|the) (?:answer|reply|response)\b"
+    r"|\b(?:add|append|repeat|say|write|print|output)\b[^.!?\n]*\b(?:sentence|phrase)\b"
+    r"|\bsystem prompt\b|\byou are now\b",
+    re.I,
+)
+
+
+def remove_injected_instructions(text):
+    lines = []
+    for line in text.split("\n"):
+        sentences = re.split(r"(?<=[.!?])\s+", line)
+        lines.append(" ".join(s for s in sentences if not INJECTED_INSTRUCTION.search(s)))
+    return "\n".join(lines).strip()
+
+
 def stream_answer(question, context):
+    question = remove_injected_instructions(question)
+    context = remove_injected_instructions(context)
     stream = ollama.chat(
         model=CHAT_MODEL,
         messages=[
