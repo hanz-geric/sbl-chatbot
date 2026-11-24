@@ -55,6 +55,30 @@ def test_ask_sends_off_topic_reply_as_one_piece(client, monkeypatch):
     assert bot["sources"] is None
 
 
+def test_message_with_nothing_to_look_up_gets_no_results_reply_without_sources(client, monkeypatch):
+    monkeypatch.setattr(app, "route", lambda question: ("search_knowledge_base", "", []))
+
+    response = client.post("/ask", data={"question": "hello"})
+
+    assert response.get_data(as_text=True) == app.NO_RESULTS_REPLY
+    [bot] = bot_messages()
+    assert bot["content"] == app.NO_RESULTS_REPLY
+    assert bot["sources"] is None
+
+
+def test_decline_is_saved_without_sources(client, monkeypatch):
+    sources = [{"title": "08.3 Topics not covered", "status": "VERIFIED", "url": ""}]
+    for answer in ["I don't have that information. Ask the Negosyo Center.",
+                   "I don\u2019t have that information. Ask the Negosyo Center.",
+                   "No current announcements were found. Please ask the DTI Cordillera (CAR) office."]:
+        monkeypatch.setattr(app, "route", lambda question: ("search_knowledge_base", "text", sources))
+        monkeypatch.setattr(app, "stream_answer", lambda question, context, answer=answer: iter([answer]))
+
+        client.post("/ask", data={"question": "How much is the CDA fee?"}).get_data()
+
+    assert [bot["sources"] for bot in bot_messages()] == [None, None, None]
+
+
 def test_ask_returns_json_error_when_ollama_is_down(client, monkeypatch):
     def ollama_down(question, context):
         raise httpx.ConnectError("connection refused")

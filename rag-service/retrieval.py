@@ -18,6 +18,10 @@ HAND_CHECKED_BONUS = 0.1
 BM25_K1 = 1.5
 BM25_B = 0.75
 RRF_K = 60
+# Every test-set question has a passage closer than 1.29; greetings, thanks, small talk and
+# gibberish are all further than 1.52 (checked November 24, 2026). Re-check after big
+# knowledge base changes or a new embedding model.
+MAX_DISTANCE = 1.4
 REGION_PHRASE = r"\s*\b(?:in|for|within)\s+(?:the\s+)?Baguio(?:\s+City)?\s*(?:and|,|&)\s*(?:the\s+)?(?:province\s+of\s+)?Benguet(?:\s+province)?\b"
 
 embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)
@@ -77,7 +81,10 @@ def keyword_search(query):
 
 def search(query):
     query = re.sub(REGION_PHRASE, "", query, flags=re.I).strip()
-    meaning = rank(vector_store.similarity_search_with_score(query, k=CANDIDATES))
+    results = vector_store.similarity_search_with_score(query, k=CANDIDATES)
+    if not results or min(distance for _, distance in results) > MAX_DISTANCE:
+        return []
+    meaning = rank(results)
     return fuse([meaning, keyword_search(query)])[:TOP_K]
 
 

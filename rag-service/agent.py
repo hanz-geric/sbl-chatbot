@@ -57,4 +57,9 @@ def route(question):
         sources = [{"title": d.metadata["title"], "status": d.metadata["status"], "url": d.metadata.get("url", "")} for d in last.artifact]
     else:
         sources = [{"title": r["title"], "status": "WEB", "url": r["url"]} for r in last.artifact]
-    return last.name, last.content, sources
+    # Several passages can come from one section; list each title once.
+    unique = []
+    for source in sources:
+        if source["title"] not in [s["title"] for s in unique]:
+            unique.append(source)
+    return last.name, last.content, unique

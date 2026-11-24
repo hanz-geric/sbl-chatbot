@@ -4,7 +4,7 @@ import ollama
 
 CHAT_MODEL = "gemma3:4b"
 OFF_TOPIC_REPLY = "I can only help with small business and livelihood questions for Baguio City and Benguet."
-NO_RESULTS_REPLY = "I could not find any information about that. Please try asking in a different way."
+NO_RESULTS_REPLY = "I can help with small business and livelihood questions for Baguio City and Benguet, such as registering a business, permits, loans and training. What would you like to know?"
 RULES = """You are the Small Business and Livelihood Assistant for Baguio City and Benguet, Philippines.
 Rules:
 1. Use ONLY the facts in CONTEXT. Do not use outside knowledge.
