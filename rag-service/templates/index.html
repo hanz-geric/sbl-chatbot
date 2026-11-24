@@ -15,7 +15,9 @@
             border: solid black 1px;
             padding: 30px;
             border-radius: 25px;
-            width: 700px;
+            max-width: 700px;
+            width: 100%;
+            box-sizing: border-box;
         }
         #chatbox{
             display: flex;
@@ -73,6 +75,20 @@
             cursor: pointer;
             text-align: left;
         }
+        #message{
+            color: #c0392b;
+            margin-top: 8px;
+        }
+        .waiting::after{
+            content: "";
+            animation: dots 1.5s steps(4) infinite;
+        }
+        @keyframes dots{
+            0%{ content: ""; }
+            25%{ content: "."; }
+            50%{ content: ".."; }
+            75%{ content: "..."; }
+        }
     </style>
 </head>
 <body>
@@ -81,7 +97,7 @@
         <div id="chatbox">{% include "messages.html" %}</div>
         <form id="askForm">
             <div class="align">
-                <textarea name="question" placeholder="Type your question..."></textarea>
+                <textarea name="question" maxlength="500" placeholder="Type your question..."></textarea>
                 <button name="submit">Send</button>
             </div>
         </form>
@@ -107,7 +123,7 @@
             form.reset();
             chatbox.innerHTML += `
                 <div class="user"><div class="text">${escapeHtml(question)}</div></div>
-                <div class="bot">Searching the knowledge base and writing an answer. This can take up to 30 seconds...</div>
+                <div class="bot waiting">Searching the knowledge base and writing an answer. This can take up to 30 seconds</div>
             `;
             chatbox.scrollTop = chatbox.scrollHeight;
             sendButton.disabled = true;
@@ -119,6 +135,7 @@
                         return response.json().then(data => {
                             document.getElementById('message').innerHTML = escapeHtml(data.message);
                             sendButton.disabled = false;
+                            questionBox.focus();
                             loadMessages();
                         });
                     }
@@ -130,10 +147,12 @@
                         return reader.read().then(result => {
                             if (result.done) {
                                 sendButton.disabled = false;
+                                questionBox.focus();
                                 loadMessages();
                                 return;
                             }
                             answer += decoder.decode(result.value, { stream: true });
+                            bubble.classList.remove('waiting');
                             bubble.innerHTML = `<div class="text">${escapeHtml(answer)}</div>`;
                             chatbox.scrollTop = chatbox.scrollHeight;
                             return readPiece();
@@ -143,8 +162,9 @@
                 })
                 .catch(error => {
                     console.error(error);
-                    document.getElementById('message').innerHTML = 'Server error';
+                    document.getElementById('message').innerHTML = 'Could not reach the server. Is app.py running?';
                     sendButton.disabled = false;
+                    questionBox.focus();
                     loadMessages();
                 });
         });

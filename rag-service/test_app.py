@@ -67,3 +67,21 @@ def test_ask_returns_json_error_when_ollama_is_down(client, monkeypatch):
 
     assert response.get_json() == {"status": "failed", "message": "Cannot reach Ollama. Is it running?"}
     assert bot_messages() == []
+
+
+def test_question_box_is_limited_to_max_question_length(tmp_path, monkeypatch):
+    monkeypatch.setattr(app, "DB_PATH", tmp_path / "chat.db")
+    app.create_table()
+    html = app.app.test_client().get("/").get_data(as_text=True)
+    assert f'maxlength="{app.MAX_QUESTION_LENGTH}"' in html
+
+
+def test_response_time_is_labelled(tmp_path, monkeypatch):
+    monkeypatch.setattr(app, "DB_PATH", tmp_path / "chat.db")
+    app.create_table()
+    client = app.app.test_client()
+    with client.session_transaction() as s:
+        s["sid"] = "test"
+    app.save_message("test", "bot", "Hello", None, 12.3)
+    html = client.get("/messages").get_data(as_text=True)
+    assert "Answered in 12.3 s" in html
