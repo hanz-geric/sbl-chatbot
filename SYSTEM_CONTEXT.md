@@ -45,9 +45,9 @@ Answer   generator.py: RULES + CONTEXT ─► gemma3:4b (Ollama, localhost:11434
 Request flow for one question:
 1. Browser POSTs the question to `/ask`. Flask saves the user message.
 2. `route(question)` runs the agent. Both tools are `return_direct=True`, so the agent stops right after the tool runs (about 2 s). No tool call → off-topic.
-3. Off-topic → `OFF_TOPIC_REPLY`. Tool returned nothing → `NO_RESULTS_REPLY`. Otherwise gemma3:4b answers from the tool's text with `RULES`.
-4. Flask saves the bot message (answer + sources JSON + seconds) and returns `{"status": "success"}`.
-5. Browser reloads the bubbles from `/messages`.
+3. Off-topic → `OFF_TOPIC_REPLY`. Tool returned nothing → `NO_RESULTS_REPLY`. Otherwise gemma3:4b answers from the tool's text with `RULES`, streamed piece by piece.
+4. Flask takes the first piece before replying, so "Cannot reach Ollama" and model errors still come back as `{"status": "failed", "message": ...}`. Otherwise it returns a streamed plain-text `Response` (off-topic and no-results replies are one piece). After the last piece it saves the bot message (answer + sources JSON + seconds).
+5. Browser shows the "Searching the knowledge base..." bubble while the router runs, adds each piece to the bot bubble as it arrives (raw text, through `escapeHtml()`), then reloads the bubbles from `/messages` so the formatting and sources show.
 
 Why two models: llama3.2:3b supports tool calling but ignores the answer rules (it invented barangay clearance requirements and called DOLE DILP off-topic in testing). gemma3:4b has no tool calling in Ollama (`ollama show gemma3:4b` lists only completion and vision) but follows the answer rules well. Measured in testing: routing ~2 s, full answer ~13–20 s.
 

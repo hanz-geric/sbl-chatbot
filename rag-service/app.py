@@ -7,7 +7,7 @@ from pathlib import Path
 
 import httpx
 import ollama
-from flask import Flask, jsonify, render_template, request, session
+from flask import Flask, Response, jsonify, render_template, request, session
 from markupsafe import Markup, escape
 
 from agent import route
@@ -101,19 +101,27 @@ def ask():
     try:
         tool, context, sources = route(question)
         if tool is None:
-            answer, sources = OFF_TOPIC_REPLY, []
+            pieces, sources = iter([OFF_TOPIC_REPLY]), []
         elif not context:
-            answer = NO_RESULTS_REPLY
+            pieces = iter([NO_RESULTS_REPLY])
         else:
-            answer = "".join(stream_answer(question, context)).strip()
+            pieces = stream_answer(question, context)
+        first = next(pieces, "")
     except ollama.ResponseError as e:
         return jsonify({"status": "failed", "message": f"The model returned an error: {e.error}"})
     except (ConnectionError, httpx.ConnectError):
         return jsonify({"status": "failed", "message": "Cannot reach Ollama. Is it running?"})
 
-    seconds = round(time.time() - start, 2)
-    save_message(session_id, "bot", answer, json.dumps(sources) if sources else None, seconds)
-    return jsonify({"status": "success"})
+    def generate():
+        answer = first
+        yield first
+        for piece in pieces:
+            answer += piece
+            yield piece
+        seconds = round(time.time() - start, 2)
+        save_message(session_id, "bot", answer.strip(), json.dumps(sources) if sources else None, seconds)
+
+    return Response(generate(), mimetype="text/plain")
 
 
 create_table()
