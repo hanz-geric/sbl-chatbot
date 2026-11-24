@@ -62,3 +62,11 @@ def test_section_number_at_start_of_title_is_removed():
     text = "01.6 BIR Tax Registration > When to register\nRegister on or before the first sale."
 
     assert clean_context(text) == "BIR Tax Registration > When to register\nRegister on or before the first sale."
+
+
+def test_model_is_told_to_decline_web_results_off_the_topic(monkeypatch):
+    context = "### DOLE intensifies inspection drive\nDOLE inspected bus terminals in Baguio City."
+
+    sent = messages_sent_to_model(monkeypatch, "What is the latest DOLE livelihood news?", context)
+
+    assert "no current announcements were found" in sent
