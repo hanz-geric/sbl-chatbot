@@ -2,7 +2,7 @@
 
 Checked November 23–24, 2026. Official sites that block crawlers or that the crawler got nothing from were read by hand in the user's own Chrome (Claude in Chrome), one page at a time, five site groups read in parallel in separate tabs. No bot check, CAPTCHA, consent box or certificate error was bypassed, and nothing was downloaded (PDFs were read only when Chrome displayed their text).
 
-Result: **68 new passages, `K300`–`K367`**, in `rag-service/data/chunks.json` (292 hand-checked passages in total). `K357`–`K362` (La Trinidad) and `K363`–`K367` (DOST SETUP guidelines, BIR EOPT flyer) were added in the follow-up on November 24, 2026 (see below). Each new passage is 300–800 characters and ends with its source URL and status. Wherever a passage gives an amount, it names the agency and the exact item in the same sentence.
+Result: **79 new passages, `K300`–`K378`**, in `rag-service/data/chunks.json` (303 hand-checked passages in total). `K357`–`K362` (La Trinidad) `K363`–`K367` (DOST SETUP guidelines, BIR EOPT flyer) and `K368`–`K378` (DOLE, Pag-IBIG and SEC PDFs saved by the user) were added in the follow-up on November 24, 2026 (see below). Each new passage is 300–800 characters and ends with its source URL and status. Wherever a passage gives an amount, it names the agency and the exact item in the same sentence.
 
 ## Passages added
 
@@ -76,6 +76,17 @@ Result: **68 new passages, `K300`–`K367`**, in `rag-service/data/chunks.json` 
 | K365 | 04.7 DOST SETUP > Paying back SETUP funding (refund terms) | FOR VALIDATION |
 | K366 | 01.6 BIR Tax Registration > Micro and small taxpayers: classes and lower penalties (EOPT Act) | VERIFIED |
 | K367 | 01.6 BIR Tax Registration > File and pay anywhere, invoice threshold, keeping books (EOPT Act) | VERIFIED |
+| K368 | 10.9 Hiring employees > 13th month pay: who gets it, how much, and when | VERIFIED |
+| K369 | 10.9 Hiring employees > 13th month pay: who is exempt, maternity leave, paying in two halves | VERIFIED |
+| K370 | 10.9 Hiring employees > Holiday pay and special day pay rates | VERIFIED |
+| K371 | 10.9 Hiring employees > Regular holidays in 2027 | VERIFIED |
+| K372 | 10.9 Hiring employees > Overtime pay and night shift differential | VERIFIED |
+| K373 | 10.9 Hiring employees > Service incentive leave (5 days paid leave) | VERIFIED |
+| K374 | 10.9 Hiring employees > Service charges in restaurants and similar businesses | VERIFIED |
+| K375 | 10.8 Hiring employees > Late or unpaid Pag-IBIG remittance: penalties | VERIFIED |
+| K376 | 10.8 Hiring employees > Pag-IBIG penalty condonation for employers with unpaid contributions | VERIFIED |
+| K377 | 01.3 SEC - Corporations and Partnerships > Requirements to register a One Person Corporation (OPC) in Baguio City and Benguet, and fees | FOR VALIDATION |
+| K378 | 01.3 SEC - Corporations and Partnerships > SEC fees for partnerships and non-stock corporations | VERIFIED |
 ## Existing passages changed
 
 | id | change | why |
@@ -86,6 +97,8 @@ Result: **68 new passages, `K300`–`K367`**, in `rag-service/data/chunks.json` 
 | K133 | 08.3 "Not covered" narrowed to Benguet towns other than Itogon, Tuba and Bokod; follow-up (Nov 24): La Trinidad also removed, title no longer names it | those three are now covered; a broad "not covered" passage makes the answer model decline |
 | K142 | BMBE registration row: "Negosyo Center / city or municipal hall" → "Negosyo Center (DTI)" | same as K090 |
 | K175 | DOST SETUP: "Amounts and repayment terms are not on the page; ask DOST." replaced by a pointer to the new 04.7 passages | refund terms now covered (K365); a "not on the page" line makes the model decline |
+| K131 | 08.3 "Not covered" narrowed from partnership and non-stock SEC fees to other SEC filings (amendments, foreign corporations, petitions) | partnership, non-stock and OPC fees now in K377, K378 |
+| K328 | DOLE pointer: "This knowledge base does not contain the computation rules" replaced by a pointer to the new 10.9 passages | rules now covered (K368–K374) |
 | K185 | "Apply online through eTMFile, or in person" → online only since September 1, 2020; added the FAQ source | IPOPHL trademark FAQ (IPSOs do not accept paper filing) |
 | K225 | DOLE Baguio–Benguet Field Office: was FOR VALIDATION (search-engine copy), now read directly and VERIFIED; adds DOLE-CAR regional phone numbers | car.dole.gov.ph/contact-us loaded this time |
 
@@ -111,12 +124,21 @@ Saved to a scratch folder, read locally, not committed.
 - **Pag-IBIG:** the circulars page links Circulars 275 (employer registration and remittance), 452, 454 and 504 (penalty condonation), but each link returns an HTML page, not the PDF. Circular 499 (eSRS) returned HTML too; a retry with a browser user-agent was blocked by this session's permission check and not attempted again. Late-remittance penalties are still not covered.
 - Live check (1156 chunks; `pytest -q` 23 passed): SETUP refund period, SETUP documents, micro taxpayer threshold, file-and-pay anywhere, invoice for a ₱300 sale (after the K367 fix) all correct.
 
+## PDFs saved by the user from sites with a bot check (November 24, 2026)
+
+The user saved these from their own Chrome into Downloads; they were read locally with pdftotext and not committed.
+
+- **DOLE:** Workers' Statutory Monetary Benefits Handbook 2024, FAQs on 13th Month Pay, Labor Advisory 21-26 (13th month pay, November 2026) and 17-26 (2027 holidays, September 2026) → K368–K374, K328 updated. The two advisories are scans with garbled text: the 2027 special (non-working) day dates and the 13th month compliance-report deadline could not be read reliably, so K371 tells users to check the advisory for the special days.
+- **Pag-IBIG:** HDMF Circular 275 (2010; the 1/10 of 1% daily penalty, employer share cannot be deducted, criminal penalties) and Circular 504 (November 20, 2026; penalty condonation) → K375, K376. Circular 275's remittance schedule by first letter is older than the eSRS schedule in K330 and was not used.
+- **SEC:** OPC notice (May 2019) → K377 (FOR VALIDATION: manual filing at PICC described there is replaced by eSPARC); MC No. 3, s. 2017 Consolidated Schedule of Fees → K378, K131 narrowed. The OPC notice gives a ₱20 minimum legal research fee while MC 3 (and K184) give ₱10.
+- Live check (1167 chunks; `pytest -q` 23 passed): 13th month deadline and computation, regular holiday pay, SIL for 5 employees, Pag-IBIG late penalty, partnership fee, OPC requirements (after retitling K377 and naming Baguio City and Benguet in it; the router adds "in Baguio City and Benguet" to the query) all correct; night shift differential correct when asked "for my employees in Baguio". **Still failing:** "What is the night shift differential rate?" and "What are the regular holidays in 2027?" get no tool from the router (routing, not data); the kasambahay Pag-IBIG answer still leaves out the no-deduction rule (now stated in K375 for all employers).
+
 ## Still not covered / needs the user
 
 - **baguio.gov.ph** would not load (Chrome "Privacy error"; in the built-in browser it never finishes loading). Nothing new for Baguio City PLD, Treasury, CHSO, city market, vendors or PESO. (La Trinidad was found later at latrinidadbenguet.com, see above.)
-- **DOLE labor standards** (13th month pay computation, service incentive leave, holiday pay, payslips): only in PDFs on bwc.dole.gov.ph whose text Chrome's viewer did not expose (2024 Workers' Statutory Monetary Benefits Handbook, 13th month pay FAQs, Labor Advisories 21-26 and 17-26, DOLE Citizen's Charter 2026). K328 only points to them.
-- **Pag-IBIG**: late-remittance penalties not found; Citizen's Charter is an interactive search; branch locator gave "No branch found" for Baguio, so K222 is unchanged.
-- **SEC**: partnership steps/fees, OPC fees and processing time not on any page read (K131 unchanged); one SEC page showed a Cloudflare check once (not passed; reached later through the site's own link).
+- **DOLE labor standards:** now covered from the PDFs the user saved (see above). Still not read: payslip rules and the DOLE Citizen's Charter 2026.
+- **Pag-IBIG**: late-remittance penalties now covered (K375, K376); Citizen's Charter is an interactive search; branch locator gave "No branch found" for Baguio, so K222 is unchanged.
+- **SEC**: partnership and OPC fees now covered (K377, K378); processing time still not found; one SEC page showed a Cloudflare check once (not passed; reached later through the site's own link).
 - **Other**: Negosyo Center directory (Power BI, no text), ecommerce.dti.gov.ph (would not load), setup.dost.gov.ph (DNS error), FDA regional office for CAR (not listed), IPOPHL registration flowchart (404), BIR EOPT flyer PDF (no text).
 - **Conflicts noted**: Trustmark FAQ says both "must" and "voluntary" (K313 is FOR VALIDATION); DOST PSTO Baguio-Benguet email differs between site footer and Contact Us page (K339 gives both, K176 unchanged).
 
