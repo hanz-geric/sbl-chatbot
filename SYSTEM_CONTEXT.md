@@ -35,7 +35,7 @@ Flask    app.py ── saves messages ──► SQLite chat.db (table messages)
    │  route(question)
    ▼
 Agent    agent.py: create_agent(llama3.2:3b, tools) picks ONE tool (or none = off-topic)
-   ├─► knowledge_tool.py  search_knowledge_base ─► retrieval.py: Chroma + all-MiniLM-L6-v2, top 3 (hand-checked preferred)
+   ├─► knowledge_tool.py  search_knowledge_base ─► retrieval.py: Chroma + all-MiniLM-L6-v2 and BM25 keyword search, fused, top 5 (hand-checked preferred)
    └─► web_tool.py        web_search ─► Tavily (internet), top 3, Philippines boost
    │  tool text = CONTEXT, tool results = sources
    ▼
@@ -188,7 +188,7 @@ return found[-1] if found else ""
 | File | Main parts |
 |---|---|
 | `build_index.py` | `Document(page_content=title + "\n" + text, metadata={id, section, title, status})`; deletes `chroma_db/` with `shutil.rmtree`; `Chroma.from_documents(..., ids=chunk ids, collection_name="knowledge_base", persist_directory=...)`; loads `chunks.json` and, if present, `scraped_chunks.json`; metadata also has `url`; prints `Done. The collection has 1397 chunks (283 hand-checked + 1114 extracted).` |
-| `retrieval.py` | `embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)`; `vector_store = Chroma(...)`; `retriever = SimpleNamespace(invoke=search)`: `search` fetches `CANDIDATES = 12` passages with `similarity_search_with_score`, subtracts `HAND_CHECKED_BONUS = 0.1` from the distance of hand-checked (`K…`) passages, and keeps `TOP_K = 3` (`rank`). Without the bonus, extracted pages crowded out hand-checked answers (e.g. "TESDA STEP"). |
+| `retrieval.py` | `embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)`; `vector_store = Chroma(...)`; `retriever = SimpleNamespace(invoke=search)`: `search` fetches `CANDIDATES = 12` passages with `similarity_search_with_score`, subtracts `HAND_CHECKED_BONUS = 0.1` from the distance of hand-checked (`K…`) passages, and orders them (`rank`). Without the bonus, extracted pages crowded out hand-checked answers (e.g. "TESDA STEP"). It also runs BM25 keyword search (`keyword_scores`, plain Python, `BM25_K1 = 1.5`, `BM25_B = 0.75`) over all passages loaded from Chroma at start-up, takes the best `CANDIDATES`, and merges both lists by reciprocal rank fusion (`fuse`, `RRF_K = 60`), keeping `TOP_K = 5`. Before searching it removes the phrase "in Baguio City and Benguet" (`REGION_PHRASE`) that the router often adds, because every passage is about that area and the phrase pulled in directory and checklist passages (issue #30). |
 | `generator.py` | `CHAT_MODEL = "gemma3:4b"`, `OFF_TOPIC_REPLY`, `NO_RESULTS_REPLY`, `RULES`, `clean_context(text)`, `stream_answer(question, context)` |
 | `knowledge_tool.py` | `@tool(response_format="content_and_artifact", return_direct=True)` → returns `(context text, docs)` |
 | `web_tool.py` | `tavily = TavilySearch(max_results=3, country="philippines")`; same decorator → returns `(context text, results)`; Tavily's `ToolException` (no results) → `("", [])` |
@@ -236,7 +236,7 @@ CREATE TABLE IF NOT EXISTS messages (
 | Tools `return_direct=True` | the agent stops after the tool; gemma answers with our tested RULES |
 | Off-topic = "no tool called" | tested: weather, tourist spots, jokes and "ignore your rules" prompts all got no tool call |
 | all-MiniLM-L6-v2 embeddings | what Lab 2.1 teaches; English-only questions, so no multilingual model needed |
-| Top 3 passages | Lab 2.1 `search_kwargs={"k": 3}`; small context keeps gemma fast |
+| Top 5 passages, hybrid search | Lab 2.1 used `k: 3`; with 1,397 passages the answer was often 4th or 5th. Hybrid search + top 5 raised the evaluation from 4.27 to 4.60 (issue #30, `docs/evaluation_issue30.md`) for ~4 s more per answer |
 | Status labels and "see 01.6" removed before the model sees text | the model copied them into answers; sources are shown separately |
 | "(Answer in English.)" after the question | keeps gemma in English |
 | Sources from tool results | the model can't make up sources |
@@ -284,8 +284,7 @@ Still current and used as taught: the Ollama CLI and Python library (`ollama.cha
 ---
 
 ## 12. Known limitations
-- all-MiniLM ranks **K004** ("Who can register") 5th for "Who can register a business name with DTI?", so it is not in the top 3. Fixing it is optional issue (keyword search + hybrid).
-- The router sometimes rewords the query (e.g. adds "in Baguio City and Benguet"), which can change which passages are found.
+- The router sometimes rewords the query, which can change which passages are found (the added "in Baguio City and Benguet" is now removed before searching).
 - llama3.2:3b sometimes writes a malformed tool call (seen once in 10 tests); that question gets the off-topic reply.
 - Prompt-injection defences only reduce attacks on a 4b model; they don't stop all of them (see `injection_results.md`).
 - One CPU = one answer at a time.
