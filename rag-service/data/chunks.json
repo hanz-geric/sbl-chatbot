@@ -549,13 +549,31 @@
   "id": "K055",
   "section": "02.7",
   "title": "02.7 Business permits in other Benguet towns (La Trinidad, Itogon, Tuba, Bokod)",
-  "text": "Baguio City rules do not apply outside the city. Each Benguet municipality has its own revenue code, fees, requirements and deadlines and issues its own Mayor's Permit through its Business Permits and Licensing Office (BPLO). Example: Itogon's revenue code sets the renewal deadline without penalty at January 20; for 2026 the LGU extended it to January 30 (LGU Itogon, January 22, 2026). Official guides were read for Itogon (02.9), Tuba (02.10) and Bokod (02.11). La Trinidad's official website could not be opened, so for La Trinidad ask the municipal BPLO or the nearest Negosyo Center.\nSource: https://itogon.gov.ph/, https://www.tuba.gov.ph/ and https://bokodbenguet.gov.ph/new-mayors-permit-business-permit/ (checked November 23, 2026)\n(Status: VERIFIED)"
+  "text": "Baguio City rules do not apply outside the city. Each Benguet municipality has its own revenue code, fees, requirements and deadlines and issues its own Mayor's Permit through its Business Permits and Licensing Office (BPLO). Example: Itogon's revenue code sets the renewal deadline without penalty at January 20; for 2026 the LGU extended it to January 30 (LGU Itogon, January 22, 2026). Official guides were read for Itogon (02.9), Tuba (02.10), Bokod (02.11) and La Trinidad (02.12).\nSource: https://itogon.gov.ph/, https://www.tuba.gov.ph/ and https://bokodbenguet.gov.ph/new-mayors-permit-business-permit/ (checked November 23, 2026); https://www.latrinidadbenguet.com/ (checked November 24, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K353",
   "section": "02.11",
   "title": "02.11 Business permit in Bokod, Benguet > Requirements and steps",
   "text": "Bokod, Benguet, new or renewed Mayor's Permit: barangay clearance to do business and solid waste segregation certificate; application form and Mayor's clearance; health certificate and sanitary permit (Municipal Health Office); BIR proof of payment if applicable; police clearance; tax declaration; tax clearance; and if applicable zoning clearance, building permit, DTI/SEC/CDA registration, authorization letter, lease contract. Steps: submit at the BPLS, Mayor's Office, Poblacion, Bokod; pay at the Treasury Office (and BFP fire fees if required); return to claim the permit.\nSource: https://bokodbenguet.gov.ph/new-mayors-permit-business-permit/ (checked November 23, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K357",
+  "section": "02.12",
+  "title": "02.12 Business permit in La Trinidad, Benguet > New permit requirements",
+  "text": "La Trinidad, Benguet's BPLS Citizen's Charter lists for a new Mayor's Permit (Permit to Operate): (1) Unified Application Form; (2) DTI, SEC or CDA registration; (3) barangay business clearance; (4) sketch of the business location; (5) zoning clearance (MPDO); (6) Engineering Office clearance or occupancy certificate; (7) sanitary permit/health certificate (MHSO); (8) Tax Order of Payment (Treasury Office); (9) Fire Safety Inspection Certificate (BFP); (10) proof you may use the place: title or tax declaration if owned, or a lease or the owner's written consent if not.\nSource: https://www.latrinidadbenguet.com/business-permits-and-licensing-section (checked November 24, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K358",
+  "section": "02.12",
+  "title": "02.12 Business permit in La Trinidad, Benguet > Extra requirements and steps",
+  "text": "Extra La Trinidad, Benguet permit requirements, if they apply: market clearance for trading post (LTVTP) and public market stalls; 100-meter radius clearance to sell cigarettes, tobacco or vapes; 50-meter radius clearance and a signed undertaking for billiard halls, bars and videoke bars; PNP certificate of no violation for bars; notarized authorization if someone else files. Steps: (1) submit documents at the BPLS; get the Tax Order of Payment; (2) pay at the Municipal Treasury Office; (3) show the official receipt to claim the permit and plate. About 50 minutes if complete.\nSource: https://www.latrinidadbenguet.com/business-permits-and-licensing-section (checked November 24, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
+  "id": "K359",
+  "section": "02.12",
+  "title": "02.12 Business permit in La Trinidad, Benguet > Renewal requirements",
+  "text": "To renew a La Trinidad, Benguet Mayor's Permit, bring the Unified Application Form, barangay business clearance, Tax Order of Payment, Fire Safety Inspection Certificate, and sanitary permit/health certificate; plus market clearance, PNP certificate, radius clearance or undertaking if they apply, and a CDA certificate of compliance for cooperatives. For the tax assessment, the Treasury Office charter (2023) asks for a notarized sworn statement of gross receipts/sales or last year's annual income tax return with quarterly ITRs and VAT returns, and the financial statement received by BIR.\nSource: https://www.latrinidadbenguet.com/business-permits-and-licensing-section and https://www.latrinidadbenguet.com/municipal-treasury-office (checked November 24, 2026)\n(Status: FOR VALIDATION)"
  },
  {
   "id": "K348",
@@ -1275,7 +1293,7 @@
   "id": "K133",
   "section": "08.3",
   "title": "08.3 Topics not covered: refer to the office",
-  "text": "**Business permit requirements and fees in La Trinidad and other Benguet towns (except Itogon, Tuba and Bokod)**\nNot covered in detail for La Trinidad and the Benguet towns other than Itogon (02.9), Tuba (02.10) and Bokod (02.11). Each municipality has its own revenue code, requirements, fees, and deadlines, so Baguio City rules do not automatically apply. Ask the municipal Business Permits and Licensing Office (BPLO) or the nearest Negosyo Center. (See 02.7.)"
+  "text": "**Business permit requirements and fees in the other Benguet towns**\nNot covered in detail for the Benguet towns other than Itogon (02.9), Tuba (02.10), Bokod (02.11) and La Trinidad (02.12). Each municipality has its own revenue code, requirements, fees, and deadlines, so Baguio City rules do not automatically apply. Ask the municipal Business Permits and Licensing Office (BPLO) or the nearest Negosyo Center. (See 02.7.)"
  },
  {
   "id": "K134",
@@ -1506,6 +1524,12 @@
   "text": "In Tuba, Benguet, every business needs a sanitary permit before its business permit is issued or renewed, and food handlers need health certificates after laboratory exams and a food safety orientation. Labs at the Municipal Health Services Office (as of Jan 1, 2025): fecalysis ₱60, urinalysis ₱60, HBsAg ₱135. Fees, paid at the Treasury Office: sanitary permit ₱115 per business, health certificate ₱170 per food handler (₱285 for one business with one handler); about 1 hour. Water refilling or delivery businesses also need water analysis and a certificate of potability.\nSource: https://www.tuba.gov.ph/offices/municipal-health-office/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K361",
+  "section": "13.6",
+  "title": "13.6 Food businesses > Sanitary permit and health certificate in La Trinidad, Benguet",
+  "text": "In La Trinidad, Benguet, the Municipal Health Services Office (MHSO) Sanitation Division issues the sanitary permit (PD 856) for food and non-food establishments. Bring the application form, laboratory results from any licensed laboratory, food handler's certificate (MHSO class every Tuesday, 3 PM; valid 3 years), health certificates, and a water potability certificate as appropriate. Health certificates: food establishment workers need chest X-ray, CBC, urinalysis and fecalysis; other establishments chest X-ray, CBC and urinalysis; videoke bars and night spots add VDRL/RPR. The La Trinidad MHSO fee for each health certificate is ₱50. MHSO: (074) 620-5907.\nSource: https://www.latrinidadbenguet.com/municipal-health-services-office (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K346",
   "section": "13.4",
   "title": "13.4 Food businesses > Sanitary permit and health certificate in Itogon, Benguet",
@@ -1560,6 +1584,12 @@
   "text": "- Under the Local Government Code (RA 7160, Section 145), a business that stops must **submit a sworn statement of its gross sales or receipts for the current year**. If the tax already paid that year is less than the tax due on those sales, **the difference must be paid before the business is considered officially retired**.\n- In Baguio City, business retirement (closure) is handled at City Hall (see 02.6). The eBPLS portal (https://ebpls.baguio.gov.ph) lists new permits, renewals and tax payments online, but not business retirement.\n- The Baguio City document list and fees for retirement are not on an official page we could read. Ask the Permits and Licensing Division or the City Treasurer's Office (see 09.1). In Benguet towns, ask the municipal BPLO.\nSource: https://www.officialgazette.gov.ph/1991/10/10/republic-act-no-7160/ and https://ebpls.baguio.gov.ph/ (checked November 23, 2026)\n(Status: VERIFIED, FOR VALIDATION)"
  },
  {
+  "id": "K360",
+  "section": "15.2",
+  "title": "15.2 Closing a business > Retiring the business permit in La Trinidad, Benguet",
+  "text": "In La Trinidad, Benguet, a business that stops must apply for retirement (surrender) at the Business Permits Licensing Section within 20 days, and it cannot be retired until all past and current taxes are paid (BPLS Citizen's Charter). Bring: the retirement form; barangay certification that the business is closed; the current year's original permit and plate (or affidavit of loss); Municipal Treasury Office clearance; a board resolution for corporations. The Treasury Office also asks for a sworn statement of gross sales or last year's ITR. The La Trinidad BPLS certification fee for a business record is ₱50.\nSource: https://www.latrinidadbenguet.com/business-permits-and-licensing-section (checked November 24, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
   "id": "K215",
   "section": "15.3",
   "title": "15.3 Closing a business > Closing BIR registration (Form 1905)",
@@ -1606,6 +1636,12 @@
   "section": "17.11",
   "title": "17.11 Contact directory > Tuba, Benguet offices for businesses",
   "text": "Municipality of Tuba, Benguet: Municipal Hall, Poblacion, Tuba, Benguet 2603; (074) 447 0064; tuba_municipal@yahoo.com. The LGU website links an online Business Permits and Licensing System at https://bpbc.ibpls.com/tubabenguet/. Business permit applications use the Unified Application Form at the BPLO; sanitary permits and health certificates are at the Municipal Health Services Office; taxes and fees are paid at the Municipal Treasury Office. Each office page on https://www.tuba.gov.ph/ posts its Citizen's Charter.\nSource: https://www.tuba.gov.ph/ and https://www.tuba.gov.ph/offices/municipal-health-office/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K362",
+  "section": "17.12",
+  "title": "17.12 Contact directory > La Trinidad, Benguet offices for businesses",
+  "text": "La Trinidad, Benguet municipal offices for businesses are at the Municipal Hall, Km. 5, La Trinidad, Benguet 2601. Mayor's Office: (074) 422-2601 or (074) 422-5618; fax (074) 422-5621; email mayorslt@yahoo.com. Business Permits Licensing Section: (074) 424-3647. Municipal Health Services Office (sanitary permits, health certificates): (074) 620-5907. The municipality's website is https://www.latrinidadbenguet.com (the address latrinidad.gov.ph shows a certificate error). For DTI business name registration, the La Trinidad charter points to the Go Negosyo Center or the DTI Provincial Office in Baguio City.\nSource: https://www.latrinidadbenguet.com/contact-us and https://www.latrinidadbenguet.com/business-permits-and-licensing-section (checked November 24, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K347",

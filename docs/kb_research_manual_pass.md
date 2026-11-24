@@ -2,7 +2,7 @@
 
 Checked November 23–24, 2026. Official sites that block crawlers or that the crawler got nothing from were read by hand in the user's own Chrome (Claude in Chrome), one page at a time, five site groups read in parallel in separate tabs. No bot check, CAPTCHA, consent box or certificate error was bypassed, and nothing was downloaded (PDFs were read only when Chrome displayed their text).
 
-Result: **57 new passages, `K300`–`K356`**, in `rag-service/data/chunks.json` (281 hand-checked passages in total). Each new passage is 300–800 characters and ends with its source URL and status. Wherever a passage gives an amount, it names the agency and the exact item in the same sentence.
+Result: **63 new passages, `K300`–`K362`**, in `rag-service/data/chunks.json` (287 hand-checked passages in total). `K357`–`K362` (La Trinidad) were added in the follow-up lookup on November 24, 2026 (see below). Each new passage is 300–800 characters and ends with its source URL and status. Wherever a passage gives an amount, it names the agency and the exact item in the same sentence.
 
 ## Passages added
 
@@ -65,23 +65,40 @@ Result: **57 new passages, `K300`–`K356`**, in `rag-service/data/chunks.json` 
 | K354 | 03.5 DTI programs > OTOP Next Gen: who can join (business running at least 1 year) | VERIFIED |
 | K355 | 01.6 BIR Tax Registration > Registering a cash register (CRM) or POS machine | VERIFIED |
 | K356 | 01.6 BIR Tax Registration > Moving your business to another RDO (e.g. Baguio City to La Trinidad) | VERIFIED |
+| K357 | 02.12 Business permit in La Trinidad, Benguet > New permit requirements | FOR VALIDATION |
+| K358 | 02.12 Business permit in La Trinidad, Benguet > Extra requirements and steps | FOR VALIDATION |
+| K359 | 02.12 Business permit in La Trinidad, Benguet > Renewal requirements | FOR VALIDATION |
+| K360 | 15.2 Closing a business > Retiring the business permit in La Trinidad, Benguet | FOR VALIDATION |
+| K361 | 13.6 Food businesses > Sanitary permit and health certificate in La Trinidad, Benguet | VERIFIED |
+| K362 | 17.12 Contact directory > La Trinidad, Benguet offices for businesses | VERIFIED |
 ## Existing passages changed
 
 | id | change | why |
 |---|---|---|
-| K055 | 02.7 "Other Benguet LGUs" rewritten: Baguio rules don't apply outside the city; points to the new Itogon (02.9), Tuba (02.10) and Bokod (02.11) sections; La Trinidad site would not load | official town pages now read |
+| K055 | 02.7 "Other Benguet LGUs" rewritten: Baguio rules don't apply outside the city; points to the new Itogon (02.9), Tuba (02.10) and Bokod (02.11) sections; La Trinidad site would not load. Follow-up (Nov 24): La Trinidad (02.12) added | official town pages now read |
 | K069 | removed the line "Go Lokal! and SME Roving Academy … are not yet researched" | both now covered (K306, K305) |
 | K090 | BMBE rewritten: register at a Negosyo Center (not the city/municipal hall), DTI issues the Certificate of Authority free in 15 working days | DTI Negosyo Center FAQ contradicts the old First Circle text |
-| K133 | 08.3 "Not covered" narrowed to La Trinidad and Benguet towns other than Itogon, Tuba and Bokod | those three are now covered; a broad "not covered" passage makes the answer model decline |
+| K133 | 08.3 "Not covered" narrowed to Benguet towns other than Itogon, Tuba and Bokod; follow-up (Nov 24): La Trinidad also removed, title no longer names it | those three are now covered; a broad "not covered" passage makes the answer model decline |
 | K142 | BMBE registration row: "Negosyo Center / city or municipal hall" → "Negosyo Center (DTI)" | same as K090 |
 | K185 | "Apply online through eTMFile, or in person" → online only since September 1, 2020; added the FAQ source | IPOPHL trademark FAQ (IPSOs do not accept paper filing) |
 | K225 | DOLE Baguio–Benguet Field Office: was FOR VALIDATION (search-engine copy), now read directly and VERIFIED; adds DOLE-CAR regional phone numbers | car.dole.gov.ph/contact-us loaded this time |
 
 K162, K194 and K195 were not touched. Section numbers added: 02.9–02.11, 05.5, 10.8–10.10, 13.4–13.5, 14.6, 15.5, 17.9–17.11 (in the LGU checklist below, the Itogon and Tuba contacts drafted as 17.9/17.10 were renumbered 17.10/17.11 because OWWA took 17.9).
 
+## Follow-up lookup of the sites that would not load (November 24, 2026)
+
+Retried in the Claude desktop app's built-in browser and searched the web for other official addresses. Nothing was downloaded; no bot check was passed.
+
+- **La Trinidad: found.** The town's real website is https://www.latrinidadbenguet.com (named on DTI's CMCI profile, https://cmci.dti.gov.ph/lgu-profile.php?lgu=La+Trinidad); latrinidad.gov.ph still has a certificate for another name (ERR_CERT_COMMON_NAME_INVALID). Read: BPLS page with its Citizen's Charter (undated; signed by a former mayor, so FOR VALIDATION), Treasury Office Citizen's Charter 2023, MHSO Citizen's Charter 2023, Contact Us. The charters are PDFs shown in the page's own viewer; their text was read from that viewer. → K357–K362; K055 and K133 updated. Fee amounts in the Treasury charter refer to the revenue code (Municipal Ordinance 24-2017) and were not given, so La Trinidad business tax amounts stay uncovered.
+- **baguio.gov.ph:** now redirects to main.baguio.gov.ph, which stays on its loading spinner (empty page, no console errors); infoboard.baguio.gov.ph does the same. Still nothing for the Baguio City CHSO, market, vendors or PESO. ebpls.baguio.gov.ph works but is already covered (K039–K044).
+- **ecommerce.dti.gov.ph, setup.dost.gov.ph, negosyocenter.gov.ph:** still fail to load in the built-in browser too.
+- **SEC (www.sec.gov.ph) and DOLE BWC PDFs (bwc.dole.gov.ph):** now show a Cloudflare "Just a moment" check in the built-in browser. Not passed.
+- **Pag-IBIG late-remittance penalty, SEC OPC fees:** web search found only commentaries, news and old (2009, 2019) documents that disagree with each other; nothing drafted.
+- Live check after the merge (1151 chunks; `pytest -q` 23 passed): La Trinidad new-permit requirements, health certificate fee (₱50), closing a business (20 days), BPLS phone number all correct; a Kapangan question still gets the "ask the BPLO" answer.
+
 ## Still not covered / needs the user
 
-- **baguio.gov.ph and latrinidad.gov.ph** would not load (Chrome "Privacy error", certificate). Nothing new for Baguio City PLD, Treasury, CHSO, city market, vendors or PESO; nothing for La Trinidad.
+- **baguio.gov.ph** would not load (Chrome "Privacy error"; in the built-in browser it never finishes loading). Nothing new for Baguio City PLD, Treasury, CHSO, city market, vendors or PESO. (La Trinidad was found later at latrinidadbenguet.com, see above.)
 - **DOLE labor standards** (13th month pay computation, service incentive leave, holiday pay, payslips): only in PDFs on bwc.dole.gov.ph whose text Chrome's viewer did not expose (2024 Workers' Statutory Monetary Benefits Handbook, 13th month pay FAQs, Labor Advisories 21-26 and 17-26, DOLE Citizen's Charter 2026). K328 only points to them.
 - **Pag-IBIG**: late-remittance penalties not found; Citizen's Charter is an interactive search; branch locator gave "No branch found" for Baguio, so K222 is unchanged.
 - **SEC**: partnership steps/fees, OPC fees and processing time not on any page read (K131 unchanged); one SEC page showed a Cloudflare check once (not passed; reached later through the site's own link).
