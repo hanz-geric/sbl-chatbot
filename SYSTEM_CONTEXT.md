@@ -36,7 +36,7 @@ Flask    app.py ── saves messages ──► SQLite chat.db (table messages)
    ▼
 Agent    agent.py: create_agent(llama3.2:3b, tools) picks ONE tool (or none = off-topic)
    ├─► knowledge_tool.py  search_knowledge_base ─► retrieval.py: Chroma + all-MiniLM-L6-v2 and BM25 keyword search, fused, top 5 (hand-checked preferred)
-   └─► web_tool.py        web_search ─► Tavily (internet), top 3, Philippines boost
+   └─► web_tool.py        web_search ─► Tavily (internet), top 3, news from the last month, trusted PH sites
    │  tool text = CONTEXT, tool results = sources
    ▼
 Answer   generator.py: RULES + CONTEXT ─► gemma3:4b (Ollama, localhost:11434)
@@ -62,7 +62,7 @@ Why two models: llama3.2:3b supports tool calling but ignores the answer rules (
 | Ollama | `localhost:11434`; models `llama3.2:3b` (router, ~2 GB, has `tools`) and `gemma3:4b` (answers, ~3.4 GB) |
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` through `HuggingFaceEmbeddings` (downloads ~90 MB on first use, runs on CPU, not in Ollama) |
 | Vector store | Chroma, folder `rag-service/chroma_db/`, collection `knowledge_base` |
-| Web search | Tavily, free API key in the `TAVILY_API_KEY` environment variable; `country="philippines"` boosts Philippine pages |
+| Web search | Tavily, free API key in the `TAVILY_API_KEY` environment variable; `topic="news"`, `time_range="month"`, `include_domains` = Philippine government and news sites (issue #31) |
 | Chat history | SQLite file `rag-service/chat.db` (created by `app.py`) |
 | Site URL | http://127.0.0.1:5000/ |
 
@@ -191,7 +191,7 @@ return found[-1] if found else ""
 | `retrieval.py` | `embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)`; `vector_store = Chroma(...)`; `retriever = SimpleNamespace(invoke=search)`: `search` fetches `CANDIDATES = 12` passages with `similarity_search_with_score`, subtracts `HAND_CHECKED_BONUS = 0.1` from the distance of hand-checked (`K…`) passages, and orders them (`rank`). Without the bonus, extracted pages crowded out hand-checked answers (e.g. "TESDA STEP"). It also runs BM25 keyword search (`keyword_scores`, plain Python, `BM25_K1 = 1.5`, `BM25_B = 0.75`) over all passages loaded from Chroma at start-up, takes the best `CANDIDATES`, and merges both lists by reciprocal rank fusion (`fuse`, `RRF_K = 60`), keeping `TOP_K = 5`. Before searching it removes the phrase "in Baguio City and Benguet" (`REGION_PHRASE`) that the router often adds, because every passage is about that area and the phrase pulled in directory and checklist passages (issue #30). |
 | `generator.py` | `CHAT_MODEL = "gemma3:4b"`, `OFF_TOPIC_REPLY`, `NO_RESULTS_REPLY`, `RULES`, `clean_context(text)`, `stream_answer(question, context)` |
 | `knowledge_tool.py` | `@tool(response_format="content_and_artifact", return_direct=True)` → returns `(context text, docs)` |
-| `web_tool.py` | `tavily = TavilySearch(max_results=3, country="philippines")`; same decorator → returns `(context text, results)`; Tavily's `ToolException` (no results) → `("", [])` |
+| `web_tool.py` | `tavily = TavilySearch(max_results=3)`; each search passes `topic="news"` (`SEARCH_TOPIC`), `time_range="month"` (`SEARCH_TIME_RANGE`) and `include_domains=TRUSTED_SITES` (dti, dole, dswd, tesda, sbcorp, baguio, benguet, pna and pia `.gov.ph`, plus sunstar.com.ph, inquirer.net, mb.com.ph, philstar.com), and adds `LOCAL_PLACES = "Baguio Benguet Cordillera"` to the query so Cordillera results rank higher. `country="philippines"` was dropped because Tavily allows it only with topic "general". Results with an empty title are dropped from both the context and the sources. Same decorator → returns `(context text, results)`; Tavily's `ToolException` or "no results" string → `("", [])`. `generator.py` rule 9: if no result is about a small business or livelihood program, reply that no current announcements were found and suggest the DTI, DOLE or DSWD Cordillera office (issue #31) |
 | `agent.py` | `ROUTER_MODEL = "llama3.2:3b"`, `ROUTER_PROMPT`, `router = create_agent(...)`, `route(question)` → `(tool name or None, context, sources)` |
 | `app.py` | Flask routes `GET /`, `GET /messages`, `POST /ask`; SQLite `messages` table |
 

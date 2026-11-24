@@ -32,7 +32,7 @@ def test_results_become_content_and_artifact(monkeypatch):
 
     assert out.content == "### DTI news\nNew MSME program."
     assert out.artifact == results
-    assert seen["query"] == "MSME loans"
+    assert seen["query"].startswith("MSME loans")
 
 
 def test_empty_results_give_empty_content(monkeypatch):
@@ -64,3 +64,56 @@ def test_search_error_returns_empty_result(monkeypatch):
 
     assert out.content == ""
     assert out.artifact == []
+
+
+def test_searches_only_this_months_news(monkeypatch):
+    seen = {}
+
+    def fake_invoke(args):
+        seen.update(args)
+        return {"results": []}
+
+    monkeypatch.setattr(web_tool, "tavily", SimpleNamespace(invoke=fake_invoke))
+    invoke("new livelihood grants this month")
+
+    assert seen["topic"] == "news"
+    assert seen["time_range"] == "month"
+
+
+def test_searches_only_trusted_sites(monkeypatch):
+    seen = {}
+
+    def fake_invoke(args):
+        seen.update(args)
+        return {"results": []}
+
+    monkeypatch.setattr(web_tool, "tavily", SimpleNamespace(invoke=fake_invoke))
+    invoke("latest DOLE livelihood news")
+
+    assert "dole.gov.ph" in seen["include_domains"]
+    assert "facebook.com" not in seen["include_domains"]
+
+
+def test_search_adds_local_place_names(monkeypatch):
+    seen = {}
+
+    def fake_invoke(args):
+        seen.update(args)
+        return {"results": []}
+
+    monkeypatch.setattr(web_tool, "tavily", SimpleNamespace(invoke=fake_invoke))
+    invoke("new DTI programs this year")
+
+    assert seen["query"] == "new DTI programs this year Baguio Benguet Cordillera"
+
+
+def test_results_without_a_title_are_skipped(monkeypatch):
+    kept = {"title": "DTI news", "content": "New MSME program."}
+    results = [{"title": "", "content": "Untitled page."}, kept]
+    monkeypatch.setattr(
+        web_tool, "tavily", SimpleNamespace(invoke=lambda args: {"results": results})
+    )
+    out = invoke("MSME loans")
+
+    assert out.content == "### DTI news\nNew MSME program."
+    assert out.artifact == [kept]
