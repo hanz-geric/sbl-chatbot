@@ -114,6 +114,12 @@
   "text": "A One Person Corporation (OPC) registers with SEC through eSPARC, like other corporations. After registration, an OPC must file the SEC Form for Appointment of Officers (OPC only) within 20 days from the approval of its Certificate of Incorporation, and within 5 days from any later appointment of officers or change. SEC requires this form strictly starting March 23, 2026 (SEC MC No. 10, s. 2026, Guidelines on the Compliances of OPCs). SEC also has an Application for Release of Bond form for OPCs. Applies to OPCs in Baguio City and Benguet like everywhere in the Philippines.\nSource: https://www.sec.gov.ph/reportorial-requirements/corporations-with-primary-licenses/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K377",
+  "section": "01.3",
+  "title": "01.3 SEC - Corporations and Partnerships > Requirements to register a One Person Corporation (OPC) in Baguio City and Benguet, and fees",
+  "text": "Requirements to register a One Person Corporation (OPC) in Baguio City and Benguet (SEC notice, May 2019): cover sheet; Articles of Incorporation for an OPC; written consent of the nominee and alternate nominee; the single stockholder's TIN. SEC OPC filing fees: name reservation ₱100 per name; Articles of Incorporation 1/5 of 1% of the authorized capital stock but not less than ₱2,000; legal research fee 1% of the filing fee but not less than ₱20; documentary stamp ₱30. Register an OPC with SEC online through eSPARC (see 01.3), not with DTI.\nSource: https://www.sec.gov.ph/wp-content/uploads/2019/10/2019Notice_Final-OPC-Notice-and-Requriements-Procedure-05032019.pdf (checked November 24, 2026)\n(Status: FOR VALIDATION)"
+ },
+ {
   "id": "K318",
   "section": "01.3",
   "title": "01.3 SEC - Corporations and Partnerships > What is SEC eSECURE and what ID do I need",
@@ -124,6 +130,12 @@
   "section": "01.3",
   "title": "01.3 SEC – Corporations and Partnerships > SEC registration fees for a stock corporation",
   "text": "- **Filing fee:** 1/5 of 1% of the authorized capital stock, or of the subscription price of the subscribed capital stock, whichever is higher, but **not less than ₱2,000**.\n- **Legal research fee:** 1% of the filing fee, but not less than ₱10.\n- **Name verification/reservation:** ₱100 per allowed name for 30 days.\n- A new corporation must also get a **Stock and Transfer Book**, about ₱470 (including its registration).\n- By-laws fees are added; use the SEC Registration Calculator (https://www.sec.gov.ph/online-services/registration-calculator/) for the approximate total.\nSource: https://www.sec.gov.ph/online-services/registration-calculator/ and https://www.sec.gov.ph/forms-and-fees/schedules-of-fees/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K378",
+  "section": "01.3",
+  "title": "01.3 SEC - Corporations and Partnerships > SEC fees for partnerships and non-stock corporations",
+  "text": "SEC Consolidated Schedule of Fees and Charges (Memorandum Circular No. 3, s. 2017): SEC fee for Articles of Partnership is 1/5 of 1% of the partnership's capital but not less than ₱2,000; amended Articles of Partnership ₱2,000; deed of assignment of a partner's interest ₱2,000; dissolution of a partnership ₱1,000; affidavit of withdrawal of a partner ₱1,000. SEC fee for Articles of Incorporation of a non-stock corporation is ₱1,000, and by-laws ₱1,000. SEC name verification/reservation is ₱100 per name for 30 days. The SEC legal research fee is 1% of the filing fee but not less than ₱10. eSPARC computes the exact amount.\nSource: https://www.sec.gov.ph/wp-content/uploads/2019/11/2017MCno03-new2.pdf (checked November 24, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K316",
@@ -1311,7 +1323,7 @@
   "id": "K131",
   "section": "08.3",
   "title": "08.3 Topics not covered: refer to the office",
-  "text": "**SEC registration fees for partnerships and non-stock corporations**\nNot covered. Use the fee computed in eSPARC (https://esparc.sec.gov.ph) or call SEC at 1-4SEC (14732). Stock corporation fees are covered in 01.3. DTI business name fees (01.2) apply only to sole proprietorships and are not SEC fees."
+  "text": "**SEC fees for other filings (amendments, foreign corporations, other petitions)**\nNot covered here. SEC fees for stock corporations, One Person Corporations, partnerships and non-stock corporations are in 01.3. For other SEC filings, use the fee computed in eSPARC (https://esparc.sec.gov.ph) or call SEC at 1-4SEC (14732). DTI business name fees (01.2) apply only to sole proprietorships and are not SEC fees."
  },
  {
   "id": "K132",
@@ -1428,6 +1440,18 @@
   "text": "- Pag-IBIG asks all registered employers to use the **Electronic Submission of Remittance Schedule (eSRS)** through **Virtual Pag-IBIG for Employers** to pay employees' membership savings and loan payments. After submitting the remittance schedule online, you get a **Payment Reference Number** to pay through accredited collecting partners.\n- **Due dates** depend on the first letter of the employer's name:\n \n- A to F: 1st to 7th day of the month after the period covered\n \n- G to N: 5th to 11th day of the month after\n \n- O to Z, numbers or special characters: 9th to 15th day of the month after\n- Applies to employers in Baguio City and Benguet.\nSource: https://www.pagibigfund.gov.ph/ESRS.html (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
+  "id": "K375",
+  "section": "10.8",
+  "title": "10.8 Hiring employees > Late or unpaid Pag-IBIG remittance: penalties",
+  "text": "Pag-IBIG HDMF Circular No. 275 (2010): the employer pays a counterpart of 2% of the employee's monthly compensation and must not deduct it from the employee's pay. If the employer pays or remits late, Pag-IBIG charges a penalty of 1/10 of 1% of the amount due for each day of delay, from the day after the due date until fully paid. An employer that deducted contributions but did not remit them also owes the dividends they would have earned. Refusing or failing to register, collect or remit without lawful cause is a crime: a fine of up to twice the amount involved, or up to 6 years in prison, or both.\nSource: https://www.pagibigfund.gov.ph/about_publication_circulars_memberservices.html (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K376",
+  "section": "10.8",
+  "title": "10.8 Hiring employees > Pag-IBIG penalty condonation for employers with unpaid contributions",
+  "text": "Pag-IBIG Circular No. 504 (November 20, 2026) lets employers with unremitted membership savings apply once to have all penalties condoned. If the employer never deducted from employees, it pays the employer share plus lost dividends; if it deducted but did not remit, it also remits the employee share. Pay in full within 30 days of approval, or apply for a plan of payment of up to 24 months with Pag-IBIG interest of 6% a year (0.5% a month). Missing the plan brings back the penalties, and late current contributions still get the 1/10 of 1% daily penalty. It replaces Circular 454.\nSource: https://www.pagibigfund.gov.ph/about_publication_circulars_memberservices.html (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
   "id": "K163",
   "section": "10.5",
   "title": "10.5 Hiring employees > Minimum wage in Baguio City and Benguet (Cordillera, CAR)",
@@ -1449,7 +1473,49 @@
   "id": "K328",
   "section": "10.9",
   "title": "10.9 Hiring employees > Where to find DOLE rules on 13th month pay and holiday pay",
-  "text": "- DOLE's Bureau of Working Conditions (BWC) publishes the official guidance on pay rules. In 2026 it issued **Labor Advisory No. 21-26, Guidelines on the Payment of Thirteenth Month Pay**, and **Labor Advisory No. 17-26** on wages for regular holidays and special days in **2027**. These apply in Baguio City and Benguet too.\n- BWC also publishes the **Workers' Statutory Monetary Benefits Handbook (2024 edition)** and FAQs on 13th month pay.\n- This knowledge base does not contain the computation rules. Read them at the BWC site or ask the DOLE Baguio–Benguet Field Office (see 17.8).\nSource: https://bwc.dole.gov.ph/issuances/labor-advisories/ and https://bwc.dole.gov.ph/workers-statutory-monetary-benefits/ (checked November 23, 2026)\n(Status: VERIFIED)"
+  "text": "- DOLE's Bureau of Working Conditions (BWC) publishes the official guidance on pay rules. In 2026 it issued **Labor Advisory No. 21-26, Guidelines on the Payment of Thirteenth Month Pay**, and **Labor Advisory No. 17-26** on wages for regular holidays and special days in **2027**. These apply in Baguio City and Benguet too.\n- BWC also publishes the **Workers' Statutory Monetary Benefits Handbook (2024 edition)** and FAQs on 13th month pay.\n- The rules are in the other 10.9 passages (13th month, holidays, overtime, night shift, leave, service charges). For a specific case, ask DOLE Baguio–Benguet (17.8).\nSource: https://bwc.dole.gov.ph/issuances/labor-advisories/ and https://bwc.dole.gov.ph/workers-statutory-monetary-benefits/ (checked November 23, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K368",
+  "section": "10.9",
+  "title": "10.9 Hiring employees > 13th month pay: who gets it, how much, and when",
+  "text": "DOLE Labor Advisory No. 21-26 (November 2026): every rank-and-file employee in the private sector who worked at least 1 month in the calendar year must get 13th month pay. This includes piece-rate workers, those paid a fixed wage plus commission, and those who resigned or were terminated (pro-rated). The minimum is the total basic salary earned in the year divided by 12. Basic salary does not include overtime, premium, night shift differential, holiday pay, COLA or commissions unless company policy includes them. Pay it on or before December 24, 2026. DOLE accepts no request for exemption or deferment.\nSource: https://bwc.dole.gov.ph/issuances/labor-advisories/ (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K369",
+  "section": "10.9",
+  "title": "10.9 Hiring employees > 13th month pay: who is exempt, maternity leave, paying in two halves",
+  "text": "DOLE FAQs on 13th Month Pay: only rank-and-file employees are covered; managerial employees are not. Employers exempt under PD 851 include the government and employers of workers paid purely on commission, boundary or task basis (piece-rate workers are still covered). Maternity leave benefits are not counted when computing 13th month pay. An employer may pay half of the 13th month pay before the school year opens and the other half on or before December 24. A resigned employee gets 1/12 of the basic salary earned from January (or the last 13th month payout) up to the last day of work.\nSource: https://bwc.dole.gov.ph/workers-statutory-monetary-benefits/ (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K370",
+  "section": "10.9",
+  "title": "10.9 Hiring employees > Holiday pay and special day pay rates",
+  "text": "DOLE holiday pay rules (Labor Advisory 17-26; 2024 Handbook on Workers' Statutory Monetary Benefits): on a regular holiday, an employee who does not work gets 100% of the daily wage if present or on paid leave the day before; work on it is paid 200% for the first 8 hours, plus 30% of that hourly rate for overtime; if it is also the rest day, 260% (200% x 130%). On a special (non-working) day: no work, no pay unless company policy says otherwise; work is paid 130%, or 150% if it is also the rest day. A special (working) day is an ordinary workday. Retail and service businesses regularly employing fewer than 10 workers do not have to give holiday pay.\nSource: https://bwc.dole.gov.ph/issuances/labor-advisories/ (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K371",
+  "section": "10.9",
+  "title": "10.9 Hiring employees > Regular holidays in 2027",
+  "text": "DOLE Labor Advisory No. 17-26 (September 2026), under Proclamation No. 1427, s. 2026, lists the 2027 regular holidays: January 1, March 25, March 26, April 9, May 1, June 12, August 30, November 30, December 25 and December 30, plus Eid'l Fitr and Eid'l Adha (dates to be proclaimed). February 25, 2027 is a special (working) day, paid as an ordinary workday. The advisory also lists the 2027 special (non-working) days; check it or ask the DOLE Baguio-Benguet Field Office for the exact dates. These apply to employers in Baguio City and Benguet like everywhere in the Philippines.\nSource: https://bwc.dole.gov.ph/issuances/labor-advisories/ (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K372",
+  "section": "10.9",
+  "title": "10.9 Hiring employees > Overtime pay and night shift differential",
+  "text": "DOLE 2024 Handbook on Workers' Statutory Monetary Benefits: work beyond 8 hours on an ordinary working day earns overtime pay of an extra 25% of the hourly rate (125%). Overtime on a rest day, special day or regular holiday earns an extra 30% of the hourly rate for that day. Night shift differential is an extra 10% of the regular wage for each hour worked between 10:00 PM and 6:00 AM. Retail and service businesses regularly employing not more than 5 workers do not have to pay night shift differential. Managerial employees, kasambahay, and field personnel whose hours cannot be determined are not covered by overtime and premium pay rules.\nSource: https://bwc.dole.gov.ph/workers-statutory-monetary-benefits/ (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K373",
+  "section": "10.9",
+  "title": "10.9 Hiring employees > Service incentive leave (5 days paid leave)",
+  "text": "DOLE 2024 Handbook on Workers' Statutory Monetary Benefits: an employee with at least 1 year of service (12 months, continuous or broken) gets 5 days of service incentive leave (SIL) with pay each year, usable for sick, vacation or other leave. Unused SIL can be converted to cash at the end of the year, and any unused SIL is paid in cash when the employee resigns or is separated, at the salary rate on that date. SIL is not required for businesses regularly employing fewer than 10 employees, for employees already given at least 5 days of paid vacation leave, for managerial employees, or for field personnel whose time is unsupervised.\nSource: https://bwc.dole.gov.ph/workers-statutory-monetary-benefits/ (checked November 24, 2026)\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K374",
+  "section": "10.9",
+  "title": "10.9 Hiring employees > Service charges in restaurants and similar businesses",
+  "text": "DOLE 2024 Handbook on Workers' Statutory Monetary Benefits (Labor Code Art. 96, as amended by RA 11360): all service charges collected by covered establishments, such as hotels and restaurants, must be given to the covered employees completely and equally, based on actual hours or days worked. Managerial employees are not included. Service charges must be paid out at least once every two weeks or twice a month, at intervals of not more than 16 days. Service charges do not count toward meeting the minimum wage when it increases.\nSource: https://bwc.dole.gov.ph/workers-statutory-monetary-benefits/ (checked November 24, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K190",
