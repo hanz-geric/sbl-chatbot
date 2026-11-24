@@ -26,8 +26,8 @@
  {
   "id": "K005",
   "section": "01.2",
-  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > Territorial scope and fees",
-  "text": "The fee depends on the territorial scope chosen:\n\n| Territorial scope | Registration fee | Plus documentary stamp tax |\n|---|---|---|\n| Barangay | ₱200 | ₱30 |\n| City/Municipality | ₱500 | ₱30 |\n| Regional | ₱1,000 | ₱30 |\n| National | ₱2,000 | ₱30 |\n\nAn additional 50% is charged for late filing (late renewal).\n\n(Status: VERIFIED)"
+  "title": "01.2 DTI Business Name Registration (Sole Proprietorship) > How much it costs: registration fees by territorial scope",
+  "text": "How much DTI business name registration costs depends on the territorial scope chosen:\n\n| Territorial scope | Registration fee | Plus documentary stamp tax |\n|---|---|---|\n| Barangay | ₱200 | ₱30 |\n| City/Municipality | ₱500 | ₱30 |\n| Regional | ₱1,000 | ₱30 |\n| National | ₱2,000 | ₱30 |\n\nAn additional 50% is charged for late filing (late renewal).\n\n(Status: VERIFIED)"
  },
  {
   "id": "K006",
@@ -516,21 +516,15 @@
   "text": "- **Online:** the city's Electronic Business Permits and Licensing System (eBPLS) at https://ebpls.baguio.gov.ph. Baguio began accepting new applications online on July 18, 2022. Applicants register with an active email address, then log in to fill out the form and upload documents. After payment is verified, the permit is sent by email for printing. (Northern Philippine Times / PNA, August 2022)\n- **In person:** Permits and Licensing Division, 1st Floor, Left Wing, Baguio City Hall. Satellite Business One-Stop Shops (BOSS) have operated in major malls (for example Baguio Centermall) for renewals.\n- **Assessment app:** \"Baguio in My Pocket\" (BIMP) has been used for online tax assessments.\n(Status: FOR VALIDATION)"
  },
  {
-  "id": "K046",
-  "section": "02.3",
-  "title": "02.3 Documentary requirements for a new business permit",
-  "text": "Requirements reported for Baguio City (combined from the 2020 PLD list and a 2024 PLD dialogue with the business sector):"
- },
- {
   "id": "K047",
   "section": "02.3",
-  "title": "02.3 Documentary requirements for a new business permit",
-  "text": "| # | Requirement | Issuing office |\n|---|---|---|\n| 1 | Accomplished business permit application form | PLD / eBPLS |\n| 2 | Business registration: DTI (sole proprietorship), SEC (corporation/partnership), or CDA (cooperative) | DTI / SEC / CDA |\n| 3 | Barangay business clearance (original) | Barangay where the business is located |\n| 4 | Lease contract or proof of ownership of the business location (or mall certification) | Lessor / owner |\n| 5 | Locational / zoning clearance | City Planning, Development and Sustainability Office (CPDSO); the Market Office for businesses in the market area |\n| 6 | Health / sanitary clearance | City Health Services Office (CHSO) |\n| 7 | Building clearance | City Buildings and Architecture Office (CBAO) |"
+  "title": "02.3 Documentary requirements for a new business permit in Baguio City (Mayor's Permit)",
+  "text": "Requirements reported for Baguio City (combined from the 2020 PLD list and a 2024 PLD dialogue with the business sector):\n\n| # | Requirement | Issuing office |\n|---|---|---|\n| 1 | Accomplished business permit application form | PLD / eBPLS |\n| 2 | Business registration: DTI (sole proprietorship), SEC (corporation/partnership), or CDA (cooperative) | DTI / SEC / CDA |\n| 3 | Barangay business clearance (original) | Barangay where the business is located |\n| 4 | Lease contract or proof of ownership of the business location (or mall certification) | Lessor / owner |\n| 5 | Locational / zoning clearance | City Planning, Development and Sustainability Office (CPDSO); the Market Office for businesses in the market area |\n| 6 | Health / sanitary clearance | City Health Services Office (CHSO) |\n| 7 | Building clearance | City Buildings and Architecture Office (CBAO) |"
  },
  {
   "id": "K048",
   "section": "02.3",
-  "title": "02.3 Documentary requirements for a new business permit",
+  "title": "02.3 Documentary requirements for a new business permit in Baguio City (Mayor's Permit)",
   "text": "| # | Requirement | Issuing office |\n|---|---|---|\n| 8 | Sewerage and parks clearance | City Environment and Parks Management Office (CEPMO) |\n| 9 | Fire safety clearance | Bureau of Fire Protection, Baguio City Fire Station |\n| 10 | Authorization letter, if someone else processes the application | Applicant |\n| 11 | DOLE registration, where applicable | DOLE |"
  },
  {

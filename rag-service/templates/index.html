@@ -58,6 +58,21 @@
             flex: 1;
             height: 50px;
         }
+        .text ul{
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+        .example{
+            display: block;
+            margin-top: 8px;
+            padding: 6px 10px;
+            border: 1px solid #1f6f50;
+            border-radius: 12px;
+            background: white;
+            color: #1f6f50;
+            cursor: pointer;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -92,9 +107,10 @@
             form.reset();
             chatbox.innerHTML += `
                 <div class="user"><div class="text">${escapeHtml(question)}</div></div>
-                <div class="bot">Thinking...</div>
+                <div class="bot">Searching the knowledge base and writing an answer. This can take up to 30 seconds...</div>
             `;
             chatbox.scrollTop = chatbox.scrollHeight;
+            sendButton.disabled = true;
 
             fetch('/ask', { method: 'post', body: formData })
                 .then(response => response.json())
@@ -102,15 +118,37 @@
                     if (data.status != 'success') {
                         document.getElementById('message').innerHTML = escapeHtml(data.message);
                     }
+                    sendButton.disabled = false;
                     loadMessages();
                 })
                 .catch(error => {
                     console.error(error);
                     document.getElementById('message').innerHTML = 'Server error';
+                    sendButton.disabled = false;
                     loadMessages();
                 });
         });
+
+        // Enter sends the question; Shift+Enter adds a new line
+        questionBox.addEventListener('keydown', function(e){
+            if (e.key == 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                if (!sendButton.disabled) askForm.requestSubmit();
+            }
+        });
+
+        // Example questions in the welcome message
+        document.getElementById('chatbox').addEventListener('click', function(e){
+            if (e.target.classList.contains('example') && !sendButton.disabled) {
+                questionBox.value = e.target.textContent;
+                askForm.requestSubmit();
+            }
+        });
     }
+
+    const askForm = document.getElementById('askForm');
+    const questionBox = askForm.querySelector('textarea');
+    const sendButton = askForm.querySelector('button');
 
     function loadMessages(){
         fetch('/messages')

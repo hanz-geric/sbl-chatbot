@@ -22,6 +22,8 @@ CONTEXT:
 
 def clean_context(text):
     text = re.sub(r"\n?\(Status:[^)]*\)", "", text)
+    text = re.sub(r"\n?Source: sections [^\n]*of this knowledge base[^\n]*", "", text)
+    text = re.sub(r"^\d\d(?:\.\d+[A-Z]?)?\s+", "", text)
     text = re.sub(r"\*?\((?:VERIFIED|FOR VALIDATION|INTERVIEW-DERIVED|UNVERIFIED|PENDING|GENERAL GUIDANCE)[^)]*\)\*?", "", text)
     text = re.sub(r"\(\s*see [^)]*\)", "", text, flags=re.I)
     text = re.sub(r"\s*see \d\d(?:\.\d+[A-Z]?)*(?:(?:,\s*|,?\s*and\s+)\d\d(?:\.\d+[A-Z]?)*)*\.?", "", text, flags=re.I)

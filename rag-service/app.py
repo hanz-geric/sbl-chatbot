@@ -1,4 +1,5 @@
 import json
+import re
 import secrets
 import sqlite3
 import time
@@ -7,6 +8,7 @@ from pathlib import Path
 import httpx
 import ollama
 from flask import Flask, jsonify, render_template, request, session
+from markupsafe import Markup, escape
 
 from agent import route
 from generator import NO_RESULTS_REPLY, OFF_TOPIC_REPLY, stream_answer
@@ -18,6 +20,17 @@ MAX_QUESTION_LENGTH = 500
 
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
+
+
+def format_answer(text):
+    text = str(escape(text))
+    text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
+    text = re.sub(r"^[ \t]*[*-][ \t]+(.*)$", r"<li>\1</li>", text, flags=re.M)
+    text = re.sub(r"(?:<li>.*</li>\n?)+", lambda m: "<ul>" + m.group(0).replace("\n", "") + "</ul>", text)
+    return Markup(text)
+
+
+app.jinja_env.filters["answer"] = format_answer
 
 
 def get_db():
