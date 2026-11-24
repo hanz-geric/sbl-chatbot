@@ -113,13 +113,33 @@
             sendButton.disabled = true;
 
             fetch('/ask', { method: 'post', body: formData })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.status != 'success') {
-                        document.getElementById('message').innerHTML = escapeHtml(data.message);
+                .then(response => {
+                    // JSON means an error; plain text is the answer as gemma writes it
+                    if (response.headers.get('Content-Type').startsWith('application/json')) {
+                        return response.json().then(data => {
+                            document.getElementById('message').innerHTML = escapeHtml(data.message);
+                            sendButton.disabled = false;
+                            loadMessages();
+                        });
                     }
-                    sendButton.disabled = false;
-                    loadMessages();
+                    const reader = response.body.getReader();
+                    const decoder = new TextDecoder();
+                    const bubble = chatbox.lastElementChild;
+                    let answer = '';
+                    function readPiece(){
+                        return reader.read().then(result => {
+                            if (result.done) {
+                                sendButton.disabled = false;
+                                loadMessages();
+                                return;
+                            }
+                            answer += decoder.decode(result.value, { stream: true });
+                            bubble.innerHTML = `<div class="text">${escapeHtml(answer)}</div>`;
+                            chatbox.scrollTop = chatbox.scrollHeight;
+                            return readPiece();
+                        });
+                    }
+                    return readPiece();
                 })
                 .catch(error => {
                     console.error(error);
