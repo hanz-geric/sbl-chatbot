@@ -1227,7 +1227,7 @@
   "id": "K125",
   "section": "08.2",
   "title": "08.2 Common questions across topics",
-  "text": "**I am poor and want to start a small livelihood. Is there free assistance?**\nDSWD's Sustainable Livelihood Program and DOLE's Kabuhayan (DILP) give livelihood grants, often as starter kits or seed capital, to qualified low-income or vulnerable people. Ask the City Social Welfare and Development Office or DOLE. See 05."
+  "text": "**I am poor or have little money and want to start a small business or livelihood. Is there free help or free assistance?**\nDSWD's Sustainable Livelihood Program and DOLE's Kabuhayan (DILP) give livelihood grants, often as starter kits or seed capital, to qualified low-income or vulnerable people. Ask the City Social Welfare and Development Office or DOLE. See 05."
  },
  {
   "id": "K126",
@@ -1300,6 +1300,12 @@
   "section": "08.3",
   "title": "08.3 Topics not covered: refer to the office",
   "text": "**Interest rates of bank business loans (Landbank, BDO, BPI, and other banks)**\nNot covered. The knowledge base has rates only for specific government programs: SB Corp RISE UP (04.2), OWWA–Landbank EDLP for OFWs (04.6), and DA-ACPC/DBP AgriNegosyo (04.5). Those rates are not the rates of a bank's regular business loans. Ask the bank directly, for example at its Baguio City branch.\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K197",
+  "section": "08.3",
+  "title": "08.3 Topics not covered: refer to the office",
+  "text": "**Barangay clearance (barangay business clearance) fee**\nA barangay business clearance is needed before the Mayor's Permit (see 02.3), but its fee is not covered. The clearance is issued, and its fee collected, by the barangay where the business is located, not by a city office. Ask the barangay hall of the barangay where your business is located.\n(Status: GENERAL GUIDANCE)"
  },
  {
   "id": "K137",

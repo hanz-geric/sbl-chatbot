@@ -105,13 +105,22 @@ K319 was then reworded too. It now says those are trademark fees only, not paten
 
 The full run was not repeated after the K319 change.
 
-**Still failing:**
-- T40: the free-help programs are not retrieved.
-- H06: City Tourism is named for barangay clearance.
-- T18: says only "check the advisory" and gives no schedule.
+## T40 and H06
+
+- **T40 (free help):** K125 already had the answer, DSWD SLP and DOLE Kabuhayan. Its question ("I am poor and want to start a small livelihood") did not match the router's query ("free help for starting a small business"). The question now also says "have little money", "small business" and "free help".
+  - Result: the answer named SLP and DILP and referred the user to the CSWDO or DOLE, 3 of 3 times.
+- **H06 (barangay clearance fee):** there was no 08.3 entry, so gemma named the only office in the retrieved checklists (City Tourism). The new **K197** (08.3, GENERAL GUIDANCE) says:
+  - a barangay business clearance is needed before the Mayor's Permit;
+  - its fee is not covered;
+  - the user should ask the barangay hall where the business is located.
+  - Result: "How much is the barangay clearance fee in Baguio?" was declined with that referral 3 of 3 times. "Do I need a barangay clearance for my business?" was still answered "yes" 3 of 3 times.
+- **Unchanged:** DSWD SLP and the carinderia checklist answers. The index has 1,399 passages (285 hand-checked).
+
+The full 80-question run was not repeated after the K319, K125 and K197 changes.
+
+**Still failing:** T18 says only "check the advisory" and gives no schedule.
 
 ## Next steps
 
-1. Make T40 retrieve the free-help programs (DSWD SLP, DOLE DILP), for example by adding the words "free help" and "no money" to the 08.2 passage.
-2. Fix H06: the barangay clearance fee question names City Tourism instead of the barangay hall.
-3. A group member should re-score a sample, as for v1–v4.
+1. Re-run the 80 questions to confirm the K319, K125 and K197 changes.
+2. A group member should re-score a sample, as for v1–v4.
