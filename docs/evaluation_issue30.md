@@ -63,11 +63,28 @@ The test used 10 fee questions, each answered twice with the old rule and twice 
 
 These errors come from the 4b model mixing up items that sit close together in a passage. Rewording the rule does not stop it.
 
+## Passage fixes for the number errors
+
+Because the rule did not help, the passages were reworded so the warning sits next to the number:
+
+- **K146 (CDA):** the title and text now say that ₱100–₱300 is the **name reservation fee only, not the registration fee**, and that the registration fee is not covered.
+- **K184 (SEC):** the title and text now say the fees are for **stock corporations only**, and that partnership fees are not covered (use eSPARC or 1-4SEC).
+- **K173 (OWWA–Landbank EDLP):** the 7.5% is now marked as only for the EDLP, not Landbank's other loans.
+- **New K196 (08.3):** says interest rates of bank business loans (Landbank, BDO, BPI and others) are not covered. It also says the program rates in 04.2, 04.5 and 04.6 are not bank rates. The user is told to ask the bank.
+
+End-to-end check (router + gemma3:4b), each question asked twice:
+
+| Question | Before | After (2 of 2) |
+|---|---|---|
+| H09 CDA registration fee | gave the name reservation fee | says it doesn't have it; ask the CDA |
+| V03 SEC partnership fee | gave the stock-corporation rule | not covered; eSPARC or 1-4SEC |
+| V20 Landbank loan rate | gave SB Corp's 8–12% | doesn't have it; ask the bank |
+| H10 BDO loan rate | sent the user to SB Corp | doesn't have it; ask the bank |
+
+Fee and rate questions that should be answered were still answered: V01, T48, T32, V13, V17, T08, the EDLP rate (7.5%) and the RISE UP rates. With 284 hand-checked passages the index has 1,398 passages. The full 80 questions were not re-run after this change.
+
 ## Next steps
 
-1. Reword the passages behind the remaining number errors, as was done for 08.3 earlier:
-   - K146: say that ₱100–₱300 is the name reservation fee and that the registration fee is not covered.
-   - K184: say that the rule is for stock corporations only.
-   - K173: say that 7.5% is only for the OWWA–Landbank EDLP.
+1. Re-run the 80 questions to confirm the passage fixes in a full run.
 2. Make T40 retrieve the free-help programs (DSWD SLP, DOLE DILP), for example by adding the words "free help" and "no money" to the 08.2 passage.
 3. A group member should re-score a sample, as for v1–v4.

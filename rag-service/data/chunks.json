@@ -122,8 +122,8 @@
  {
   "id": "K184",
   "section": "01.3",
-  "title": "01.3 SEC – Corporations and Partnerships > SEC registration fees for a stock corporation",
-  "text": "- **Filing fee:** 1/5 of 1% of the authorized capital stock, or of the subscription price of the subscribed capital stock, whichever is higher, but **not less than ₱2,000**.\n- **Legal research fee:** 1% of the filing fee, but not less than ₱10.\n- **Name verification/reservation:** ₱100 per allowed name for 30 days.\n- A new corporation must also get a **Stock and Transfer Book**, about ₱470 (including its registration).\n- By-laws fees are added; use the SEC Registration Calculator (https://www.sec.gov.ph/online-services/registration-calculator/) for the approximate total.\nSource: https://www.sec.gov.ph/online-services/registration-calculator/ and https://www.sec.gov.ph/forms-and-fees/schedules-of-fees/ (checked November 23, 2026)\n(Status: VERIFIED)"
+  "title": "01.3 SEC – Corporations and Partnerships > SEC registration fees for a stock corporation only (not partnerships)",
+  "text": "- **Filing fee:** 1/5 of 1% of the authorized capital stock, or of the subscription price of the subscribed capital stock, whichever is higher, but **not less than ₱2,000**.\n- **Legal research fee:** 1% of the filing fee, but not less than ₱10.\n- **Name verification/reservation:** ₱100 per allowed name for 30 days.\n- A new corporation must also get a **Stock and Transfer Book**, about ₱470 (including its registration).\n- **These fees are for stock corporations only.** SEC fees for partnerships and non-stock corporations are not covered; use the fee computed in eSPARC or call 1-4SEC (14732).\n- By-laws fees are added; use the SEC Registration Calculator (https://www.sec.gov.ph/online-services/registration-calculator/) for the approximate total.\nSource: https://www.sec.gov.ph/online-services/registration-calculator/ and https://www.sec.gov.ph/forms-and-fees/schedules-of-fees/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K316",
@@ -200,8 +200,8 @@
  {
   "id": "K146",
   "section": "01.4",
-  "title": "01.4 CDA – Cooperatives > Name reservation and online registration",
-  "text": "- Before registering, a cooperative reserves its name with a Cooperative Name Reservation Notice: **₱100 for 30 days, ₱200 for 60 days, ₱300 for 90 days**.\n- A cooperative becomes a legal entity when the CDA issues its Certificate of Registration.\n- Register online through CDA's eCoopRIS: https://cs.cda.gov.ph/ecoopris/users/login\n- The registration fee, minimum number of members, and training requirement are not on this page; ask the CDA.\nSource: https://cda.gov.ph/services/regulatory-services/registration/ (checked November 23, 2026)\n(Status: VERIFIED)"
+  "title": "01.4 CDA – Cooperatives > Name reservation fee (not the registration fee) and online registration",
+  "text": "- **Name reservation fee only:** before registering, a cooperative reserves its name with a Cooperative Name Reservation Notice: **₱100 for 30 days, ₱200 for 60 days, ₱300 for 90 days**. This is not the CDA registration fee.\n- A cooperative becomes a legal entity when the CDA issues its Certificate of Registration.\n- Register online through CDA's eCoopRIS: https://cs.cda.gov.ph/ecoopris/users/login\n- **The CDA registration fee is not covered** (it is not on the CDA page), and neither are the minimum number of members and the training requirement; ask the CDA.\nSource: https://cda.gov.ph/services/regulatory-services/registration/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K014",
@@ -915,7 +915,7 @@
   "id": "K173",
   "section": "04.6",
   "title": "04.6 Programs for OFWs > Business loan for OFWs and their families: OWWA–Landbank Enterprise Development and Loan Program (EDLP)",
-  "text": "- For OFWs and their families who want to start a business, including in Baguio City and Benguet. OWWA runs it with Landbank (LBP).\n- First, enterprise development: a business appreciation seminar, skills self-assessment, referral to training, and a business plan seminar.\n- After completing the Enhanced Enterprise Development Training (EEDT), borrowers can get a loan of **₱100,000 up to ₱2 million** (individual) or **up to ₱5 million** (group), at a **fixed 7.5% a year**.\n- Apply within **3 years of arriving** in the Philippines, unless the business was already running before the application.\n- SB Corp's Franchise Funding is also open to returning OFWs (see 04.2).\nSource: https://owwa.gov.ph/ofw-enterprise-development-and-loan-program-formerly-p2b-ofw-reintegration-program/ (checked November 23, 2026)\n(Status: VERIFIED)"
+  "text": "- For OFWs and their families who want to start a business, including in Baguio City and Benguet. OWWA runs it with Landbank (LBP).\n- First, enterprise development: a business appreciation seminar, skills self-assessment, referral to training, and a business plan seminar.\n- After completing the Enhanced Enterprise Development Training (EEDT), borrowers can get a loan of **₱100,000 up to ₱2 million** (individual) or **up to ₱5 million** (group), at a **fixed 7.5% a year**. This rate is only for the OWWA–Landbank EDLP; it is not the rate of Landbank's other business loans.\n- Apply within **3 years of arriving** in the Philippines, unless the business was already running before the application.\n- SB Corp's Franchise Funding is also open to returning OFWs (see 04.2).\nSource: https://owwa.gov.ph/ofw-enterprise-development-and-loan-program-formerly-p2b-ofw-reintegration-program/ (checked November 23, 2026)\n(Status: VERIFIED)"
  },
  {
   "id": "K174",
@@ -1294,6 +1294,12 @@
   "section": "08.3",
   "title": "08.3 Topics not covered: refer to the office",
   "text": "**Whether a loan or grant will be approved**\nThe chatbot cannot promise approval of any loan or grant. Approval is decided by the agency (for example SB Corp, DSWD, DOLE) after evaluating the application.\n\n(Status: VERIFIED)"
+ },
+ {
+  "id": "K196",
+  "section": "08.3",
+  "title": "08.3 Topics not covered: refer to the office",
+  "text": "**Interest rates of bank business loans (Landbank, BDO, BPI, and other banks)**\nNot covered. The knowledge base has rates only for specific government programs: SB Corp RISE UP (04.2), OWWA–Landbank EDLP for OFWs (04.6), and DA-ACPC/DBP AgriNegosyo (04.5). Those rates are not the rates of a bank's regular business loans. Ask the bank directly, for example at its Baguio City branch.\n(Status: VERIFIED)"
  },
  {
   "id": "K137",
